@@ -1,11 +1,95 @@
 <!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forms</title>
-</head>
-<body>
+<html lang="uk">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Forms</title>
+    </head>
+    
+    <body>
+        <main>
+            <form action="#" method="post">
+                <fieldset>
+                    <legend><b>Інформація аккаунту</b></legend>
+                    <div>
+                        <label for="name">Повне ім'я</label>
+                        <input type="text" id="name" name="name" required />                
+                    </div>
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required />    
+                    </div>
+                    <div>
+                        <label for="password">Пароль</label>
+                        <input type="password" name="password" id="password" required />    
+                    </div>
+                    <div>
+                        <label for="password-repeat">Пароль ще раз</label>
+                        <input type="password" name="password-repeat" id="password-repeat" required /> 
+                    </div>                
+                </fieldset>
 
-</body>
+                <fieldset>
+                    <legend><b>Персональні дані</b></legend>
+                    <div>
+                        <span>Стать</span>
+                        <input type="radio" name="gender" id="male-gender" required />
+                        <label for="male-gender">чоловіча</label>
+        
+                        <input type="radio" name="gender" id="female-gender" required />
+                        <label for="female-gender">жіноча</label>
+                    </div>
+                    <div>
+                        <label for="age">Вік</label>
+                        <input type="number" name="age" id="age" required />
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend><b>Деталі курсу</b></legend>
+                    <div>
+                        <label for="course">Курс</label>
+                        <select name="course" id="course" required>
+                            <option value="none">-=Виберіть курс=-</option>
+                            <optgroup label="Технічні напрямки">
+                                <option value="front-end">Front-End</option>
+                                <option value="back-end">Back-End</option>
+                            </optgroup>
+                            <optgroup label="Менеджмент">
+                                <option value="project-management">Project Management</option>
+                            </optgroup>
+                            <optgroup label="Тестування">
+                                <option value="qa-manual">QA Manual</option>
+                            </optgroup>
+                        </select>
+                    </div>
+                    <div>
+                        <label for="date">Виберіть орієнтовну дату початку курсу</label>
+                        <input type="date" name="date" id="date" min="2024-03-12" max="2024-12-31" required />
+                    </div>
+                </fieldset>
+
+                <fieldset>
+                    <legend><b>Контактні дані</b></legend>
+                    <div>
+                        <label for="adress">Повна адреса</label>
+                        <textarea name="adress" id="adress" cols="24" rows="3" placeholder="Країна, регіон, місто/селище, вулиця" required></textarea>
+                    </div>
+                    <div>
+                        <label for="phone-number">Телефон</label>
+                        <input type="tel" name="phone-number" id="phone-number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="111-111-1111" required />
+                    </div>               
+                </fieldset>
+
+                <div>
+                    <input type="checkbox" name="agreement" id="agreement" required />
+                    <label for="agreement">Я погоджуюсь з обробкою персональних даних</label>
+                </div>
+                <div>
+                    <button type="reset">Очистити форму</button>
+                    <button type="submit">Зареєструватися</button>
+                </div> 
+            </form>
+        </main>
+    </body>
 </html>
