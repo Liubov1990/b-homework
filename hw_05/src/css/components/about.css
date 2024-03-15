@@ -1,0 +1,26 @@
+.about {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 500px;
+  background: var(--secondary-bg-color);
+  box-sizing: border-box;
+  padding: 100px 15px;
+}
+
+.about__heading {
+  margin-bottom: 45px;
+}
+
+.about__text-wrap {
+  max-width: 480px;
+}
+
+.about__text {
+  text-align: center;
+  margin-bottom: 31px;
+}
+
+.about__text--zero-mr {
+  margin-bottom: 0;
+}

@@ -1,0 +1,14 @@
+button {
+  font-family: "Open Sans";
+  font-weight: var(--font-w-bold);
+  letter-spacing: 1.6px;
+  line-height: 2.6;
+  text-align: center;
+  width: 180px;
+  height: 44px;
+  border-radius: 22px;
+  border: none;
+  color: var(--main-bg-color);
+  background-color: var(--main-text-color);
+  padding: 0 16px;
+}

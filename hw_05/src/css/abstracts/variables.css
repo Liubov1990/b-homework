@@ -1,0 +1,10 @@
+:root {
+  --main-bg-color: #ffffff;
+  --secondary-bg-color: #f6f6f6;
+  --main-text-color: #070707;
+  --secondary-text-color: #828282;
+  --empty-star-color: #e5e5e5;
+
+  --font-w-normal: 400;
+  --font-w-bold: 700;
+}

@@ -1,0 +1,38 @@
+body {
+  font-family: "Open Sans";
+  font-size: 18px;
+  font-weight: var(--font-w-normal);
+  line-height: 1.36;
+  color: var(--main-text-color);
+  width: 100%;
+}
+
+main {
+  width: 100%;
+  height: auto;
+}
+
+.content-wrapper {
+  width: 970px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 34px;
+}
+
+h1,
+h2 {
+  font-weight: var(--font-w-bold);
+}
+
+a {
+  text-decoration: none;
+  color: var(--main-text-color);
+}

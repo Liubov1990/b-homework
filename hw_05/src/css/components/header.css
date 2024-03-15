@@ -1,0 +1,43 @@
+header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  letter-spacing: 0.32px;
+  padding: 0 15px;
+  margin-bottom: 12px;
+  box-sizing: border-box;
+}
+
+.content-wrapper--bb {
+  border-bottom: 1px solid var(--secondary-text-color);
+}
+
+nav {
+  width: 496px;
+  height: 30px;
+  padding: 25px 0 24px 0;
+}
+
+ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-self: center;
+  height: 30px;
+}
+
+nav a {
+  color: var(--secondary-text-color);
+}
+
+.active {
+  color: var(--main-text-color);
+}
+
+/* instead of class 'active' will be changed later*/
+/* nav a:hover, 
+nav a:active {
+  color: var(--main-text-color);
+} */

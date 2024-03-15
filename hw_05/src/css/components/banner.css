@@ -1,0 +1,17 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 497px;
+  padding: 0 15px;
+}
+
+h1 {
+  align-self: flex-start;
+  margin-bottom: 45px;
+}
+
+.hero__img {
+  width: 970px;
+  height: 387px;
+}
