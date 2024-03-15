@@ -4,4 +4,5 @@
 @import "./abstracts/variables.css";
 
 @import "./components/header.css";
+@import "./components/card.css";
 @import "./components/footer.css";

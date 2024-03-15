@@ -1,6 +1,8 @@
 :root {
   --main-text-color: #101915;
-  --medium--bg-color: #449678;
+  --dark-bg-color: #2d5a57;
+  --medium-bg-color: #449678;
+  --light-bg-color: #dbe7d0;
 
   --fw-normal: 400;
   --fw-bold: 700;
