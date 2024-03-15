@@ -1,0 +1,10 @@
+aside {
+  width: 35%;
+  box-sizing: border-box;
+}
+
+aside > section > img {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+}
