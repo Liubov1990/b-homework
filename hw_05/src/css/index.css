@@ -1,5 +1,5 @@
 /* reset styles */
-@import "/src/css/reset.css";
+@import "./abstracts/reset.css";
 
 /* abstracts */
 @import "./abstracts/fonts.css";
