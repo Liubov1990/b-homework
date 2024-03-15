@@ -1,8 +1,10 @@
 @import "../reset.css";
 
+/* abstracts */
 @import "./abstracts/core.css";
 @import "./abstracts/variables.css";
 
+/* components */
 @import "./components/header.css";
 @import "./components/card.css";
 @import "./components/aside.css";

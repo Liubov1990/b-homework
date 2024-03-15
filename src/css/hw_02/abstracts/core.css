@@ -7,11 +7,21 @@ body {
 body {
   display: flex;
   flex-direction: column;
-  font-family: "Noto Sans", sans-serif;
+  font-family: "Roboto", sans-serif;
   font-size: 16px;
   font-weight: var(--fw-normal);
   font-style: normal;
   line-height: 1.3;
+  box-sizing: border-box;
+}
+
+.content-wrapper {
+  display: flex;
+  flex: 1 0 auto;
+  text-align: justify;
+  background: var(--medium-bg-color);
+  width: 100%;
+  padding: 15px;
   box-sizing: border-box;
 }
 
@@ -21,21 +31,20 @@ h1 {
 
 h2 {
   font-size: 22px;
+  margin-bottom: 20px;
 }
 
-h1,
-h2,
-span {
-  font-weight: var(--fw-bold);
+svg {
+  width: 20px;
+  height: 20px;
+  fill: var(--accent-color);
 }
 
-.content-wrapper {
-  display: flex;
-  flex: 1 0 auto;
-  background: var(--dark-bg-color);
-  width: 100%;
-  padding: 15px;
-  box-sizing: border-box;
+hr {
+  margin-block-start: 25px;
+  margin-block-end: 25px;
+  border: 0;
+  border-top: 1px solid var(--accent-color);
 }
 
 a {

@@ -2,3 +2,13 @@ main {
   width: 65%;
   box-sizing: border-box;
 }
+
+dt {
+  font-size: 18px;
+  color: var(--accent-color);
+  margin-bottom: 7px;
+}
+
+dd {
+  margin-bottom: 25px;
+}

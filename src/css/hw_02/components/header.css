@@ -1,7 +1,7 @@
 header {
   width: 100%;
-  padding: 10px 15px;
-  background: var(--medium-bg-color);
-  border-bottom: 2px solid var(--main-text-color);
+  background: var(--accent-color);
+  color: var(--white-color);
+  padding: 0 25px 5px 25px;
   box-sizing: border-box;
 }
