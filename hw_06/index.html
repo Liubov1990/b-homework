@@ -8,7 +8,12 @@
 
   <body>
     <main>
-      <form name="course-apply" action="#" method="post">
+      <form
+        name="course-apply"
+        action="#"
+        method="post"
+        enctype="multipart/form-data"
+      >
         <fieldset>
           <legend><b>Інформація акаунту</b></legend>
           <div>
@@ -141,13 +146,7 @@
 
         <div>
           <label for="cover-letter">Мотиваційний лист</label>
-          <input
-            type="file"
-            name="cover-letter"
-            id="cover-letter"
-            enctype="multipart/form-data"
-            required
-          />
+          <input type="file" name="cover-letter" id="cover-letter" required />
         </div>
 
         <div>
