@@ -1,6 +1,7 @@
 @import "../reset.css";
 
 @import "./abstracts/core.css";
+@import "./abstracts/variables.css";
 
 @import "./components/header.css";
 @import "./components/footer.css";
