@@ -1,6 +1,23 @@
 footer {
+  display: flex;
+  justify-content: center;
   width: 100%;
-  padding: 0 15px;
   flex-shrink: 0;
+  width: 100%;
+  background: var(--medium-bg-color);
+  border-top: 2px solid var(--main-text-color);
+  padding: 10px 15px;
   box-sizing: border-box;
+}
+
+footer > a {
+  margin-right: 10px;
+}
+
+footer > a:last-child {
+  margin-right: 0;
+}
+
+footer > a:hover {
+  color: var(--light-bg-color);
 }
