@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shopping list</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="../shared/css/libs/reset.css" />
+    <link rel="stylesheet" href="./css/index.css" />
+
+    <link rel="shortcut icon" href="./public/favicon.png" type="image/x-icon" />
+  </head>
+
+  <body>
+    <header>
+      <div class="heading-container">
+        <h1>CSS Dinner Shopping List</h1>
+        <p>Let’s go to the mall!</p>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <form action="#" method="post">
+          <ul class="product-list">
+            <li class="product-item">
+              <input type="checkbox" name="first" id="first" />
+              <label for="first"
+                >A lot of pickles
+                <small>for the next lessons about CSS</small>
+              </label>
+            </li>
+            <li class="product-item">
+              <input type="checkbox" name="second" id="second" />
+              <label for="second"
+                >10 apples <small>for more CSS manipulations</small>
+              </label>
+            </li>
+            <li class="product-item">
+              <input type="checkbox" name="third" id="third" />
+              <label for="third"
+                >20 oranges <small>because they are awesome</small>
+              </label>
+            </li>
+            <li class="product-item">
+              <input type="checkbox" name="fourth" id="fourth" />
+              <label for="fourth"
+                >13 plates <small>hm... they always dissapear</small>
+              </label>
+            </li>
+            <li class="product-item">
+              <input type="checkbox" name="fifth" id="fifth" />
+              <label for="fifth">15 bentos</label>
+            </li>
+            <li class="product-item">
+              <input type="checkbox" name="sixth" id="sixth" />
+              <label for="sixth"
+                >1 bottle of Sake <small>for my friends</small>
+              </label>
+            </li>
+          </ul>
+          <button type="submit"><span id="button">Bon appetit :)</span></button>
+        </form>
+      </div>
+    </main>
+  </body>
+</html>
