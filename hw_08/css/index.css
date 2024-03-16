@@ -78,7 +78,7 @@ small {
   font-size: 11px;
   line-height: 12.89px;
   vertical-align: middle;
-  margin-top: -2px; /* for line-through... */
+  margin-top: -3px; /* for line-through... */
 }
 
 [type="submit"] {
@@ -124,7 +124,7 @@ input[type="checkbox"]:checked + label > small {
   /* for line-through... */
   text-decoration: line-through;
   text-decoration-thickness: 1.5px;
-  margin-top: -2px;
+  margin-top: -3px;
   transition: all 0.1s ease-in;
 }
 
