@@ -45,9 +45,9 @@ img {
   padding: 0 20px;
 }
 
+.personal-info__link:visited,
 .personal-info__link:hover,
-.personal-info__link:active,
-.personal-info__link:visited {
+.personal-info__link:active {
   color: var(--accent-color);
 }
 
