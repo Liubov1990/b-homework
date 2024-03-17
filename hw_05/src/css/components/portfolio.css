@@ -2,9 +2,8 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 2268px;
   background-color: var(--secondary-bg-color);
-  padding: 100px 15px;
+  padding: 100px 15px 99px 15px;
   box-sizing: border-box;
 }
 

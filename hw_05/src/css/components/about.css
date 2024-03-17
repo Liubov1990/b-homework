@@ -2,7 +2,6 @@
   display: flex;
   align-items: center;
   flex-direction: column;
-  height: 500px;
   background: var(--secondary-bg-color);
   box-sizing: border-box;
   padding: 100px 15px;

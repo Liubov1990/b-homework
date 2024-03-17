@@ -3,15 +3,9 @@ header {
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
-  height: 80px;
   letter-spacing: 0.32px;
   padding: 0 15px;
-  margin-bottom: 12px;
   box-sizing: border-box;
-}
-
-.content-wrapper--bb {
-  border-bottom: 1px solid var(--secondary-text-color);
 }
 
 nav {
