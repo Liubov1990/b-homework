@@ -74,11 +74,12 @@ main {
 }
 
 small {
-  display: inline-block; /* for line-through (looks like one line, when elems are close enough)*/
+  /* for line-through as text-decoration (looks like one line, when elems are close enough)*/
+  /* display: inline-block;  */
   font-size: 11px;
   line-height: 12.89px;
   vertical-align: middle;
-  margin-top: -3px; /* for line-through... */
+  margin-top: -3px;
 }
 
 [type="submit"] {
@@ -107,7 +108,9 @@ input[type="checkbox"] + label::before {
 }
 
 input[type="checkbox"]:checked + label {
-  text-decoration: line-through; /* for line-through... */
+  position: relative; /* for pseudo line-through... */
+  /* for line-through as text-decoration */
+  /* text-decoration: line-through; */
   color: #9b96ac;
   outline: none;
 }
@@ -117,16 +120,26 @@ input[type="checkbox"]:checked + label::before {
   background-image: url("../public/check.svg");
   background-repeat: no-repeat;
   background-position: center;
-  transition: all 0.1s ease-in-out;
 }
 
-input[type="checkbox"]:checked + label > small {
-  /* for line-through... */
+/* psewdoelem line-through  */
+input[type="checkbox"]:checked + label::after {
+  position: absolute;
+  content: "";
+  width: calc(100% - 48px);
+  border-top: 1.5px solid #9b96ac;
+  position: absolute;
+  right: 0;
+  top: 50%;
+  z-index: 1;
+}
+
+/*  for line-through as text-decoration */
+/* input[type="checkbox"]:checked + label > small {
   text-decoration: line-through;
   text-decoration-thickness: 1.5px;
   margin-top: -3px;
-  transition: all 0.1s ease-in;
-}
+} */
 
 small::before {
   content: "(";
@@ -139,6 +152,6 @@ small::after {
 #button {
   font-size: 18px;
   line-height: 21.09px;
-  padding: 12px 0;
+  padding: 11px 0 12px 0;
   margin-left: -20px;
 }
