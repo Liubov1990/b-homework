@@ -35,15 +35,18 @@ p {
 main {
   background-color: #3b3f45;
   height: calc(100vh - 82px);
+  padding-top: 17px;
+  box-sizing: border-box;
 }
 
 .container {
   max-width: 534px;
+  border: 3px solid #ffffff;
   margin: 0 auto;
 }
 
 .product-list {
-  padding: 20px 0 45px 0;
+  padding-bottom: 45px;
 }
 
 .product-item {
@@ -56,6 +59,10 @@ main {
   border-bottom: 3px solid transparent;
   padding: 9px 0 13px 0;
   box-sizing: border-box;
+}
+
+.product-item:first-child {
+  border-top: none;
 }
 
 .product-item:nth-child(even) {
@@ -72,6 +79,10 @@ main {
   border-top: 3px solid white;
   border-bottom: 3px solid white;
   transition: all 0.1s ease-in;
+}
+
+.product-item:first-child:hover {
+  border-top: none;
 }
 
 small {
@@ -151,6 +162,7 @@ small::after {
 #button {
   font-size: 18px;
   line-height: 21.09px;
+  padding-block: 0;
   padding: 11px 0 12px 0;
   margin-left: -20px;
 }
