@@ -32,12 +32,8 @@ nav a {
   color: var(--secondary-text-color);
 }
 
-.active {
-  color: var(--main-text-color);
-}
-
-/* instead of class 'active' will be changed later*/
-/* nav a:hover, 
+nav a:hover,
 nav a:active {
   color: var(--main-text-color);
-} */
+  transition: all 0.2s ease-in;
+}

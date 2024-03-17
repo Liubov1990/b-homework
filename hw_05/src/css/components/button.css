@@ -2,13 +2,20 @@ button {
   font-family: "Open Sans";
   font-weight: var(--font-w-bold);
   letter-spacing: 1.6px;
-  line-height: 2.6;
+  line-height: 2.2;
   text-align: center;
   width: 180px;
   height: 44px;
   border-radius: 22px;
-  border: none;
+  border: 3px solid transparent;
   color: var(--main-bg-color);
   background-color: var(--main-text-color);
-  padding: 0 16px;
+  box-sizing: border-box;
+}
+
+button:hover {
+  color: var(--main-text-color);
+  border: 3px solid var(--main-text-color);
+  background-color: var(--empty-star-color);
+  transition: all 0.2s ease-in;
 }
