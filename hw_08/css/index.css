@@ -47,7 +47,7 @@ main {
 
 .product-item {
   font-size: 18px;
-  line-height: 21px;
+  line-height: 20px;
   height: 45px;
   color: #ffffff;
   background-color: #88839e;
@@ -79,7 +79,6 @@ small {
   position: relative;
   bottom: 1px;
   font-size: 11px;
-  line-height: 12.89px;
   vertical-align: middle;
 }
 
