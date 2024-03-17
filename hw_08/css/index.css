@@ -74,12 +74,13 @@ main {
 }
 
 small {
-  /* for line-through as text-decoration (looks like one line, when elems are close enough)*/
-  /* display: inline-block;  */
+  /* --for line-through as text-decoration (looks like one line, when elems are close enough)--*/
+  /* display: inline-block; */
+  position: relative;
+  bottom: 1px;
   font-size: 11px;
   line-height: 12.89px;
   vertical-align: middle;
-  margin-top: -3px;
 }
 
 [type="submit"] {
@@ -103,13 +104,12 @@ input[type="checkbox"] + label::before {
   height: 19px;
   background: #ffffff;
   margin: 0 16px 0 12px;
-  margin-top: -3px;
   vertical-align: middle;
 }
 
 input[type="checkbox"]:checked + label {
-  position: relative; /* for pseudo line-through... */
-  /* for line-through as text-decoration */
+  position: relative; /* for pseudo line-through */
+  /* --for line-through as text-decoration-- */
   /* text-decoration: line-through; */
   color: #9b96ac;
   outline: none;
@@ -122,7 +122,7 @@ input[type="checkbox"]:checked + label::before {
   background-position: center;
 }
 
-/* psewdoelem line-through  */
+/* pseudoelem line-through  */
 input[type="checkbox"]:checked + label::after {
   position: absolute;
   content: "";
@@ -130,15 +130,14 @@ input[type="checkbox"]:checked + label::after {
   border-top: 1.5px solid #9b96ac;
   position: absolute;
   right: 0;
-  top: 50%;
+  top: calc(50%);
   z-index: 1;
 }
 
-/*  for line-through as text-decoration */
+/*  --for line-through as text-decoration-- */
 /* input[type="checkbox"]:checked + label > small {
   text-decoration: line-through;
   text-decoration-thickness: 1.5px;
-  margin-top: -3px;
 } */
 
 small::before {
