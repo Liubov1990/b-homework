@@ -46,3 +46,8 @@ footer {
   font-size: 14px;
   color: var(--secondary-text-color);
 }
+
+.footer__follow > a:hover {
+  color: var(--main-text-color);
+  transition: all 0.2s ease-in;
+}
