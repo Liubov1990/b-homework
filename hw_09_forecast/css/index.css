@@ -1,0 +1,5 @@
+@import "../../shared/css/libs/reset.css";
+
+@import "./libs/weather-icons.min.css";
+
+@import "./styles.css";
