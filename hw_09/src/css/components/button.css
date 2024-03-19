@@ -21,7 +21,7 @@
   background-color: var(--white);
   color: var(--secondary-text-color);
   border: 1px solid var(--btn-border-color);
-  margin-right: 32px;
+  margin-right: 33px;
   padding-left: 26px;
   padding-right: 26px;
 }
