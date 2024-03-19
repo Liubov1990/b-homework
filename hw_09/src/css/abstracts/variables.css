@@ -1,0 +1,11 @@
+:root {
+  --white: #ffffff;
+  --accent-color: #ff9900;
+  --main-text-color: #544837;
+  --secondary-text-color: #2f281e;
+  --btn-border-color: #bcd0e5;
+
+  --fw-normal: 400;
+  --fw-medium: 600;
+  --fw-bold: 700;
+}

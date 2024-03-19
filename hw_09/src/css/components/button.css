@@ -1,0 +1,26 @@
+.header__auth {
+  display: flex;
+  justify-content: center;
+}
+
+.button {
+  all: inherit;
+  height: 46px;
+  font-weight: var(--fw-medium);
+  line-height: 21px;
+  color: var(--white);
+  background: var(--accent-color);
+  border-radius: 4px;
+  padding: 12px 22px;
+  box-sizing: border-box;
+  vertical-align: middle;
+}
+
+.button--white {
+  background-color: var(--white);
+  color: var(--secondary-text-color);
+  border: 1px solid var(--btn-border-color);
+  margin-right: 32px;
+  padding-left: 26px;
+  padding-right: 26px;
+}
