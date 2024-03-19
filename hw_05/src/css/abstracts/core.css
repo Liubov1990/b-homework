@@ -7,7 +7,7 @@ body {
   width: 100%;
 }
 
-main {
+.main {
   width: 100%;
   height: auto;
 }
@@ -17,6 +17,14 @@ main {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+.horisontal-rule {
+  border: 0;
+  border-top: 1px solid var(--secondary-text-color);
+  margin-block-start: 0;
+  margin-block-end: 0;
+  max-width: 970px;
 }
 
 h1 {
@@ -35,12 +43,4 @@ h2 {
 a {
   text-decoration: none;
   color: var(--main-text-color);
-}
-
-hr {
-  border: 0;
-  border-top: 1px solid var(--secondary-text-color);
-  margin-block-start: 0;
-  margin-block-end: 0;
-  max-width: 970px;
 }
