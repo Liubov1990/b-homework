@@ -8,6 +8,7 @@
   height: 46px;
   font-weight: var(--fw-medium);
   line-height: 21px;
+  text-align: center;
   color: var(--white);
   background: var(--accent-color);
   border-radius: 4px;
@@ -23,4 +24,9 @@
   margin-right: 32px;
   padding-left: 26px;
   padding-right: 26px;
+}
+
+.button--big {
+  width: 180px;
+  height: 50px;
 }

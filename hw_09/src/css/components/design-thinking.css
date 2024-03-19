@@ -1,0 +1,30 @@
+.design-thinking {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 71px;
+}
+
+.design-thinking__text-block {
+  width: 500px;
+  padding: 97px 0;
+  margin-right: 56px;
+}
+
+.design-thinking__heading {
+  font-weight: var(--fw-bold);
+  font-size: 44px;
+  line-height: 54px;
+  margin-bottom: 31px;
+}
+
+.design-thinking__text {
+  font-size: 18px;
+  line-height: 28px;
+  margin-bottom: 27px;
+}
+
+.design-thinking__image {
+  display: block;
+  width: 644px;
+  height: 495px;
+}
