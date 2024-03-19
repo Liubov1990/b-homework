@@ -20,6 +20,6 @@
   margin-bottom: 31px;
 }
 
-.about__text--zero-mr {
+.about__text:last-child {
   margin-bottom: 0;
 }
