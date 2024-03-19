@@ -1,4 +1,4 @@
-button {
+.footer__button {
   font-family: "Open Sans";
   font-weight: var(--font-w-bold);
   letter-spacing: 1.6px;
@@ -13,7 +13,7 @@ button {
   box-sizing: border-box;
 }
 
-button:hover {
+.footer__button:hover {
   color: var(--main-text-color);
   border: 3px solid var(--main-text-color);
   background-color: var(--empty-star-color);
