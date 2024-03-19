@@ -33,3 +33,8 @@
 .header__link:hover {
   color: var(--accent-color);
 }
+
+.header__auth {
+  display: flex;
+  justify-content: center;
+}
