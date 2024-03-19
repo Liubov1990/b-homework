@@ -10,6 +10,7 @@
 .header__logo {
   width: 200px;
   height: 32px;
+  cursor: pointer;
 }
 
 .header__nav {
