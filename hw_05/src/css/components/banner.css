@@ -5,7 +5,7 @@
   padding: 13px 15px 0 15px;
 }
 
-h1 {
+.hero__title {
   align-self: flex-start;
   margin-bottom: 44px;
 }
