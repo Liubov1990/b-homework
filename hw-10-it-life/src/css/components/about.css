@@ -87,19 +87,13 @@
 }
 
 .about__icon {
-  width: 20px;
-  height: 20px;
   fill: var(--white-color);
-  padding: 11px;
   background-color: var(--light-accent-color);
-  margin: 2px;
-  cursor: pointer;
 }
 
 .about__icon:hover {
   fill: var(--accent-color);
   background-color: var(--white-color);
-  transition: all 0.1s ease-in;
 }
 
 .about__name {
