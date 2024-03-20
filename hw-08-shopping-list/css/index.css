@@ -86,7 +86,7 @@ main {
 }
 
 small {
-  /* --for line-through as text-decoration (looks like one line, when elems are close enough)--*/
+  /* --for line-through as text-decoration (looks like one line, when elems are close enough) -- костиль -- */
   /* display: inline-block; */
   position: relative;
   bottom: 1px;
@@ -120,7 +120,7 @@ input[type="checkbox"] + label::before {
 
 input[type="checkbox"]:checked + label {
   position: relative; /* for pseudo line-through */
-  /* --for line-through as text-decoration-- */
+  /* --for line-through as text-decoration -- костиль -- */
   /* text-decoration: line-through; */
   color: #9b96ac;
   outline: none;
@@ -145,7 +145,7 @@ input[type="checkbox"]:checked + label::after {
   z-index: 1;
 }
 
-/*  --for line-through as text-decoration-- */
+/*  --for line-through as text-decoration -- костиль -- */
 /* input[type="checkbox"]:checked + label > small {
   text-decoration: line-through;
   text-decoration-thickness: 1.5px;
