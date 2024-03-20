@@ -16,7 +16,10 @@ body {
 }
 
 .content-wrapper {
-  max-width: 1200px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
 }
