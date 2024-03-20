@@ -1,0 +1,25 @@
+.nav {
+  margin-left: -40px;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__list-item {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: var(--fw-semi-bold);
+  text-transform: uppercase;
+  margin-right: 30px;
+}
+
+.nav__list-item:last-child {
+  margin-right: 0;
+}
+
+.nav__link:hover {
+  color: var(--accent-color);
+  transition: all 0.1 ease;
+}
