@@ -1,5 +1,7 @@
 @import "../../shared/css/libs/reset.css";
 
+@import url("https://fonts.cdnfonts.com/css/lucida-sans?styles=20863");
+
 @import "./weather-icons.min.css";
 
 @import "./styles.css";
