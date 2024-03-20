@@ -3,10 +3,11 @@
   --main-text-color: #3c3c3c;
   --card-name-text-color: #282528;
   --card-description-color: #646464;
-  --secondary-background-color: #f6f6f6;
+  --main-bg-color: #f6f6f6;
   --hr-color: #bdbdbd;
   --pseudo-line-color: #dddbdb;
   --accent-color: #18b5dc;
+  --light-accent-color: #5dcbe6;
 
   --fw-light: 300;
   --fw-semi-bold: 600;

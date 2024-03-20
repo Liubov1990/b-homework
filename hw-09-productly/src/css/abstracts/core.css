@@ -24,6 +24,10 @@ body {
   padding-right: 15px;
 }
 
+.main {
+  width: 100%;
+}
+
 h1,
 h2,
 h3 {
