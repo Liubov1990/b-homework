@@ -10,14 +10,28 @@
 }
 
 .footer__nav {
-  margin-bottom: 28px;
+  margin-bottom: 27px;
+}
+
+.footer__list-item {
+  font-size: 18px;
+  line-height: 21.6px;
 }
 
 .footer__icon {
+  padding: 10px;
   fill: var(--accent-color);
   background-color: var(--white-color);
   border: 1px solid var(--accent-color);
 }
+
+.footer__social-link {
+  display: inline-block;
+  width: 42px;
+  height: 42px;
+  margin: 0 3px;
+}
+
 .footer__icon--reverse {
   transform: rotate(90deg) translateX(0px);
 }

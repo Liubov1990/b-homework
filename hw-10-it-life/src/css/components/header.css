@@ -2,7 +2,16 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  padding: 9px 0;
+  padding: 9px 0 9px 0;
+}
+
+.header__nav {
+  margin-left: -40px;
+}
+
+.header__list-item:hover {
+  transform: scale(1.1);
+  transition: font-size 0.5s ease-in-out;
 }
 
 .header__button {
@@ -25,5 +34,5 @@
   color: var(--white-color);
   background-color: var(--accent-color);
   border: 0;
-  transition: all 0.1 ease;
+  transition: all 0.2s ease-in;
 }
