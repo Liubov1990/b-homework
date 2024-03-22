@@ -5,6 +5,12 @@
   padding: 9px 0 9px 0;
 }
 
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .header__nav {
   margin-left: -40px;
 }
