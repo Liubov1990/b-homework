@@ -2,7 +2,7 @@
   width: 110px;
   height: 46px;
   font-family: "Montserrat";
-  font-weight: var(--fw-medium);
+  font-weight: var(--fw-semi-bold);
   text-align: center;
   color: var(--white);
   background: var(--accent-color);

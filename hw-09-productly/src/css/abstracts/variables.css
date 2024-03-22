@@ -4,8 +4,13 @@
   --main-text-color: #544837;
   --secondary-text-color: #2f281e;
   --btn-border-color: #bcd0e5;
+  --violet-icon-bg: #7752be;
+  --tangetine-icon-bg: #fab005;
+  --red-icon-bg: #f03e3d;
+  --blue-icon-bg: #4dadf7;
 
-  --fw-normal: 400;
-  --fw-medium: 600;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
   --fw-bold: 700;
 }

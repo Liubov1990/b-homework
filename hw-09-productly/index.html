@@ -11,9 +11,15 @@
     <div class="container">
       <header class="header">
         <div class="content-wrapper">
-          <a href="#">
-            <img src="./public/logo.svg" alt="logo" class="logo" />
-          </a>
+          <div class="logo">
+            <a href="#" class="logo__link">
+              <img
+                src="./public/sprites/logo.svg"
+                alt="logo"
+                class="logo__icon"
+              />
+            </a>
+          </div>
           <nav class="header__nav">
             <ul class="header__list">
               <li class="header__list-item">
@@ -59,55 +65,66 @@
         </section>
 
         <section class="features">
-          <div class="content-wrapper">
-            <h2 class="features__title">
-              We design tools to unveil your superpowers
-            </h2>
-            <div class="features__tests-block">
-              <a href="#" class="features__link">
-                <div class="features__tests-item">
-                  <svg class="features__icon">
-                    <use xlink:href="" />
-                  </svg>
-                </div>
-                <h3 class="features__heading">First click tests</h3>
-                <p class="features__description">
-                  While most people enjoy casino gambling,
-                </p>
-              </a>
-              <a href="#" class="features__link">
-                <div class="features__tests-item">
-                  <svg class="features__icon">
-                    <use xlink:href="" />
-                  </svg>
-                </div>
-                <h3 class="features__heading">Design surveys</h3>
-                <p class="features__description">
-                  Sports betting, lottery and bingo playing for the fun
-                </p>
-              </a>
-              <a href="#" class="features__link">
-                <div class="features__tests-item">
-                  <svg class="features__icon">
-                    <use xlink:href="" />
-                  </svg>
-                </div>
-                <h3 class="features__heading">Preference tests</h3>
-                <p class="features__description">
-                  The Myspace page defines the individual.
-                </p>
-              </a>
-              <a href="#" class="features__link">
-                <div class="features__tests-item">
-                  <svg class="features__icon">
-                    <use xlink:href="" />
-                  </svg>
-                </div>
-                <h3 class="features__heading">Five second tests</h3>
-                <p class="features__description">
-                  Personal choices and the overall personality of the person.
-                </p>
-              </a>
+          <h2 class="features__title">
+            We design tools to unveil your superpowers
+          </h2>
+          <div class="features__linear-bg">
+            <div class="content-wrapper">
+              <div class="features__tests-block">
+                <a href="#" class="features__item-link">
+                  <div class="features__tests-item">
+                    <svg class="icon icon--violet features__icon">
+                      <use
+                        xlink:href="./public/sprites/fontawesome-sprite.svg#cursor-icon"
+                      />
+                    </svg>
+                    <h3 class="features__heading">First click tests</h3>
+                    <p class="features__description">
+                      While most people enjoy casino gambling,
+                    </p>
+                  </div>
+                </a>
+                <a href="#" class="features__item-link">
+                  <div class="features__tests-item">
+                    <svg class="icon features__icon">
+                      <use
+                        xlink:href="./public/sprites/fontawesome-sprite.svg#stumbleupon"
+                      />
+                    </svg>
+                    <h3 class="features__heading">Design surveys</h3>
+                    <p class="features__description">
+                      Sports betting, lottery and bingo playing for the fun
+                    </p>
+                  </div>
+                </a>
+                <a href="#" class="features__item-link">
+                  <div class="features__tests-item">
+                    <svg class="icon icon--red features__icon">
+                      <use
+                        xlink:href="./public/sprites/fontawesome-sprite.svg#heart"
+                      />
+                    </svg>
+                    <h3 class="features__heading">Preference tests</h3>
+                    <p class="features__description">
+                      The Myspace page defines the individual.
+                    </p>
+                  </div>
+                </a>
+                <a href="#" class="features__item-link">
+                  <div class="features__tests-item">
+                    <svg class="icon icon--blue features__icon">
+                      <use
+                        xlink:href="./public/sprites/fontawesome-sprite.svg#hourglass-half"
+                      />
+                    </svg>
+                    <h3 class="features__heading">Five second tests</h3>
+                    <p class="features__description">
+                      Personal choices and the overall personality of the
+                      person.
+                    </p>
+                  </div>
+                </a>
+              </div>
             </div>
             <button type="button" class="button button--big">
               Sign up Now

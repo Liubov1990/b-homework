@@ -1,0 +1,17 @@
+.icon {
+  font-family: "FontAwesome";
+  fill: white;
+  background-color: var(--tangetine-icon-bg);
+}
+
+.icon--violet {
+  background-color: var(--violet-icon-bg);
+}
+
+.icon--red {
+  background-color: var(--red-icon-bg);
+}
+
+.icon--blue {
+  background-color: var(--blue-icon-bg);
+}
