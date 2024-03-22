@@ -6,6 +6,12 @@
   padding-bottom: 17px;
 }
 
+.header__inner {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .header__nav {
   margin-top: 2px;
 }

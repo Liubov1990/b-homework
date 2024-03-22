@@ -10,7 +10,7 @@
   <body>
     <div class="container">
       <header class="header">
-        <div class="content-wrapper">
+        <div class="content-wrapper header__inner">
           <div class="logo">
             <a href="#" class="logo__link">
               <img
@@ -42,9 +42,10 @@
           </div>
         </div>
       </header>
-      <main class="main">
+
+      <main>
         <section class="hero">
-          <div class="content-wrapper">
+          <div class="content-wrapper hero__inner">
             <div class="hero__text-block">
               <h1 class="hero__heading">The Design Thinking superpowers</h1>
               <p class="hero__text">
@@ -132,6 +133,71 @@
           </div>
         </section>
       </main>
+
+      <footer class="footer">
+        <div class="content-wrapper footer__inner">
+          <div class="logo">
+            <a href="#" class="logo__link">
+              <img
+                src="./public/sprites/logo.svg"
+                alt="logo"
+                class="logo__icon"
+              />
+            </a>
+          </div>
+          <div class="footer__list-block">
+            <h3 class="footer__heading">Quick Links</h3>
+            <nav>
+              <ul class="footer__list">
+                <li class="footer__list-item">
+                  <a href="#" class="footer__list-link">About Us</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#" class="footer__list-link">Blog</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#" class="footer__list-link">Contact</a>
+                </li>
+                <li class="footer__list-item">
+                  <a href="#" class="footer__list-link">FAQ</a>
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="footer__list-block">
+            <h3 class="footer__heading">Legal Stuff</h3>
+            <ul class="footer__list">
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Disclaimer</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Financing</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Privacy Policy</a>
+              </li>
+              <li class="footer__list-item">
+                <a href="#" class="footer__list-link">Terms of Service</a>
+              </li>
+            </ul>
+          </div>
+          <div class="footer__form-wrap">
+            <form action="#" method="post" name="sign-up-form">
+              <h3 class="footer__heading">
+                Knowing you're always on the best energy deal.
+              </h3>
+              <input
+                type="tel"
+                placeholder="Enter your phone Number"
+                class="footer__form-input"
+              />
+              <button type="submit" class="button button--big">
+                Sign up Now
+              </button>
+            </form>
+          </div>
+        </div>
+      </footer>
     </div>
   </body>
 </html>

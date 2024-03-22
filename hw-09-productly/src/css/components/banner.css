@@ -5,6 +5,11 @@
   padding-top: 70px;
 }
 
+.hero__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
 .hero__text-block {
   width: 500px;
   padding: 98px 0 97px 0;

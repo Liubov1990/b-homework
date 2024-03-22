@@ -1,0 +1,68 @@
+.footer {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  padding: 70px 0 55px 0;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer_list-block {
+  width: 135px;
+}
+
+.footer__heading {
+  font-family: "Gotham", sans-serif;
+  max-width: 280px;
+  font-size: 20px;
+  font-weight: var(--fw-bold);
+  line-height: 30px;
+  letter-spacing: 0.5px;
+  word-spacing: 1.4px;
+  margin-bottom: 22px;
+}
+
+.footer__list {
+  padding-top: 8px;
+}
+
+.footer__list-item {
+  font-weight: var(--fw-medium);
+  line-height: 26px;
+  margin-bottom: 15px;
+}
+
+.footer__list-link {
+  color: var(--main-text-color);
+}
+
+.footer__list-link:hover {
+  color: var(--btn-border-color);
+}
+
+.footer__form-wrap {
+  display: flex;
+  flex-direction: column;
+  max-width: 340px;
+}
+
+.footer__form-input {
+  width: 100%;
+  height: 50px;
+  color: var(--main-text-color);
+  letter-spacing: 1.2px;
+  border: 1px solid var(--btn-border-color);
+  border-radius: 4px;
+  outline: none;
+  padding: 16px 10px 15px 10px;
+  box-sizing: border-box;
+  margin-bottom: 25px;
+}
+
+.footer__form-input::placeholder {
+  color: var(--btn-border-color);
+  line-height: 19.5px;
+}

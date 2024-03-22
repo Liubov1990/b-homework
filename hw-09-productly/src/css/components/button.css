@@ -19,6 +19,7 @@
 }
 
 .button--big {
+  font-family: "Poppins", sans-serif;
   width: 180px;
   height: 50px;
   font-weight: var(--fw-bold);
@@ -26,13 +27,15 @@
 }
 
 .button:hover {
-  opacity: 0.6;
+  /* opacity: 0.6; */
+  background-color: var(--btn-border-color);
   cursor: pointer;
   transition: all 0.1s ease-in;
 }
 
 .button--white:hover {
   color: var(--white);
-  background: var(--accent-color);
+  /* background: var(--accent-color); */
+  background-color: var(--btn-border-color);
   border: none;
 }
