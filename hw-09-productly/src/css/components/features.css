@@ -76,6 +76,7 @@
 }
 
 .features__description {
+  color: var(--main-text-color);
   font-weight: var(--fw-medium);
   line-height: 26px;
 }
