@@ -7,13 +7,12 @@
 
 .hero__inner {
   display: flex;
-  justify-content: space-between;
+  align-items: center;
 }
 
 .hero__text-block {
-  width: 500px;
-  padding: 98px 0 97px 0;
-  margin-right: 56px;
+  display: flex;
+  flex-direction: column;
 }
 
 .hero__heading {
