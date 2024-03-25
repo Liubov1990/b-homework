@@ -12,7 +12,7 @@
 }
 
 .header__nav {
-  margin-left: -40px;
+  transform: translateX(-22px);
 }
 
 .header__list-item:hover {
