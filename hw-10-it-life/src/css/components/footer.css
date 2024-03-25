@@ -19,11 +19,6 @@
   margin-bottom: 27px;
 }
 
-.footer__list-item {
-  font-size: 18px;
-  line-height: 21.6px;
-}
-
 .footer__icon {
   padding: 10px;
   fill: var(--accent-color);

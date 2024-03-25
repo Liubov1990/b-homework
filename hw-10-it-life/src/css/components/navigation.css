@@ -15,9 +15,14 @@
   margin-right: 0;
 }
 
+.nav__list-item--small-font {
+  font-size: 18px;
+  line-height: 21.6px;
+}
+
 .nav__link:hover {
   color: var(--accent-color);
-  transition: all 0.2 ease-in;
+  transition: color 0.2 ease-in;
 }
 
 .nav__link--active {
