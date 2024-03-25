@@ -1,0 +1,184 @@
+/* Media */
+
+@media screen and (max-width: 768px) {
+  .heading {
+    font-size: 26px;
+    margin-bottom: 40px;
+    margin-top: 70px;
+  }
+
+  .section {
+    grid-gap: 15px;
+  }
+
+  .section__overlay-text,
+  .section__author-name {
+    font-size: 10px;
+    line-height: 12px;
+  }
+
+  /* Second Grid - Architectural Photography Grid */
+  .section__life-photography {
+    grid-template-rows: repeat(4, minmax(200px, 1fr));
+  }
+
+  /* Third Grid - Portrait Fashion Photography Grid */
+  .section__portrait-fashion-photography {
+    grid-template-rows: repeat(5, minmax(200px, 1fr));
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section {
+    grid-gap: 10px;
+  }
+
+  .section__life-photography,
+  .section__portrait-fashion-photography {
+    grid-template-columns: 1fr;
+  }
+
+  /* First Grid - Architectural Photography Grid */
+  .section__architectural-photography {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, auto);
+    grid-template-areas:
+      "first"
+      "second"
+      "third"
+      "fourth"
+      "fifth"
+      "sixth";
+  }
+
+  /* Second Grid - Still Life Photography Grid */
+  .section__life-photography {
+    grid-template-rows: repeat(11, minmax(200px, 1fr));
+    grid-template-areas:
+      "first"
+      "first"
+      "second"
+      "third"
+      "third"
+      "third"
+      "fourth"
+      "fourth"
+      "fourth"
+      "fifth"
+      "sixth";
+  }
+
+  .section__life-photography-element:nth-child(1) {
+    /* grid-column: 1 / 2;
+      grid-row: 1 / 3; */
+    grid-area: first;
+  }
+
+  .section__life-photography-element:nth-child(2) {
+    /* grid-column: 1 / 2;
+      grid-row: 3 / 4; */
+    grid-area: second;
+  }
+
+  .section__life-photography-element:nth-child(3) {
+    /* grid-column: 1 / 2;
+      grid-row: 4 / 7; */
+    grid-area: third;
+  }
+
+  .section__life-photography-element:nth-child(4) {
+    /* grid-column: 1 / 2;
+      grid-row: 7 / 10; */
+    grid-area: fourth;
+  }
+
+  .section__life-photography-element:nth-child(5) {
+    /* grid-column: 1 / 2;
+      grid-row: 10 / 11; */
+    grid-area: fifth;
+  }
+
+  .section__life-photography-element:nth-child(6) {
+    /* grid-column: 1 / 2;
+      grid-row: 11 / 12; */
+    grid-area: sixth;
+  }
+
+  /* Third Grid - Portrait Fashion Photography Grid */
+  .section__portrait-fashion-photography {
+    grid-template-rows: repeat(21, minmax(200px, 1fr));
+
+    /* grid-template-areas:
+      "first"
+      "first"
+      "second"
+      "second"
+      "second"
+      "third"
+      "third"
+      "fourth"
+      "fourth"
+      "fifth"
+      "fifth"
+      "fifth"
+      "sixth"
+      "sixth"
+      "sixth"
+      "seventh"
+      "seventh"
+      "eighth"
+      "ninth"
+      "tenth"
+      "tenth"; */
+  }
+
+  .section__portrait-fashion-photography-element:nth-child(1) {
+    grid-column: 1 / 2;
+    grid-row: 1 / 3;
+  }
+
+  .section__portrait-fashion-photography-element:nth-child(2) {
+    grid-column: 1 / 2;
+    grid-row: 3 / 6;
+  }
+
+  .section__portrait-fashion-photography-element:nth-child(3) {
+    grid-column: 1 / 2;
+    grid-row: 6 / 8;
+  }
+
+  .section__portrait-fashion-photography-element:nth-child(4) {
+    grid-column: 1 / 2;
+    grid-row: 8 / 10;
+  }
+
+  .section__portrait-fashion-photography-element:nth-child(5) {
+    grid-column: 1 / 2;
+    grid-row: 10 / 13;
+  }
+
+  .section__portrait-fashion-photography-element:nth-child(6) {
+    grid-column: 1 / 2;
+    grid-row: 13 / 16;
+  }
+
+  .section__portrait-fashion-photography-element:nth-child(7) {
+    grid-column: 1 / 2;
+    grid-row: 16 / 18;
+  }
+
+  .section__portrait-fashion-photography-element:nth-child(8) {
+    grid-column: 1 / 2;
+    grid-row: 18 / 19;
+  }
+
+  .section__portrait-fashion-photography-element:nth-child(9) {
+    grid-column: 1 / 2;
+    grid-row: 19 / 20;
+  }
+
+  .section__portrait-fashion-photography-element:nth-child(10) {
+    grid-column: 1 / 2;
+    grid-row: 20 / 22;
+  }
+}

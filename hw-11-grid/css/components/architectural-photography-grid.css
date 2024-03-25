@@ -1,0 +1,34 @@
+/* First Grid */
+
+.section__architectural-photography {
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: repeat(3, auto);
+  grid-template-areas:
+    "first second second"
+    "third third fourth"
+    "fifth sixth sixth";
+}
+
+.section__architectural-photography-element:nth-child(1) {
+  grid-area: first;
+}
+
+.section__architectural-photography-element:nth-child(2) {
+  grid-area: second;
+}
+
+.section__architectural-photography-element:nth-child(3) {
+  grid-area: third;
+}
+
+.section__architectural-photography-element:nth-child(4) {
+  grid-area: fourth;
+}
+
+.section__architectural-photography-element:nth-child(5) {
+  grid-area: fifth;
+}
+
+.section__architectural-photography-element:nth-child(6) {
+  grid-area: sixth;
+}

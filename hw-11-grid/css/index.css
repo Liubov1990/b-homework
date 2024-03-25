@@ -1,0 +1,10 @@
+@import "../../shared/css/libs/reset.css";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Delius+Unicase&family=Roboto:wght@400;500&display=swap");
+
+@import "./components/main.css";
+@import "./components/architectural-photography-grid.css";
+@import "./components/still-life-photography-grid.css";
+@import "./components/portrait-fashion-photography-grid.css";
+
+@import "./media-queries/media.css";
