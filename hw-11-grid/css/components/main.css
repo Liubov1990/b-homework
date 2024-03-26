@@ -35,6 +35,17 @@ body {
   border-radius: 20px;
 }
 
+/* Styles for adaptive square */
+/* .section__life-photography-element,
+.section__portrait-fashion-photography-element {
+  width: 100%;
+}
+.section__element::after {
+  content: "";
+  display: block;
+  padding-bottom: 50%;
+} */
+
 .section__overlay {
   position: absolute;
   top: 0;
