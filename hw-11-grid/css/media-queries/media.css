@@ -14,15 +14,6 @@
     font-size: 10px;
     line-height: 12px;
   }
-  /* Second Grid - Architectural Photography Grid */
-  .section__life-photography {
-    grid-template-rows: repeat(4, minmax(200px, 1fr));
-  }
-
-  /* Third Grid - Portrait Fashion Photography Grid */
-  .section__portrait-fashion-photography {
-    grid-template-rows: repeat(5, minmax(200px, 1fr));
-  }
 }
 
 @media screen and (max-width: 480px) {
@@ -46,7 +37,7 @@
   /* Second Grid - Still Life Photography Grid */
   .section__life-photography {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(11, minmax(200px, 1fr));
+    grid-template-rows: repeat(11, auto);
     grid-template-areas:
       "first"
       "first"
@@ -94,7 +85,7 @@
   /* Third Grid - Portrait Fashion Photography Grid */
   .section__portrait-fashion-photography {
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(21, minmax(200px, 1fr));
+    grid-template-rows: repeat(21, auto);
     /* grid-template-areas:
       "first"
       "first"
