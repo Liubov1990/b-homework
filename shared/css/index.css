@@ -1,0 +1,21 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+.homework__list-item {
+  font-family: "Roboto", sans-serif;
+  font-size: 20px;
+  font-weight: 500;
+  margin-bottom: 10px;
+}
+
+.homework__link {
+  color: #000;
+  text-decoration: none;
+}
+
+.homework__link:hover {
+  text-decoration: underline;
+}
+
+.homework__order {
+  font-weight: 700;
+}
