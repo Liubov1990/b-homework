@@ -49,6 +49,7 @@
   display: flex;
   flex-direction: column;
   max-width: 340px;
+  width: 100%;
 }
 
 .footer__form-input {

@@ -13,8 +13,7 @@
   font-weight: var(--fw-bold);
   line-height: 43.88px;
   text-align: center;
-  /* padding: 0 15px; */
-  margin-bottom: 31px;
+  margin-bottom: 50px;
 }
 
 .features__linear-bg {
@@ -24,8 +23,8 @@
   align-items: center;
   width: 100%;
   background: url("../../../public/sprites/linear-background.svg") no-repeat
-    bottom center / cover;
-  padding: 19px 0 74px 0;
+    center bottom / cover;
+  padding-bottom: 74px;
   /* overflow: hidden; */
 }
 
@@ -88,4 +87,8 @@
   color: var(--main-text-color);
   font-weight: var(--fw-medium);
   line-height: 26px;
+}
+
+.features__button {
+  transform: translateX(5px);
 }
