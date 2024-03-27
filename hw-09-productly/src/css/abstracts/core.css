@@ -14,9 +14,10 @@ body {
 }
 
 .content-wrapper {
-  width: 1200px;
-  padding-left: 15px;
-  padding-right: 15px;
+  max-width: 1230px;
+  width: 100%;
+  padding: 0 15px;
+  box-sizing: border-box;
 }
 
 h1,
