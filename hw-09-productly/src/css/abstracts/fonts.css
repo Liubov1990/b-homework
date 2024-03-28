@@ -4,7 +4,7 @@
 
 @font-face {
   font-family: "Gotham";
-  src: url(./../../public/fonts/GothamBold.ttf) format("ttf"),
+  src: url(./../../public/fonts/GothamBold.ttf) format("truetype"),
     url(./../../public/fonts/Gotham-Bold.otf) format("otf");
   font-weight: 700;
 }

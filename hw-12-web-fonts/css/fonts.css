@@ -1,0 +1,12 @@
+@import url("https://fonts.googleapis.com/css2?family=PT+Sans:ital,wght@0,400;0,700;1,400&family=Tourney:wght@600&display=swap");
+@import url("https://fonts.cdnfonts.com/css/staatliches?styles=31359");
+
+@font-face {
+  font-family: "Farro-Light";
+  src: url(../public/fonts/Farro-Light.eot);
+  src: url(../public/fonts/Farro-Light.eot?#iefix) format("embedded-opentype"),
+    url(../public/fonts/Farro-Light.otf) format("otf"),
+    url(../public/fonts/Farro-Light.woff) format("woff"),
+    url(../public/fonts/Farro-Light.woff2) format("woff2"),
+    url(../public/fonts/Farro-Light.ttf) format("truetype");
+}
