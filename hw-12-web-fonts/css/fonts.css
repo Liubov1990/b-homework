@@ -8,5 +8,5 @@
     url(../public/fonts/Farro-Light.otf) format("otf"),
     url(../public/fonts/Farro-Light.woff) format("woff"),
     url(../public/fonts/Farro-Light.woff2) format("woff2"),
-    url(../public/fonts/Farro-Light.ttf) format("truetype");
+    url(./public/fonts/Farro-Light.ttf) format("truetype");
 }
