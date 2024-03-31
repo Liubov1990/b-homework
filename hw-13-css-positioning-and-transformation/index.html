@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Web Fonts</title>
+
+    <link
+      href="https://fonts.cdnfonts.com/css/francois-one?styles=19758"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/index.css" />
+  </head>
+  <body>
+    <div class="root">
+      <header class="header">
+        <div class="container header__inner">
+          <div class="header__toolbar">
+            <div class="header__languages-menu">
+              <button type="button" class="header__switch-lang-btn">ENG</button>
+            </div>
+            <nav class="header__nav">
+              <ul class="header__list">
+                <li class="header__list-item">
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="header__list-link"
+                    >Documentation</a
+                  >
+                </li>
+                <li class="header__list-item">
+                  <a
+                    href="#"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="header__list-link"
+                    >Who's using</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </div>
+          <div class="logo">
+            <a href="#">
+              <img src="./public/company-logo-black.svg" alt="logo" />
+            </a>
+          </div>
+        </div>
+      </header>
+
+      <main class="main">
+        <div class="container main__inner">
+          <aside class="aside">
+            <nav class="aside__nav">
+              <ul class="aside__list">
+                <li class="title aside__list-item">
+                  <a href="#introduction" class="aside__list-link"
+                    >Introduction</a
+                  >
+                </li>
+                <li class="title aside__list-item">
+                  <a href="#core-components" class="aside__list-link"
+                    >core components</a
+                  >
+                </li>
+                <li class="title aside__list-item">
+                  <a href="#react-fundamentals" class="aside__list-link"
+                    >react fundamentals</a
+                  >
+                </li>
+                <li class="title aside__list-item">
+                  <a href="#handling-text-input" class="aside__list-link"
+                    >handling text input</a
+                  >
+                </li>
+              </ul>
+            </nav>
+          </aside>
+          <section class="articles">
+            <div class="articles__inner">
+              <article class="article" id="introduction">
+                <h2 class="title article__title">
+                  Introduction <sup class="article__chapter">Chapter 1</sup>
+                </h2>
+                <p class="article__paragraph">
+                  Welcome to the very start of your React Native journey! If
+                  you're looking for environment setup instructions, they've
+                  moved to
+                  <a
+                    href="https://reactnative.dev/docs/environment-setup"
+                    target="_blank"
+                    >their own section</a
+                  >. Continue reading for an introduction to the documentation,
+                  Native Components, React, and more!
+                </p>
+              </article>
+              <article class="article" id="core-components">
+                <h2 class="title article__title">
+                  Core components <sup class="article__chapter">Chapter 2</sup>
+                </h2>
+                <p class="article__paragraph">
+                  React Native is an open source framework for building Android
+                  and iOS applications using React and the app platform’s native
+                  capabiles. With React Native, you use JavaScript to access
+                  your platform’s APIs as well as to describe the appearance and
+                  behavior of your UI using React components:
+                  <em class="emphasize">bundles of reusable, nestable code</em>.
+                  You can learn more about React in the next section. But first,
+                  let’s cover how components work in React Native.
+                </p>
+              </article>
+              <article class="article" id="react-fundamentals">
+                <h2 class="title article__title">
+                  React fundamentals
+                  <sup class="article__chapter">Chapter 3</sup>
+                </h2>
+                <p class="article__paragraph article__paragraph--mb-34">
+                  React Native runs on
+                  <a href="https://react.dev/" target="_blank">React</a>, a
+                  popular open source library for building user interfaces with
+                  JavaScript. To make the most of React Native, it helps to
+                  understand React itself. This section can get you started or
+                  can serve as a refresher course.
+                </p>
+                <p class="article__paragraph article__paragraph--mb-30">
+                  We’re going to cover the core concepts behind React:
+                </p>
+                <ul class="article__concepts-list">
+                  <li class="article__concept-item article__paragraph--mb-30">
+                    <strong class="article__concept-name">+ components.</strong>
+                    The rest of this introduction to React uses cats in its
+                    examples: friendly, approachable creatures that need names
+                    and a cafe to work in.
+                  </li>
+                  <li class="article__concept-item">
+                    <strong class="article__concept-name">+ JSX.</strong>
+                    React and React Native use JSX, a syntax that lets you write
+                    elements inside JavaScript like so:
+                    <code class="code"
+                      >&lt;Text&gt;Hello, I am your cat!&lt;/Text&gt;</code
+                    >.
+                    <p class="article__paragraph article__paragraph--mrgs">
+                      The React docs have
+                      <a
+                        href="https://react.dev/learn/writing-markup-with-jsx"
+                        target="_blank"
+                        >a comprehensive guide to JSX</a
+                      >
+                      you can refer to learn even more. Because JSX is
+                      JavaScript, you can use variables inside it. Here you are
+                      declaring a
+                      <code class="code">name</code> for the cat, name, and
+                      embedding it with curly braces inside
+                      <code class="code">&lt;Text&gt;</code>
+                    </p>
+                  </li>
+                  <li class="article__concept-item">
+                    <strong class="article__concept-name">+ props.</strong>
+                    Props is short for “properties”.
+                  </li>
+                  <li class="article__concept-item">
+                    <strong class="article__concept-name">+ state.</strong>
+                    While you can think of props as arguments you use to
+                    configure how components render, state is like a component’s
+                    personal data storage. State is useful for handling data
+                    that changes over time or that comes from user interaction.
+                    State gives your components memory!
+                  </li>
+                </ul>
+              </article>
+              <article class="article" id="handling-text-input">
+                <h2 class="title article__title">
+                  handling text input
+                  <sup class="article__chapter">Chapter 4</sup>
+                </h2>
+                <p class="article__paragraph">
+                  TextInput is a Core Component that allows the user to enter
+                  text. It has an
+                  <span class="emphasize">onChangeText</span> prop that takes a
+                  function to be called every time the text changed, and an
+                  onSubmitEditing prop that takes a function to be called when
+                  the text is submitted.
+                </p>
+                <p class="article__paragraph">
+                  For example, let's say that as the user types, you're
+                  translating their words into a different language. In this new
+                  language, every single word is written the same way:
+                  <img
+                    src="./public/images/pizza.png"
+                    alt="pizza"
+                    class="article__emodji"
+                  />. So the sentence "Hello there Bob" would be translated as
+                  "<img
+                    src="./public/images/pizza.png"
+                    alt="pizza"
+                    class="article__emodji"
+                  />
+                  <img
+                    src="./public/images/pizza.png"
+                    alt="pizza"
+                    class="article__emodji"
+                  />".
+                </p>
+              </article>
+            </div>
+          </section>
+        </div>
+      </main>
+    </div>
+  </body>
+</html>
