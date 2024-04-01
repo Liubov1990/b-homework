@@ -129,7 +129,9 @@ body {
 
 .aside__nav {
   position: sticky;
-  top: 161px;
+  top: 0;
+  margin-top: -161px;
+  padding-top: 161px;
 }
 
 .aside__list-item {
@@ -155,8 +157,7 @@ body {
 
 .article {
   margin-bottom: 58px;
-  margin-top: -179px;
-  padding-top: 179px;
+  scroll-margin-top: 179px;
 }
 
 .title {
