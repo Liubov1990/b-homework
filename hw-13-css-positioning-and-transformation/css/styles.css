@@ -1,3 +1,5 @@
+/* General */
+
 html {
   font-size: 16px;
 }
@@ -25,6 +27,8 @@ body {
   padding: 0 15px;
   box-sizing: border-box;
 }
+
+/* Header */
 
 .header {
   display: flex;
@@ -90,16 +94,14 @@ body {
   text-decoration: none;
 }
 
+/* Main */
+
 .main {
   display: flex;
   flex-direction: column;
   align-items: center;
   width: 100%;
-  background-image: url(../public/images/bg_picture.png);
-  background-repeat: no-repeat;
-  background-position: top 151px right 0;
-  background-attachment: fixed;
-  /* here for fixed*/
+  min-height: calc(100vh - 80px);
   margin-top: 80px;
 }
 
@@ -109,6 +111,15 @@ body {
   width: 100%;
 }
 
+.background-img {
+  background-image: url(../public/images/bg_picture.png);
+  background-repeat: no-repeat;
+  background-position: top 149px right 39px;
+  background-attachment: fixed;
+}
+
+/* Aside + Nav */
+
 .aside {
   display: flex;
   flex-direction: column;
@@ -116,7 +127,6 @@ body {
   width: 100%;
 }
 
-/* here */
 .aside__nav {
   position: sticky;
   top: 161px;
@@ -132,20 +142,15 @@ body {
   text-decoration: none;
 }
 
+/* Articles */
+
 .articles {
   display: flex;
   flex-direction: column;
   align-items: center;
   max-width: 785px;
   width: 100%;
-  margin-top: 99px;
-}
-
-.articles__inner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
+  padding-top: 99px;
 }
 
 .article {
@@ -234,190 +239,7 @@ body {
   top: -4px;
 }
 
-a {
-  color: inherit;
-  outline: none;
-}
-
-a:active,
-a:focus,
-a:visited {
-  outline: none;
-}
-
-/* Styles for 1st version */
-
-/* html {
-  font-size: 16px;
-}
-
-body {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 400;
-  font-style: normal;
-  line-height: 1.71;
-  font-size: 1.75rem;
-  color: #000000;
-  background-color: white;
-}
-
-.root {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.container {
-  max-width: 1230px;
-  width: 100%;
-  padding: 0 15px;
-  box-sizing: border-box;
-}
-
-.header {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-  padding: 13px 0;
-  margin-bottom: 71px;
-}
-
-.header__inner {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.header__toolbar {
-  display: flex;
-  align-items: center;
-}
-
-.header__switch-lang-btn {
-  font-family: "Tourney", sans-serif;
-  font-size: 1.375rem;
-  font-weight: 600;
-  line-height: 0.8;
-  letter-spacing: 0.04em;
-  display: block;
-  height: 40px;
-  text-transform: uppercase;
-  background: transparent;
-  text-align: left;
-  border: none;
-  padding: 0 3px;
-  margin-right: 49px;
-  margin-bottom: 1px;
-}
-
-.header__list {
-  display: flex;
-  justify-content: space-between;
-  text-transform: uppercase;
-}
-
-.header__list-item {
-  font-family: "Staatliches", sans-serif;
-  font-size: 1.375rem;
-  font-weight: 400;
-  line-height: 1.25;
-  letter-spacing: 0.03em;
-}
-
-.header__list-item:first-child::after {
-  content: "\002F";
-  color: inherit;
-  margin: 0 10px 0 7px;
-}
-
-.header__list-link {
-  text-decoration: none;
-}
-
-.main {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-
-.articles {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-
-.articles__inner {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: 100%;
-}
-
-.article {
-  margin-bottom: 31px;
-}
-
-.article__title {
-  font-family: "Francois One", sans-serif;
-  font-size: 2.25rem;
-  line-height: 1.33;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
-  margin-bottom: 40px;
-}
-
-.article__chapter {
-  position: relative;
-  top: -2px;
-  left: -2px;
-  font-family: "Farro-Light", sans-serif;
-  font-size: 1.14rem;
-  font-weight: 300;
-  line-height: 1;
-  letter-spacing: 0.04em;
-  text-transform: capitalize;
-  vertical-align: top;
-}
-
-.article__paragraph,
-.article__concept-item {
-  margin-bottom: 29px;
-}
-
-.article__paragraph--mrg {
-  margin-top: 41px;
-  margin-bottom: 38px;
-}
-
-.article__concepts-list {
-  padding-top: 2px;
-}
-
-.article__concept-name {
-  font-family: "PT Sans", sans-serif;
-  font-weight: 700;
-}
-
-.code {
-  background-color: #d3d3d3;
-  padding: 4px 2px 6px 0;
-}
-
-.emphasize {
-  font-family: "PT Sans", sans-serif;
-  font-style: italic;
-}
-
-.article__emodji {
-  display: inline-block;
-  width: 28px;
-  height: 30px;
-  position: relative;
-  top: -4px;
-}
+/* Links */
 
 a {
   color: inherit;
@@ -429,4 +251,3 @@ a:focus,
 a:visited {
   outline: none;
 }
- */

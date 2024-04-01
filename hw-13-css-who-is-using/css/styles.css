@@ -102,11 +102,10 @@ body {
   align-items: center;
   width: 100%;
   min-height: calc(100vh - 80px);
-  /* here for fixed*/
   margin-top: 80px;
 }
 
-/* users section */
+/* Users section */
 
 .users {
   display: flex;
@@ -199,6 +198,8 @@ body {
 .users__user-img--top {
   transform: translateY(7px);
 }
+
+/* Links */
 
 a {
   color: inherit;
