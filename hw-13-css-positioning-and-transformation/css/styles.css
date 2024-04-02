@@ -111,12 +111,12 @@ body {
   width: 100%;
 }
 
-.background-img {
+/* .background-img {
   background-image: url(../public/images/bg_picture.png);
   background-repeat: no-repeat;
   background-position: top 149px right 39px;
   background-attachment: fixed;
-}
+} */
 
 /* Aside + Nav */
 
@@ -147,12 +147,21 @@ body {
 /* Articles */
 
 .articles {
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
   max-width: 785px;
   width: 100%;
   padding-top: 99px;
+}
+
+.background-fixed {
+  position: fixed;
+  top: 70px;
+  margin-top: 80px;
+  transform: translateX(198px);
+  z-index: -1;
 }
 
 .article {
