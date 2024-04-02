@@ -41,4 +41,5 @@
   background-color: var(--accent-color);
   border: 0;
   transition: all 0.2s ease-in;
+  cursor: url(../../../public/svg/cursor.svg), auto;
 }

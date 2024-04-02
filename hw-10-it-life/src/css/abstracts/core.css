@@ -28,6 +28,7 @@ a {
   display: inline-block;
   text-decoration: none;
   color: var(--main-text-color);
+  cursor: url(../../../public/svg/cursor.svg), auto;
 }
 
 a:link,

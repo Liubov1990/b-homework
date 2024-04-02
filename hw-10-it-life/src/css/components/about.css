@@ -60,7 +60,7 @@
   width: 270px;
   height: 270px;
   margin-bottom: 20px;
-  cursor: pointer;
+  cursor: url(../../../public/svg/cursor.svg), auto;
 }
 
 .about__img-wrap:hover .about__overlay {
