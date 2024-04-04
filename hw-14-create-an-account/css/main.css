@@ -204,9 +204,9 @@ body {
   border: var(--input-focus-border);
 }
 
-.popup__input:invalid {
+/* .popup__input:invalid {
   border: var(--input-invalid-border);
-}
+} */
 
 .popup__label:not(.popup__radio-label) {
   display: block;
@@ -267,11 +267,14 @@ body {
 .popup__select {
   background: url("../public/svg/double_arrow.svg") no-repeat right 13px center;
   background-size: 11px;
-  color: var(--heading-color);
   appearance: none;
 }
 
-.popup__select {
+.popup__select:invalid {
+  color: var(--icon-color);
+}
+
+.popup__option {
   color: var(--heading-color);
 }
 
