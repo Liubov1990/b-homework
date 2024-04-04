@@ -8,33 +8,35 @@
     <link rel="stylesheet" href="./css/index.css" />
   </head>
   <body>
-    <div class="container">
+    <div class="root container">
       <!-- Create an Account -->
       <section class="popup">
         <div class="popup__inner">
           <h2 class="popup__heading">Create an Account</h2>
           <form action="#" method="post" name="signup" class="popup__form">
-            <div class="popup__input-wrap">
-              <label for="signin-first-name" class="popup__label"
-                >First Name</label
-              >
-              <input
-                type="text"
-                id="signin-first-name"
-                name="signin-first-name"
-                class="popup__input"
-              />
-            </div>
-            <div class="popup__input-wrap">
-              <label for="signin-last-name" class="popup__label"
-                >Last Name</label
-              >
-              <input
-                type="text"
-                id="signin-last-name"
-                name="signin-last-name"
-                class="popup__input"
-              />
+            <div class="popup__inputs-group-wrap">
+              <div class="popup__input-wrap">
+                <label for="signin-first-name" class="popup__label"
+                  >First Name</label
+                >
+                <input
+                  type="text"
+                  id="signin-first-name"
+                  name="signin-first-name"
+                  class="popup__input"
+                />
+              </div>
+              <div class="popup__input-wrap">
+                <label for="signin-last-name" class="popup__label"
+                  >Last Name</label
+                >
+                <input
+                  type="text"
+                  id="signin-last-name"
+                  name="signin-last-name"
+                  class="popup__input"
+                />
+              </div>
             </div>
             <div class="popup__input-wrap">
               <label for="signin-email" class="popup__label">E-mail</label>
@@ -42,13 +44,13 @@
                 type="email"
                 id="signin-email"
                 name="signin-email"
-                class="popup__input"
+                class="popup__input popup__input--full-width"
               />
-              <span class="popup__info-text">
+              <p class="popup__info-text">
                 We'll never share your email with anyone else.
-              </span>
+              </p>
             </div>
-            <div class="popup__input-wrap">
+            <div class="popup__input-wrap popup__radio-wrap">
               <input
                 type="radio"
                 id="male"
@@ -56,7 +58,9 @@
                 value="male"
                 class="popup__radio-input"
               />
-              <label for="radio" class="popup__label">Male</label>
+              <label for="male" class="popup__label popup__radio-label"
+                >Male</label
+              >
               <input
                 type="radio"
                 id="female"
@@ -64,42 +68,66 @@
                 value="female"
                 class="popup__radio-input"
               />
-              <label for="radio" class="popup__label">Female</label>
-            </div>
-            <div class="popup__input-wrap">
-              <label for="signin-select" class="popup__label">Country</label>
-              <select
-                id="signin-select"
-                name="signin-countries-list"
-                class="popup__input"
-                placeholder="Select"
+              <label for="female" class="popup__label popup__radio-label"
+                >Female</label
               >
-                <!-- <option value=""></option> -->
-              </select>
             </div>
-            <div class="popup__input-wrap">
-              <label for="signin-city" class="popup__label">City</label>
-              <input
-                type="text"
-                id="signin-city"
-                name="signin-city"
-                class="popup__input"
-              />
+            <div class="popup__inputs-group-wrap">
+              <div class="popup__input-wrap">
+                <label for="signin-select" class="popup__label">Country</label>
+                <select
+                  id="signin-select"
+                  name="signin-countries-list"
+                  class="popup__input popup__input--pdd-r popup__select"
+                >
+                  <option value="" disabled selected class="popup__option">
+                    Select
+                  </option>
+                  <option value="ukraine" class="popup__option">Ukraine</option>
+                  <option value="usa" class="popup__option">USA</option>
+                </select>
+              </div>
+              <div class="popup__input-wrap">
+                <label for="signin-city" class="popup__label">City</label>
+                <input
+                  type="text"
+                  id="signin-city"
+                  name="signin-city"
+                  class="popup__input"
+                />
+              </div>
             </div>
-            <button type="submit" id="signup-form">Sign Up</button>
+            <button
+              type="submit"
+              id="signup-form"
+              class="popup__btn popup__btn--full-width"
+            >
+              Sign Up
+            </button>
           </form>
-          <!-- <div class="popup__policy-login-wrap"> -->
-          <p class="popup__info-text">
-            By clicking the 'Sign Up' button, you confirm that you accept our
-            <a href="#" class="popup__link">Terms of Use</a> and
-            <a href="#" class="popup__link">Privacy Policy</a>
-          </p>
-          <hr class="popup__horizontal-rule" />
-          <p class="popup__login">
-            Have an account?
-            <a href="#" class="popup__link popup__login-link">Log In</a>
-          </p>
-          <!-- </div> -->
+          <div class="popup__aditional-details">
+            <p class="popup__info-text popup__info-text--center">
+              By clicking the 'Sign Up' button, you confirm that you accept our
+              <a
+                href="#"
+                class="popup__link popup__link--small-size popup__terms-policy-link"
+                >Terms of Use</a
+              >and<a
+                href="#"
+                class="popup__link popup__link--small-size popup__terms-policy-link"
+                >Privacy Policy</a
+              >
+            </p>
+            <hr class="popup__horizontal-rule" />
+            <p class="popup__login">
+              Have an account?
+              <a
+                href="#"
+                class="popup__link popup__link--big-size popup__login-link"
+                >Log In</a
+              >
+            </p>
+          </div>
         </div>
       </section>
 
@@ -120,78 +148,97 @@
                 alt="profile photo"
                 class="popup__profile-photo"
               />
-              <div class="popup__upload-photo">
+              <div class="popup__manage-photo">
                 <input
                   type="file"
                   name="upload-profile-photo"
-                  class="popup__input"
+                  id="upload-photo"
+                  class="popup__input popup__input--small popup__input--pdd-r popup__upload-file"
                 />
-                <button type="reset" class="popup__input"></button>
-                <span class="popup__info-text">Up to 1 MB (300x300 px)</span>
+                <button
+                  type="button"
+                  class="popup__input--small popup__delete-photo-btn"
+                ></button>
+                <p class="popup__info-text">Up to 1 MB (300x300 px)</p>
               </div>
             </div>
-            <div class="popup__input-wrap">
-              <label for="profile-name" class="popup__label">Name</label>
-              <input
-                type="text"
-                id="profile-name"
-                name="profile-name"
-                class="popup__input"
-              />
+            <div class="popup__inputs-group-wrap">
+              <div class="popup__input-wrap">
+                <label for="profile-name" class="popup__label">Name</label>
+                <input
+                  type="text"
+                  id="profile-name"
+                  name="profile-name"
+                  class="popup__input"
+                />
+              </div>
+              <div class="popup__input-wrap">
+                <label for="profile-email" class="popup__label">E-mail</label>
+                <input
+                  type="email"
+                  id="profile-email"
+                  name="profile-email"
+                  class="popup__input"
+                />
+              </div>
             </div>
-            <div class="popup__input-wrap">
-              <label for="profile-email" class="popup__label">E-mail</label>
-              <input
-                type="email"
-                id="profile-email"
-                name="profile-email"
-                class="popup__input"
-              />
+            <div class="popup__inputs-group-wrap">
+              <div class="popup__input-wrap">
+                <label for="profile-select" class="popup__label">Country</label>
+                <select
+                  id="profile-select"
+                  name="profile-countries-list"
+                  class="popup__input popup__input--pdd-r popup__select"
+                >
+                  <option value="" disabled selected class="popup__option">
+                    Select
+                  </option>
+                  <option value="ukraine" class="popup__option">Ukraine</option>
+                  <option value="usa" class="popup__option">USA</option>
+                </select>
+              </div>
+              <div class="popup__input-wrap">
+                <label for="profile-city" class="popup__label">City</label>
+                <input
+                  type="text"
+                  id="profile-city"
+                  name="profile-city"
+                  class="popup__input"
+                />
+              </div>
             </div>
-            <div class="popup__input-wrap">
-              <label for="profile-select" class="popup__label">Country</label>
-              <select
-                id="profile-select"
-                name="profile-countries-list"
-                class="popup__input"
-                placeholder="Select"
-              >
-                <!-- <option value=""></option> -->
-              </select>
+            <div class="popup__inputs-group-wrap">
+              <div class="popup__input-wrap">
+                <label for="profile-zip-code" class="popup__label"
+                  >Zip Code</label
+                >
+                <input
+                  type="text"
+                  id="profile-zip-code"
+                  name="profile-zip-code"
+                  class="popup__input"
+                />
+              </div>
+              <div class="popup__input-wrap">
+                <label for="profile-tel" class="popup__label"
+                  >Phone Number</label
+                >
+                <input
+                  type="tel"
+                  id="profile-tel"
+                  name="profile-tel"
+                  class="popup__input"
+                />
+              </div>
             </div>
-            <div class="popup__input-wrap">
-              <label for="profile-city" class="popup__label">City</label>
-              <input
-                type="text"
-                id="profile-city"
-                name="profile-city"
-                class="popup__input"
-              />
-            </div>
-            <div class="popup__input-wrap">
-              <label for="profile-zip-code" class="popup__label"
-                >Zip Code</label
-              >
-              <input
-                type="text"
-                id="profile-zip-code"
-                name="profile-zip-code"
-                class="popup__input"
-              />
-            </div>
-            <div class="popup__input-wrap">
-              <label for="profile-tel" class="popup__label">Phone Number</label>
-              <input
-                type="tel"
-                id="profile-tel"
-                name="profile-tel"
-                class="popup__input"
-              />
-            </div>
-            <button type="submit" id="update-form">Update</button>
+            <button type="submit" id="update-form" class="popup__btn">
+              Update
+            </button>
           </form>
         </div>
       </section>
     </div>
+
+    <script src="./index.js"></script>
   </body>
 </html>
