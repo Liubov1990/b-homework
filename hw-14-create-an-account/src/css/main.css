@@ -265,7 +265,7 @@ body {
 /* Select */
 
 .popup__select {
-  background: url("../public/svg/double_arrow.svg") no-repeat right 13px center;
+  background: url(../../public/svg/double_arrow.svg) no-repeat right 13px center;
   background-size: 11px;
   appearance: none;
 }
@@ -302,7 +302,7 @@ body {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
-  background: url(../public/svg/camera.svg) no-repeat right 10px center;
+  background: url(../../public/svg/camera.svg) no-repeat right 10px center;
 }
 
 .popup__delete-photo-btn {
@@ -310,7 +310,7 @@ body {
   border: var(--input-default-border);
   border-radius: var(--input-border-radius);
   background-color: var(--white-color);
-  background: url(../public/svg/trash_can.svg) no-repeat center;
+  background: url(../../public/svg/trash_can.svg) no-repeat center;
   vertical-align: top;
   margin-left: 5px;
   box-sizing: border-box;
