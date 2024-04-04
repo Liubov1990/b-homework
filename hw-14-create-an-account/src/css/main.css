@@ -278,6 +278,10 @@ body {
   color: var(--heading-color);
 }
 
+.popup__option:first-child {
+  color: var(--icon-color);
+}
+
 /* File */
 
 .transparent {
