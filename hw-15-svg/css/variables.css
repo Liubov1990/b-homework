@@ -1,0 +1,19 @@
+:root {
+  --dark-green: #3db370;
+  --middle-green: #caeff2;
+  --light-green: #e1f4f5;
+  --lighten-green: #f4feff;
+  --dark-blue: #007ffc;
+  --middle-blue: #b9dcff;
+  --light-blue: #d1e7ff;
+  --lighten-blue: #e8f3ff;
+  --text: #16133d;
+  --secondary-text: #7690a8;
+  --icon-color: #0d0d0d;
+  --white: #ffffff;
+
+  --border-outer: 1px solid #e5eaf4;
+  --border-inner: 1px solid #1565d81a;
+  --border-outer-hover: 1px solid var(--dark-green);
+  --border-inner-hover: 1px solid #3db3701a;
+}
