@@ -252,12 +252,10 @@ body {
   width: 8px;
   height: 8px;
   opacity: 0;
-  background: var(--white-color);
 }
 
 .popup__radio-input:checked + .popup__radio-label::before {
-  background: var(--accent-color);
-  border: var(--border-transparent);
+  border: 6px solid var(--accent-color);
 }
 
 .popup__radio-input:checked + .popup__radio-label::after {
@@ -269,8 +267,12 @@ body {
 .popup__select {
   background: url("../public/svg/double_arrow.svg") no-repeat right 13px center;
   background-size: 11px;
-  color: var(--icon-color);
+  color: var(--heading-color);
   appearance: none;
+}
+
+.popup__select {
+  color: var(--heading-color);
 }
 
 /* File */
