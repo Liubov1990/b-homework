@@ -40,8 +40,8 @@ body {
 .header__inner {
   display: flex;
   justify-content: flex-start;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 22px;
+  padding-bottom: 13px;
 }
 
 .logo__icon {
@@ -76,8 +76,10 @@ body {
 }
 
 .services__subheading {
+  text-transform: uppercase;
   line-height: 1.31;
   color: var(--secondary-text);
+  margin-left: 3px;
 }
 
 .services__heading {
@@ -87,7 +89,7 @@ body {
   line-height: 1.3;
   letter-spacing: 0.013rem;
   margin-top: 15px;
-  margin-bottom: 40px;
+  margin-bottom: 34px;
 }
 
 .services__block {
@@ -101,7 +103,7 @@ body {
   width: 100%;
   border: var(--border-outer);
   border-radius: var(--border-outer-radius);
-  padding: 40px;
+  padding: 39px 50px 36px 39px;
   box-sizing: border-box;
 }
 
@@ -118,7 +120,7 @@ body {
   border: var(--border-inner);
   border-radius: var(--border-inner-radius);
   box-sizing: border-box;
-  margin-bottom: 30px;
+  margin-bottom: 31px;
 }
 
 .services__item:hover > .services__image-wrap {
@@ -127,20 +129,20 @@ body {
 }
 
 .services__icon {
-  width: 38px;
-  height: 36px;
-  margin-top: 14px;
+  width: 39px;
+  height: 37px;
+  margin-top: 13px;
 }
 
 .services__title {
   font-size: 1.5rem;
   line-height: 0.88;
   letter-spacing: 0.013rem;
-  margin-bottom: 15px;
+  margin-bottom: 13px;
 }
 
 .services__description {
-  margin-bottom: 30px;
+  margin-bottom: 22px;
 }
 
 .services__link {
@@ -171,7 +173,7 @@ body {
 }
 
 .footer__icons {
-  margin-top: 40px;
+  margin-top: 31px;
 }
 
 .footer__icon {
@@ -181,7 +183,7 @@ body {
   padding: 9px;
   border-radius: var(--icon-border-radius);
   background: var(--white);
-  margin-right: 10px;
+  margin-right: 6px;
 }
 
 a {
