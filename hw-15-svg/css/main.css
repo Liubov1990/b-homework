@@ -49,6 +49,14 @@ body {
   height: 35px;
 }
 
+.horizontal-rule {
+  border: none;
+  border-top: var(--horizontal-rule);
+  width: 100%;
+  margin-block-start: 0;
+  margin-block-end: 0;
+}
+
 .main {
   flex: 1 0 auto;
 }

@@ -12,6 +12,7 @@
   --icon-color: #0d0d0d;
   --white: #ffffff;
 
+  --horizontal-rule: 1px solid #efeef3;
   --border-outer: 1px solid #e5eaf4;
   --border-inner: 1px solid #1565d81a;
   --border-outer-hover: 1px solid var(--dark-green);
