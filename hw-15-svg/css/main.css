@@ -200,6 +200,11 @@ body {
   fill: var(--icon-color);
 }
 
+.footer__icon:hover {
+  fill: var(--dark-green);
+  cursor: pointer;
+}
+
 a {
   text-decoration: none;
 }
