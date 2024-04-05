@@ -150,5 +150,47 @@ body {
 }
 
 .footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   flex-shrink: 0;
+  width: 100%;
+  background: var(--text-color);
+}
+
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+.logo-white {
+  color: var(--white);
+}
+
+.footer__icons {
+  margin-top: 40px;
+}
+
+.footer__icon {
+  width: 20px;
+  height: 20px;
+  fill: var(--icon-color);
+  padding: 9px;
+  border-radius: var(--icon-border-radius);
+  background: var(--white);
+  margin-right: 10px;
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+a:active,
+a:focus,
+a:visited {
+  outline: none;
 }

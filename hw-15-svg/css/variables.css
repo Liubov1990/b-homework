@@ -18,6 +18,7 @@
   --border-outer-hover: 1px solid var(--dark-green);
   --border-inner-hover: 1px solid #3db3701a;
 
+  --icon-border-radius: 5px;
   --border-outer-radius: 8px;
   --border-inner-radius: 16px;
 
