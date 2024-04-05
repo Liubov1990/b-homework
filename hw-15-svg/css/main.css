@@ -173,17 +173,23 @@ body {
 }
 
 .footer__icons {
-  margin-top: 31px;
+  margin-top: 32px;
 }
 
-.footer__icon {
+.footer__social-link {
+  display: inline-block;
   width: 20px;
-  height: 20px;
-  fill: var(--icon-color);
+  height: 19px;
   padding: 9px;
   border-radius: var(--icon-border-radius);
   background: var(--white);
   margin-right: 6px;
+}
+
+.footer__icon {
+  width: 20px;
+  height: 19px;
+  fill: var(--icon-color);
 }
 
 a {
