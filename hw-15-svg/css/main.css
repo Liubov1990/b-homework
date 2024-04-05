@@ -239,5 +239,5 @@ a:visited {
 }
 
 .logo-svg--image-color {
-  --image-color: var(--dark-green);
+  --logo-image-color: var(--dark-green);
 }
