@@ -44,6 +44,14 @@ body {
   padding-bottom: 13px;
 }
 
+.logo--dark {
+  fill: #16133d;
+}
+
+.logo--white {
+  fill: var(--white);
+}
+
 .logo__icon {
   width: 200px;
   height: 35px;
