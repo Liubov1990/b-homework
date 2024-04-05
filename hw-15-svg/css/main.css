@@ -202,6 +202,7 @@ body {
 
 .footer__icon:hover {
   fill: var(--dark-green);
+  transition: all 0.5ms ease-in-out;
   cursor: pointer;
 }
 
