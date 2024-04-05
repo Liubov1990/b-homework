@@ -1,0 +1,22 @@
+main {
+  width: 65%;
+  box-sizing: border-box;
+}
+
+main > .card {
+  margin-bottom: 20px;
+}
+
+main > .card:last-child {
+  margin-bottom: 10px;
+}
+
+dt {
+  font-size: 18px;
+  color: var(--accent-color);
+  margin-bottom: 7px;
+}
+
+dd {
+  margin-bottom: 25px;
+}

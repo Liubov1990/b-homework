@@ -1,0 +1,22 @@
+footer {
+  display: flex;
+  justify-content: center;
+  flex-shrink: 0;
+  width: 100%;
+  line-height: 1;
+  background: var(--accent-color);
+  padding: 10px 25px;
+  box-sizing: border-box;
+}
+
+footer > a {
+  margin-right: 10px;
+}
+
+footer > a:last-child {
+  margin-right: 0;
+}
+
+footer svg {
+  fill: var(--white-color);
+}

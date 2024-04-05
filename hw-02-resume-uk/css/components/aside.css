@@ -1,0 +1,74 @@
+aside {
+  width: 35%;
+  box-sizing: border-box;
+}
+
+.wrapper-with-icons {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.wrapper-with-icons--zero-mb {
+  margin-bottom: 0;
+}
+
+.wrapper-with-icons > svg {
+  margin-right: 15px;
+}
+
+/* personal-info */
+
+.personal-info__photo-wrapper {
+  position: relative;
+  margin-bottom: 25px;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  z-index: 0;
+}
+
+.personal-info__name {
+  position: absolute;
+  background: rgba(254, 254, 254, 0.5);
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  font-size: 22px;
+  padding: 0 20px;
+  box-sizing: border-box;
+  z-index: 1;
+}
+
+.personal-info__contacts {
+  padding: 0 20px;
+}
+
+.personal-info__link:visited,
+.personal-info__link:hover,
+.personal-info__link:active {
+  color: var(--accent-color);
+}
+
+/* personal-info */
+
+.skills {
+  padding: 0 20px 20px 20px;
+}
+
+.skills__item {
+  margin-bottom: 20px;
+}
+
+.skills__item > p:not(p:first-child) {
+  margin-left: 35px;
+}
+
+.skills__item:last-child {
+  margin-bottom: 0;
+}
+
+.skills__field {
+  font-size: 18px;
+}

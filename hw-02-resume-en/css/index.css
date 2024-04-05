@@ -1,4 +1,4 @@
-@import "../libs/reset.css";
+@import "./libs/reset.css";
 
 /* abstracts */
 @import "./abstracts/core.css";

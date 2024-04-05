@@ -1,0 +1,7 @@
+header {
+  width: 100%;
+  background: var(--accent-color);
+  color: var(--white-color);
+  padding: 0 25px 5px 25px;
+  box-sizing: border-box;
+}
