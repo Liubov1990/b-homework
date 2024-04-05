@@ -64,17 +64,6 @@ a:visited {
 }
 
 /* Logo */
-.logo-svg {
-  fill-rule: evenodd;
-}
-
-.logo-svg--dark {
-  fill: #16133d;
-}
-
-.logo-svg--white {
-  fill: var(--white);
-}
 
 .logo__icon {
   width: 203px;
@@ -230,21 +219,32 @@ a:visited {
 }
 
 /* SVG Sprite */
+.logo__svg-image-color {
+  --logo-image-color: var(--dark-green);
+}
 
-.icon-color {
+.logo__text-color {
+  --logo-text-color: var(--text-color);
+}
+
+.logo__text-color--white {
+  --logo-text-color: var(--white);
+}
+
+.logo__fill-rule {
+  --even-odd: evenodd;
+}
+
+.services__icon-color {
   --light-color: var(--light-blue);
   --lighten-color: var(--lighten-blue);
   --middle-color: var(--middle-blue);
   --dark-color: var(--dark-blue);
 }
 
-.icon-color:hover {
+.services__icon-color:hover {
   --light-color: var(--light-green);
   --lighten-color: var(--lighten-green);
   --middle-color: var(--middle-green);
   --dark-color: var(--dark-green);
-}
-
-.logo-svg--image-color {
-  --logo-image-color: var(--dark-green);
 }
