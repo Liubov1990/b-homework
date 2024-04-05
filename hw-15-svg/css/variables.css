@@ -18,6 +18,10 @@
   --border-outer-hover: 1px solid var(--dark-green);
   --border-inner-hover: 1px solid #3db3701a;
 
+  --border-outer-radius: 8px;
+  --border-inner-radius: 16px;
+
   --fw-regular: 400;
+  --fw-semi-bold: 600;
   --fs-normal: normal;
 }
