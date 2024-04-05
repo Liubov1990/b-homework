@@ -1,3 +1,5 @@
+/* Layout and General */
+
 html {
   font-size: 16px;
 }
@@ -23,6 +25,11 @@ body {
   align-items: center;
 }
 
+.main {
+  flex: 1 0 auto;
+  width: 100%;
+}
+
 .container {
   max-width: 1200px;
   width: 100%;
@@ -30,6 +37,18 @@ body {
   box-sizing: border-box;
 }
 
+a {
+  text-decoration: none;
+}
+
+a,
+a:active,
+a:focus,
+a:visited {
+  outline: none;
+}
+
+/* Header */
 .header {
   display: flex;
   flex-direction: column;
@@ -44,6 +63,7 @@ body {
   padding-bottom: 13px;
 }
 
+/* Logo */
 .logo-svg {
   fill-rule: evenodd;
 }
@@ -62,6 +82,7 @@ body {
   transform: translateX(-3px);
 }
 
+/* Hr */
 .horizontal-rule {
   border: none;
   border-top: var(--horizontal-rule);
@@ -70,11 +91,7 @@ body {
   margin-block-end: 0;
 }
 
-.main {
-  flex: 1 0 auto;
-  width: 100%;
-}
-
+/* Services */
 .services {
   display: flex;
   flex-direction: column;
@@ -164,6 +181,7 @@ body {
   color: var(--dark-green);
 }
 
+/* Footer */
 .footer {
   display: flex;
   flex-direction: column;
@@ -179,10 +197,6 @@ body {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-}
-
-.logo-white {
-  color: var(--white);
 }
 
 .footer__icons {
@@ -211,18 +225,7 @@ body {
   cursor: pointer;
 }
 
-a {
-  text-decoration: none;
-}
-
-a,
-a:active,
-a:focus,
-a:visited {
-  outline: none;
-}
-
-/*  */
+/* SVG Sprite */
 
 .icon-color {
   --light-color: var(--light-blue);
