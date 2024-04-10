@@ -1,0 +1,7 @@
+@use "../abstracts" as *;
+
+.header__divider {
+  @extend %full-width;
+  max-width: 451px;
+  height: 20px;
+}

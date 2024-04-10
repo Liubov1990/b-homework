@@ -1,0 +1,91 @@
+@use "../abstracts" as *;
+
+.member {
+  @include flex(column, center);
+  @extend %full-width;
+  padding-top: 40px;
+  padding-bottom: 122px;
+
+  &__inner {
+    @include flex;
+    @extend %full-width;
+    max-width: 1060px;
+
+    // @media screen and (max-width: 768px) {
+    //   @include flex(column, center);
+    // }
+  }
+
+  &__content-wrap {
+    @include flex(column, $justification: center);
+    flex-basis: $half-width;
+    padding-top: 65px;
+    padding: 65px 15px;
+    box-sizing: border-box;
+
+    &:first-child {
+      border-right: $border;
+    }
+
+    // @media screen and (max-width: 768px) {
+    //   &:first-child {
+    //     border-right: none;
+    //     border-bottom: $border;
+    //   }
+    // }
+  }
+
+  &__photo {
+    align-self: flex-start;
+  }
+
+  &__info {
+    @include flex(column, center);
+    align-self: flex-end;
+  }
+
+  &__name {
+    @include fonts(
+      $f-family: font("rob"),
+      $f-size: 2.25rem,
+      $f-weight: $fw-black,
+      $l-height: 1.17
+    );
+    position: relative;
+    padding-bottom: 21px;
+    margin-bottom: 30px;
+
+    &::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      width: 100px;
+      height: 1px;
+      background: $line-color;
+      left: calc($half-width - 49px);
+    }
+  }
+
+  &__position {
+    font-size: 1.5rem;
+    line-height: 1.5;
+    margin-bottom: 20px;
+  }
+
+  &__social-links {
+    @include flex();
+  }
+
+  &__description {
+    @include fonts(
+      $f-size: 0.875rem,
+      $f-weight: $fw-medium,
+      $l-height: 1.71,
+      $color: $description-text-color
+    );
+    text-align: center;
+    max-width: 430px;
+    margin-bottom: 15px;
+    margin-top: 45px;
+  }
+}

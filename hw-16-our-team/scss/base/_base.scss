@@ -1,0 +1,38 @@
+@use "../abstracts" as *;
+
+html {
+  font-size: $initial-font-size;
+}
+
+body {
+  @include fonts($color: $main-text-color);
+  @extend %full-width;
+  background: $white-color;
+  min-height: $min-content-vh;
+}
+
+.root {
+  //   @include flex(column, center);
+}
+
+.container {
+  @extend %full-width;
+  max-width: 1200px;
+  padding: 0 15px;
+  box-sizing: border-box;
+}
+
+.main {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+}
+
+a,
+a:active,
+a:focus,
+a:visited {
+  outline: none;
+}

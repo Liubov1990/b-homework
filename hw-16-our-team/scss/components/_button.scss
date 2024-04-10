@@ -1,0 +1,24 @@
+@use "../abstracts" as *;
+
+.member__profile-link {
+  @include fonts(
+    $f-family: font("open"),
+    $f-size: 0.875rem,
+    $f-weight: $fw-bold,
+    $l-height: 1,
+    $t-transform: uppercase,
+    $color: $main-text-color
+  );
+  text-align: center;
+  width: 118px;
+  height: 24px;
+  background: $white-color;
+  border: $border;
+  box-sizing: border-box;
+
+  &:hover {
+    @include transition(background 0.5s ease);
+    @include fonts($color: $white-color);
+    background: $line-color;
+  }
+}

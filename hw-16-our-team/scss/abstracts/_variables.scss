@@ -1,0 +1,30 @@
+@use "colors" as *;
+
+$gfonts: (
+  "ral": "'Raleway', sans-serif",
+  "rob": "'Roboto', sans-serif",
+  "open": "'Open Sans', sans-serif",
+);
+
+$fs-normal: normal;
+$initial-font-size: 16px;
+
+$fw-regular: 400;
+$fw-medium: 500;
+$fw-bold: 700;
+$fw-black: 900;
+
+$min-content-vh: 100vh;
+$full-width: 100%;
+$half-width: 50%;
+
+$border: 1px solid $line-color;
+$icon-border: 2px solid $icon-color;
+
+$linear-colors: (
+  "startColor": $line-color,
+  "stopColor": $line-color 23%,
+  "startTransparent": transparent 23%,
+  "stopTransparent": transparent 77%,
+  "repeatColor": $line-color 77%,
+);

@@ -1,0 +1,20 @@
+@use "../abstracts" as *;
+@use "sass:map";
+
+.member {
+  &__background {
+    @include flex(column, center);
+    @include linear-gradient(0deg, 90deg, 180deg, 270deg);
+    padding: 15px;
+    max-width: 430px;
+    background-position: 0 0, 0 0, $full-width 0, 0 $full-width;
+    background-size: 1px $full-width, $full-width 1px, 1px $full-width,
+      $full-width 1px;
+    background-repeat: no-repeat;
+  }
+
+  &__image {
+    @include responsive-image;
+    min-width: 200px;
+  }
+}

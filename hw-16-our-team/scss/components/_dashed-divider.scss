@@ -1,0 +1,28 @@
+@use "../abstracts" as *;
+
+.member__dash {
+  position: relative;
+  display: block;
+  width: 20px;
+  height: 4px;
+  background: $line-color;
+  margin-bottom: 25px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 10px;
+    height: 4px;
+    background: $line-color;
+  }
+
+  &::before {
+    left: -15px;
+  }
+
+  &::after {
+    right: -15px;
+  }
+}
