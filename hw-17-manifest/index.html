@@ -10,35 +10,52 @@
     <div class="root">
       <header class="header">
         <div class="container header__inner">
-          <div class="header__logo">
+          <div>
             <a href="#">
-              <svg>
+              <svg class="header__logo-icon">
                 <use xlink:href="./public/svg/sprite.svg#logo" />
               </svg>
             </a>
           </div>
           <nav class="header__nav">
-            <ul class="header__list">
-              <li class="header__list-item"><a href="#">home</a></li>
-              <li class="header__list-item"><a href="#">about</a></li>
-              <li class="header__list-item"><a href="#">works</a></li>
-              <li class="header__list-item"><a href="#">blog</a></li>
-              <li class="header__list-item"><a href="#">contact</a></li>
+            <ul class="header__nav-list">
+              <li class="header__list-item">
+                <a href="#" class="header__nav-link">home</a>
+              </li>
+              <li class="header__list-item">
+                <a href="#" class="header__nav-link">about</a>
+              </li>
+              <li class="header__list-item">
+                <a href="#" class="header__nav-link">works</a>
+              </li>
+              <li class="header__list-item">
+                <a href="#" class="header__nav-link">blog</a>
+              </li>
+              <li class="header__list-item">
+                <a href="#" class="header__nav-link">contact</a>
+              </li>
             </ul>
           </nav>
-          <div class="header__search">
-            <form action="#" method="get" name="search-form">
-              <input
-                type="text"
-                name="search"
-                placeholder="Search"
-                class="header__input"
-              />
-              <button type="submit" class="header__search-btn">
-                <svg>
-                  <use xlink:href="./public/svg/sprite.svg#search-icon" />
-                </svg>
-              </button>
+          <div class="header__nav-bar">
+            <form
+              action="#"
+              method="get"
+              name="search-form"
+              class="header__form"
+            >
+              <div class="header__search-wrap">
+                <input
+                  type="text"
+                  name="search"
+                  placeholder="Search"
+                  class="header__input"
+                />
+                <button type="submit" class="header__search-btn">
+                  <svg class="header__search-lens">
+                    <use xlink:href="./public/svg/sprite.svg#search-icon" />
+                  </svg>
+                </button>
+              </div>
             </form>
           </div>
         </div>

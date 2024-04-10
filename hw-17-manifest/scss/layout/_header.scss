@@ -1,1 +1,89 @@
 @use "../abstracts" as *;
+@use "../base/typography" as *;
+
+.header {
+  @include flex(column, center);
+  @extend %full-width;
+  position: relative;
+  padding: 40px 0;
+
+  &__inner {
+    @include flex($alignment: center, $justification: space-between);
+  }
+
+  &__logo-icon {
+    width: 141.79px;
+    height: 12px;
+  }
+
+  &__nav {
+    margin-left: auto;
+  }
+
+  &__nav-list {
+    @include flex($alignment: center, $justification: space-around);
+    @extend %full-width;
+    gap: 20px;
+  }
+
+  &__list-item {
+    @include font-list-regular;
+  }
+
+  &__nav-link {
+    position: relative;
+    display: inline-block;
+    padding: 5px;
+
+    &:active::after {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: calc(50% - 22px);
+      height: 1px;
+      width: 40px;
+      background: $black-color;
+    }
+  }
+
+  &__nav-bar {
+    margin-left: 85px;
+  }
+
+  &__search-wrap {
+    @include flex($alignment: center);
+    position: relative;
+    max-width: 178px;
+    padding-left: 5px;
+    box-sizing: border-box;
+  }
+
+  &__input {
+    width: $full-width;
+    border: none;
+    border-bottom: 1px solid $black-color;
+    padding-right: 25px;
+    padding-left: 0;
+    display: none;
+
+    &::placeholder {
+      @include font-search-placeholser;
+    }
+  }
+
+  &__search-btn {
+    position: absolute;
+    right: 0;
+    border: none;
+    outline: none;
+    padding: 0 0 0 10px;
+    background: $white-color;
+    box-sizing: border-box;
+  }
+
+  &__search-lens {
+    width: 17px;
+    height: 16px;
+    fill: $black-color;
+  }
+}

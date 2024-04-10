@@ -1,4 +1,5 @@
 @use "../abstracts" as *;
+
 html {
   // font-size: $initial-font-size;
 }
@@ -28,9 +29,11 @@ a {
   text-decoration: none;
 }
 
-a,
+a:link,
+a:visited,
+a:hover,
 a:active,
-a:focus,
-a:visited {
+a:focus {
+  color: $black-color;
   outline: none;
 }

@@ -1,6 +1,16 @@
 @use "colors" as *;
 @use "variables" as *;
 
+// centered-flex
+
+@mixin flex($direction: row, $alignment: stretch, $justification: flex-start) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $alignment;
+  justify-content: $justification;
+}
+
+// fonts
 @mixin fonts(
   $f-family: '"Lato", sans-serif',
   $f-style: $fs-normal,
