@@ -1,2 +1,22 @@
 @use "colors" as *;
 @use "variables" as *;
+
+@mixin fonts(
+  $f-family: '"Lato", sans-serif',
+  $f-style: $fs-normal,
+  $f-weight: $fw-regular,
+  $f-size: 1rem,
+  $l-height: 1.66,
+  $l-spacing: normal,
+  $t-transform: none,
+  $color: $main-text-color
+) {
+  font-family: $f-family;
+  font-style: $f-style;
+  font-weight: $f-weight;
+  font-size: $f-size;
+  line-height: $l-height;
+  letter-spacing: $l-spacing;
+  text-transform: $t-transform;
+  color: $color;
+}
