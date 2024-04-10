@@ -1,0 +1,17 @@
+@use "../abstracts" as *;
+@use "../base/typography" as *;
+
+.hero {
+  @include flex(column, center);
+  background: url("./../public/images/desktop/hero.webp") no-repeat;
+  background-size: 100%;
+  height: $min-content-vh;
+
+  &__text {
+    padding-top: 100px;
+  }
+
+  &__heading {
+    @include font-hero-heading;
+  }
+}

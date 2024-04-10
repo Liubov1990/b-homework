@@ -23,3 +23,12 @@ body {
   letter-spacing: 0.1em;
   color: $placeholder-color;
 }
+
+@mixin font-hero-heading {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 48px;
+  font-weight: $fw-semi-bold;
+  line-height: 1.33;
+  letter-spacing: 0.05em;
+  color: $black-color;
+}

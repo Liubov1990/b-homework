@@ -1,6 +1,6 @@
 @use "colors" as *;
 
-$min-content-vh: 100vh;
+$min-content-vh: calc(100vh - 100px);
 $min-content-width: 320px;
 
 $full-width: 100%;
