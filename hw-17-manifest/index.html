@@ -71,6 +71,8 @@
         <section class="blog">
           <div class="container blog__inner">
             <h1 class="blog__heading">Blog</h1>
+
+            <!-- Posts -->
             <div class="posts">
               <article class="posts__post">
                 <picture class="posts__image">
@@ -114,7 +116,7 @@
                     srcset="./public/images/tablet/blog.webp"
                     media="(min-width: 768px) and (max-width: 1023px)"
                   />
-                  <img src="./public/images/phone/blog.webp" alt="Arrow" />
+                  <img src="./public/images/phone/blog.webp" alt="Blog" />
                 </picture>
                 <div class="posts__text-content-wrap">
                   <div class="posts__text-content">
@@ -137,6 +139,101 @@
                 </div>
               </article>
             </div>
+
+            <!-- Latest posts -->
+            <section class="latest">
+              <div class="latest__more">
+                <h2 class="blog__latest-heading">Latest Posts</h2>
+                <button type="button" class="button button--transparent">
+                  Aiew All &rarr;
+                </button>
+              </div>
+              <div class="latest__posts">
+                <article class="latest__post">
+                  <picture class="latest__image">
+                    <source
+                      srcset="./public/images/desktop/lamp_white.webp"
+                      media="(min-width: 1024px)"
+                    />
+                    <source
+                      srcset="./public/images/tablet/lamp_white.webp"
+                      media="(min-width: 768px) and (max-width: 1023px)"
+                    />
+                    <img
+                      src="./public/images/phone/lamp_white.webp"
+                      alt="White lamp"
+                    />
+                  </picture>
+                  <div class="latest__text-content-wrap">
+                    <div class="latest__info">
+                      <div class="latest__category">Interface Design</div>
+                      <time datetime="2020-06-08" class="latest__date"
+                        >8 June, 2020</time
+                      >
+                    </div>
+                    <h3 class="latest__title">UX traffic light colours</h3>
+                    <p class="latest__excerpt">
+                      UI has to make a huge visual difference between warning,
+                      an alert and a success.
+                    </p>
+                  </div>
+                </article>
+                <article class="latest__post">
+                  <picture class="latest__image">
+                    <source
+                      srcset="./public/images/desktop/arrow_2.webp"
+                      media="(min-width: 1024px)"
+                    />
+                    <source
+                      srcset="./public/images/tablet/arrow_2.webp"
+                      media="(min-width: 768px) and (max-width: 1023px)"
+                    />
+                    <img src="./public/images/phone/arrow_2.webp" alt="Arrow" />
+                  </picture>
+                  <div class="latest__text-content-wrap">
+                    <div class="latest__info">
+                      <div class="latest__category">Technology</div>
+                      <time datetime="2020-05-06" class="latest__date"
+                        >6 May, 2020</time
+                      >
+                    </div>
+                    <h3 class="latest__title">
+                      Using UX Design to Build a Sustainable Future
+                    </h3>
+                    <p class="latest__excerpt">
+                      UI has to make a huge visual difference between warning,
+                      an alert and a success.
+                    </p>
+                  </div>
+                </article>
+                <article class="latest__post">
+                  <picture class="latest__image">
+                    <source
+                      srcset="./public/images/desktop/roof.webp"
+                      media="(min-width: 1024px)"
+                    />
+                    <source
+                      srcset="./public/images/tablet/roof.webp"
+                      media="(min-width: 768px) and (max-width: 1023px)"
+                    />
+                    <img src="./public/images/phone/roof.webp" alt="Roof" />
+                  </picture>
+                  <div class="latest__text-content-wrap">
+                    <div class="latest__info">
+                      <div class="latest__category">Visual Design</div>
+                      <time datetime="2020-06-08" class="latest__date"
+                        >8 June, 2020</time
+                      >
+                    </div>
+                    <h3 class="latest__title">Creativity vs. UX</h3>
+                    <p class="latest__excerpt">
+                      Is it possible to create a delightful user experience
+                      without following best UX practices?
+                    </p>
+                  </div>
+                </article>
+              </div>
+            </section>
           </div>
         </section>
       </main>
