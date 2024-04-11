@@ -21,6 +21,7 @@
 @mixin responsive-image {
   display: block;
   max-width: 100%;
+  width: 100%;
   min-width: 300px;
   height: auto;
 }

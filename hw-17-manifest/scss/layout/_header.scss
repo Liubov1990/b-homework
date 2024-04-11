@@ -59,16 +59,27 @@
   }
 
   &__input {
-    width: $full-width;
+    // @extend %full-width;
+    width: 0;
     border: none;
     border-bottom: 1px solid $black-color;
-    padding-right: 25px;
+    padding-right: 0;
+    // padding-right: 25px;
+    // display: none;
     padding-left: 0;
-    display: none;
+    opacity: 0;
 
     &::placeholder {
       @include font-search-placeholder;
     }
+  }
+
+  &__search-btn:focus + &__input {
+    @include transition(opacity 0.5s ease-in-out);
+    @extend %full-width;
+    // display: block;
+    padding-right: 25px;
+    opacity: 1;
   }
 
   &__search-btn {
@@ -79,6 +90,7 @@
     padding: 0 0 0 10px;
     background: $white-color;
     box-sizing: border-box;
+    z-index: 1;
   }
 
   &__search-lens {

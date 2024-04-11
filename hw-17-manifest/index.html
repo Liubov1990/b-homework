@@ -44,17 +44,18 @@
               class="header__form"
             >
               <div class="header__search-wrap">
-                <input
-                  type="text"
-                  name="search"
-                  placeholder="Search"
-                  class="header__input"
-                />
-                <button type="submit" class="header__search-btn">
+                <button href="#search" type="submit" class="header__search-btn">
                   <svg class="header__search-lens">
                     <use xlink:href="./public/svg/sprite.svg#search-icon" />
                   </svg>
                 </button>
+                <input
+                  type="text"
+                  id="search"
+                  name="search"
+                  placeholder="Search"
+                  class="header__input"
+                />
               </div>
             </form>
           </div>
@@ -73,19 +74,14 @@
             <h1 class="blog__heading">Blog</h1>
             <div class="blog__posts">
               <article class="blog__post">
-                <!-- <div class="blog__post1-image"></div> -->
                 <picture class="blog__post-image">
                   <source
                     srcset="./public/images/desktop/arrow_1.webp"
-                    media="(min-width: 769px)"
+                    media="(min-width: 1024px)"
                   />
                   <source
                     srcset="./public/images/tablet/arrow_1.webp"
-                    media="(max-width: 768px)"
-                  />
-                  <source
-                    srcset="./public/images/phone/arrow_1.webp"
-                    media="(max-width: 425px)"
+                    media="(min-width: 768px) and (max-width: 1023px)"
                   />
                   <img src="./public/images/phone/arrow_1.webp" alt="Arrow" />
                 </picture>
@@ -110,24 +106,16 @@
                 </div>
               </article>
               <article class="blog__post">
-                <!-- <div class="blog__post2-image"></div> -->
                 <picture class="blog__post-image">
                   <source
                     srcset="./public/images/desktop/blog.webp"
-                    media="(min-width: 769px)"
+                    media="(min-width: 1024px)"
                   />
                   <source
-                    srcset="./public/images/tablet/arrow_1.webp"
-                    media="(max-width: 768px)"
+                    srcset="./public/images/tablet/blog.webp"
+                    media="(min-width: 768px) and (max-width: 1023px)"
                   />
-                  <source
-                    srcset="./public/images/phone/lamp_white.webp"
-                    media="(max-width: 425px)"
-                  />
-                  <img
-                    src="./public/images/phone/lamp_orange.webp"
-                    alt="Arrow"
-                  />
+                  <img src="./public/images/phone/blog.webp" alt="Arrow" />
                 </picture>
                 <div class="blog__text-content-wrap">
                   <div class="blog__text-content">
