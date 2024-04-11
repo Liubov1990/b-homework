@@ -6,7 +6,7 @@
   @extend %full-width;
   margin-bottom: 90px;
 
-  &__more {
+  &__all {
     @include flex($alignment: center, $justification: space-between);
     @extend %full-width;
     margin-bottom: 30px;
