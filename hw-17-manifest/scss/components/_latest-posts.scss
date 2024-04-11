@@ -1,0 +1,52 @@
+@use "../abstracts" as *;
+@use "../base/typography" as *;
+
+.latest {
+  @include flex(column, center);
+  @extend %full-width;
+  margin-bottom: 90px;
+
+  &__more {
+    @include flex(center, $justification: space-between);
+    @extend %full-width;
+    margin-bottom: 30px;
+  }
+
+  &__heading {
+    @include font-heading2;
+  }
+
+  &__posts {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: stretch;
+    gap: 30px;
+  }
+
+  &__post {
+    @include flex(column);
+  }
+
+  &__image {
+    margin-bottom: 25px;
+  }
+
+  &__text-content-wrap {
+    @include flex(column);
+  }
+
+  &__info {
+    @include flex($justification: space-between);
+    @include font-latest-category;
+    margin-bottom: 20px;
+  }
+
+  &__title {
+    @include font-latest-title;
+    margin-bottom: 20px;
+  }
+
+  &__excerpt {
+    @include font-post-excerpt;
+  }
+}

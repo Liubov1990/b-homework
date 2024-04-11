@@ -42,8 +42,25 @@ body {
   color: $black-color;
 }
 
+@mixin font-heading2 {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 1.66;
+  letter-spacing: 0.1em;
+  color: $black-color;
+}
+
 @mixin font-post-category {
   font-size: 16px;
+  font-weight: $fw-regular;
+  line-height: 1.66;
+  letter-spacing: 0.1em;
+  color: $placeholder-color;
+}
+
+@mixin font-latest-category {
+  font-size: 12px;
   font-weight: $fw-regular;
   line-height: 1.66;
   letter-spacing: 0.1em;
@@ -59,10 +76,27 @@ body {
   color: $black-color;
 }
 
+@mixin font-latest-title {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 22px;
+  font-weight: $fw-medium;
+  line-height: 1.66;
+  letter-spacing: 0.1em;
+  color: $black-color;
+}
+
 @mixin font-post-date {
   font-size: 16px;
   font-weight: $fw-regular;
   line-height: 1.66;
   letter-spacing: 0.1em;
   color: $placeholder-color;
+}
+
+@mixin font-post-excerpt {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.66;
+  letter-spacing: 0.05em;
+  color: $main-text-color;
 }
