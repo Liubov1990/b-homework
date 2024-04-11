@@ -6,12 +6,26 @@
   position: relative;
   width: 100%;
   height: $min-content-vh;
-  background: url("./../public/images/desktop/hero.webp") no-repeat center;
+  background: url(./../public/images/desktop/hero.webp);
+  background-repeat: no-repeat;
+  background-position: center;
   background-size: cover;
   overflow: hidden;
 
-  @media (max-width: 768px) {
-    height: 50vh;
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    width: 100%;
+    background: url(./../public/images/tablet/hero.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+  }
+
+  @media screen and (max-width: 767px) {
+    width: 100%;
+    background: url(./../public/images/phone/hero_image.webp);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 
   &__text {
