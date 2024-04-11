@@ -10,6 +10,21 @@
   justify-content: $justification;
 }
 
+// transition
+
+@mixin transition($params) {
+  transition: $params;
+}
+
+// image
+
+@mixin responsive-image {
+  display: block;
+  max-width: 100%;
+  min-width: 300px;
+  height: auto;
+}
+
 // fonts
 @mixin fonts(
   $f-family: '"Lato", sans-serif',

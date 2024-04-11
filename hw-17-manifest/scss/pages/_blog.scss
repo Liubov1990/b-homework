@@ -1,0 +1,80 @@
+@use "../abstracts" as *;
+@use "../base/typography" as *;
+
+.blog {
+  @include flex(column, center);
+  @extend %full-width;
+  padding-top: 90px;
+  padding-bottom: 90px;
+
+  &__inner {
+    @include flex(column);
+  }
+
+  &__heading {
+    @include font-heading1;
+    align-self: flex-start;
+    margin-bottom: 45px;
+  }
+
+  &__posts {
+    // @include flex(column);
+    // @extend %full-width;
+    // box-sizing: border-box;
+    //
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-auto-rows: auto;
+    gap: 50px;
+    box-sizing: border-box;
+  }
+
+  &__posts &__post:nth-of-type(2n) &__text-content-wrap {
+    order: -1;
+    margin-left: auto;
+  }
+
+  &__post {
+    // @include flex($justification: space-between);
+    // margin-bottom: 50px;
+    // margin-right: auto;
+    // &:nth-of-type(2n) {
+    //   flex-direction: row-reverse;
+    //   margin-right: 0;
+    //   margin-left: auto;
+    // }
+    //
+
+    display: grid;
+    grid-template-columns: 47% 52%;
+    grid-auto-rows: auto;
+    gap: 20px;
+  }
+
+  &__text-content-wrap {
+    @include flex(column, $justification: center);
+  }
+
+  &__text-content {
+    @include flex(column);
+    @extend %full-width;
+    max-width: 420px;
+    padding: 10px;
+    box-sizing: border-box;
+  }
+
+  &__post-category {
+    @include font-post-category;
+    margin-bottom: 30px;
+  }
+
+  &__post-title {
+    @include font-post-title;
+    margin-bottom: 15px;
+  }
+
+  &__post-date {
+    @include font-post-date;
+    margin-bottom: 50px;
+  }
+}

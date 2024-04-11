@@ -1,6 +1,8 @@
 @use "../abstracts" as *;
 
-html {
+html,
+body {
+  height: 100%;
   // font-size: $initial-font-size;
 }
 
@@ -36,4 +38,8 @@ a:active,
 a:focus {
   color: $black-color;
   outline: none;
+}
+
+img {
+  @include responsive-image;
 }

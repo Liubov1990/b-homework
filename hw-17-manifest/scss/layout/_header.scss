@@ -67,7 +67,7 @@
     display: none;
 
     &::placeholder {
-      @include font-search-placeholser;
+      @include font-search-placeholder;
     }
   }
 
