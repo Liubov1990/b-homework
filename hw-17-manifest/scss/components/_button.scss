@@ -4,16 +4,16 @@
 .button {
   @include font-post-category;
   display: inline;
-  max-width: 182px;
+  width: 180px;
   height: 45px;
+  text-transform: capitalize;
   text-align: center;
-  background: $main-text-color;
   color: $white-color;
+  background: $main-text-color;
   outline: none;
   border: none;
   padding-inline: 0px;
   padding-block: 0px;
-  padding: 8px 15px;
 
   &:hover {
     @include transition(background 0.5s ease-in-out);
@@ -22,11 +22,12 @@
 }
 
 .button--transparent {
+  width: auto;
   height: auto;
   color: $placeholder-color;
   background-color: transparent;
   padding-top: 0;
-  padding-bottom: 0;
+  padding-left: 15px;
 
   &:hover {
     @include transition(background 0.5s ease-in-out);
