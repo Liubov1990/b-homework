@@ -14,6 +14,7 @@
 
   &__heading {
     @include font-heading2;
+    text-transform: capitalize;
   }
 
   &__posts {
@@ -40,6 +41,7 @@
 
   &__category {
     @include font-latest-category;
+    text-transform: capitalize;
   }
 
   &__title {

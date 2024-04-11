@@ -39,6 +39,7 @@
 
   &__category {
     @include font-post-category;
+    text-transform: capitalize;
     margin-bottom: 30px;
   }
 
