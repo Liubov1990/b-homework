@@ -27,10 +27,11 @@
 
   &__post {
     @include flex(column);
+    margin-bottom: 50px;
   }
 
   &__image {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
   }
 
   &__info {
@@ -46,10 +47,10 @@
 
   &__title {
     @include font-popular-title;
+    margin-bottom: 20px;
   }
 
   &__excerpt {
     @include font-post-excerpt;
-    margin-bottom: 54px;
   }
 }
