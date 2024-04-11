@@ -88,10 +88,22 @@ body {
 }
 
 //
+
 @mixin font-latest-title {
   font-family: "Red Hat Display", sans-serif;
   font-size: 22px;
   font-weight: $fw-medium;
+  line-height: 1.66;
+  letter-spacing: 0.1em;
+  color: $black-color;
+}
+
+//
+
+@mixin font-popular-title {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 24px;
+  font-weight: $fw-semi-bold;
   line-height: 1.66;
   letter-spacing: 0.1em;
   color: $black-color;

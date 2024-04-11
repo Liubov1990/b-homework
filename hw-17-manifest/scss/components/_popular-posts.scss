@@ -1,7 +1,7 @@
 @use "../abstracts" as *;
 @use "../base/typography" as *;
 
-.latest {
+.popular {
   @include flex(column, center);
   @extend %full-width;
   margin-bottom: 90px;
@@ -18,7 +18,7 @@
 
   &__posts {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
     grid-auto-rows: auto;
     align-items: stretch;
     gap: 30px;
@@ -26,15 +26,10 @@
 
   &__post {
     @include flex(column);
-    margin-bottom: 50px;
   }
 
   &__image {
-    margin-bottom: 25px;
-  }
-
-  &__text-content-wrap {
-    @include flex(column);
+    margin-bottom: 20px;
   }
 
   &__info {
@@ -43,12 +38,16 @@
     margin-bottom: 20px;
   }
 
+  &__category {
+    @include font-latest-category;
+  }
+
   &__title {
-    @include font-latest-title;
-    margin-bottom: 20px;
+    @include font-popular-title;
   }
 
   &__excerpt {
     @include font-post-excerpt;
+    margin-bottom: 54px;
   }
 }
