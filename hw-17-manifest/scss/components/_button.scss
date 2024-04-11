@@ -1,6 +1,7 @@
 @use "../abstracts" as *;
 
 .button {
+  @include font-post-category;
   display: inline;
   max-width: 182px;
   height: 45px;
@@ -14,8 +15,8 @@
   padding: 8px 15px;
 
   &:hover {
-    background: $button-hover-color;
     @include transition(background 0.5s ease-in-out);
+    background: $button-hover-color;
   }
 }
 
@@ -27,8 +28,8 @@
   padding-bottom: 0;
 
   &:hover {
+    @include transition(background 0.5s ease-in-out);
     color: $black-color;
     background: none;
-    @include transition(background 0.5s ease-in-out);
   }
 }
