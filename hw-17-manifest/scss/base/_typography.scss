@@ -26,10 +26,11 @@ body {
 
 //styleName: Heading / H1 ;
 
-@mixin font-heading1 {
+@mixin font-heading1-semibold {
+  @include responsive-font(30, 48);
   font-family: "Red Hat Display", sans-serif;
-  font-size: 48px;
-  font-weight: $fw-regular;
+  // font-size: 48px;
+  font-weight: $fw-semi-bold;
   line-height: 1.33;
   letter-spacing: 0.05em;
   color: $black-color;

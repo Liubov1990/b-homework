@@ -3,6 +3,7 @@
 html,
 body {
   height: 100%;
+  width: 100%;
   // font-size: $initial-font-size;
 }
 
@@ -19,7 +20,7 @@ body {
 .container {
   @extend %full-width;
   max-width: 1200px;
-  padding: 0 34px;
+  padding: 0 15px;
   box-sizing: border-box;
 
   @include for-phone-only {

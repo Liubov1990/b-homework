@@ -4,7 +4,7 @@
 .hero {
   @include flex(column, center);
   position: relative;
-  width: 100%;
+  width: $full-width;
   height: $min-content-vh;
   background: url(./../public/images/desktop/hero.webp);
   background-repeat: no-repeat;
@@ -12,16 +12,19 @@
   background-size: cover;
   overflow: hidden;
 
-  @media screen and (min-width: 768px) and (max-width: 1023px) {
-    width: 100%;
+  // media
+  @include for-tablet-portrait-up-to-laptop {
+    width: $full-width;
     background: url(./../public/images/tablet/hero.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
   }
-
-  @media screen and (max-width: 767px) {
-    width: 100%;
+  @include for-tablet-landscape-down {
+    height: $min-tablet-content-vh;
+  }
+  @include for-tablet-portrait-down {
+    width: $full-width;
     background: url(./../public/images/phone/hero_image.webp);
     background-repeat: no-repeat;
     background-position: center;
@@ -32,9 +35,23 @@
     position: absolute;
     top: 0;
     padding-top: 100px;
+
+    // media
+    @include for-tablet-landscape-down {
+      padding-top: 30px;
+    }
+    @include for-phone-only {
+      padding-top: 73px;
+    }
   }
 
   &__heading {
-    @include font-heading1;
+    @include font-heading1-semibold;
+
+    // media
+    @include for-phone-only {
+      margin-bottom: 5px;
+      line-height: 1.57;
+    }
   }
 }

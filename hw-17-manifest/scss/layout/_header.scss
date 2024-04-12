@@ -177,8 +177,12 @@
       padding: 15px 0 15px 15px;
       margin-left: 24px;
 
+      // @include for-phone-only {
+      //   margin-left: 20px;
+      // }
+
       @include for-phone-only {
-        margin-left: 20px;
+        margin-left: 5px;
       }
     }
 

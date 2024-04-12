@@ -13,7 +13,7 @@
   }
 
   &__heading {
-    @include font-heading1;
+    @include font-heading1-semibold;
     align-self: flex-start;
     margin-bottom: 30px;
   }

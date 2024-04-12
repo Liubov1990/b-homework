@@ -1,6 +1,23 @@
 @use "colors" as *;
 @use "variables" as *;
 
+// function
+
+@function rem($size) {
+  @return $size / $default-fs * 1rem;
+}
+
+// responsive-font
+
+@mixin responsive-font($min-size, $max-size) {
+  $adding-size: $max-size - $min-size;
+  $max-width: $max-width - 320;
+  font-size: calc(
+    #{$min-size + px} + #{$adding-size} *
+      ((100vw - #{$min-content-width}) / #{$max-width})
+  );
+}
+
 // centered-flex
 
 @mixin flex($direction: row, $alignment: stretch, $justification: flex-start) {
@@ -55,8 +72,14 @@
   }
 }
 
+@mixin for-tablet-portrait-up-to-laptop {
+  @media screen and (min-width: 768px) and (max-width: 1023px) {
+    @content;
+  }
+}
+
 @mixin for-tablet-portrait-down {
-  @media screen and (max-width: 768px) {
+  @media screen and (max-width: 767px) {
     @content;
   }
 }
@@ -66,28 +89,24 @@
     @content;
   }
 }
+
 // @mixin for-tablet-portrait-up {
 //   @media screen and (min-width: 600px) {
 //     @content;
 //   }
 // }
-@mixin for-tablet-portrait-up {
-  @media screen and (min-width: 600px) {
-    @content;
-  }
-}
-@mixin for-tablet-landscape-up {
-  @media screen and (min-width: 900px) {
-    @content;
-  }
-}
-@mixin for-desktop-up {
-  @media screen and (min-width: 1200px) {
-    @content;
-  }
-}
-@mixin for-big-desktop-up {
-  @media screen and (min-width: 1800px) {
-    @content;
-  }
-}
+// @mixin for-tablet-landscape-up {
+//   @media screen and (min-width: 900px) {
+//     @content;
+//   }
+// }
+// @mixin for-desktop-up {
+//   @media screen and (min-width: 1200px) {
+//     @content;
+//   }
+// }
+// @mixin for-big-desktop-up {
+//   @media screen and (min-width: 1800px) {
+//     @content;
+//   }
+// }
