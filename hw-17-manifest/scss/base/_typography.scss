@@ -40,7 +40,7 @@ body {
 @mixin font-heading2 {
   font-family: "Red Hat Display", sans-serif;
   font-size: 28px;
-  font-weight: 600;
+  font-weight: $fw-semi-bold;
   line-height: 1.66;
   letter-spacing: 0.1em;
   color: $black-color;
@@ -50,7 +50,7 @@ body {
 
 @mixin font-post-excerpt {
   font-size: 16px;
-  font-weight: 400;
+  font-weight: $fw-regular;
   line-height: 1.66;
   letter-spacing: 0.05em;
   color: $main-text-color;
@@ -66,6 +66,16 @@ body {
   color: $placeholder-color;
 }
 
+//styleName: Heading / H6;
+
+@mixin font-footer-contact {
+  font-size: 16px;
+  font-weight: $fw-regular;
+  line-height: 1.66;
+  letter-spacing: 0.1em;
+  color: $black-color;
+}
+
 //styleName: Heading / H9;
 
 @mixin font-latest-category {
@@ -74,6 +84,15 @@ body {
   line-height: 1.66;
   letter-spacing: 0.1em;
   color: $placeholder-color;
+}
+
+//styleName: Heading / H9;
+@mixin font-copiright {
+  font-size: 12px;
+  font-weight: $fw-regular;
+  line-height: 1.66;
+  letter-spacing: 0.1em;
+  color: $black-color;
 }
 
 // Heading / H3 ???
@@ -117,4 +136,5 @@ body {
   font-weight: $fw-regular;
   line-height: 1.68;
   letter-spacing: 0.05em;
+  color: $main-text-color;
 }
