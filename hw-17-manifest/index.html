@@ -9,33 +9,41 @@
   <body>
     <div class="root">
       <header class="header">
-        <div class="container header__inner">
-          <div>
+        <!-- <div class="container header__inner"> -->
+        <!-- <div class=""> -->
+        <nav class="container header__nav">
+          <input
+            type="checkbox"
+            name="burger-checkbox"
+            id="burger-checkbox"
+            class="header__checkbox"
+          />
+          <div class="logo">
             <a href="#">
               <svg class="header__logo-icon">
                 <use xlink:href="./public/svg/sprite.svg#logo" />
               </svg>
             </a>
           </div>
-          <nav class="header__nav">
-            <ul class="header__nav-list">
-              <li class="header__list-item">
-                <a href="#" class="header__nav-link">home</a>
-              </li>
-              <li class="header__list-item">
-                <a href="#" class="header__nav-link">about</a>
-              </li>
-              <li class="header__list-item">
-                <a href="#" class="header__nav-link">works</a>
-              </li>
-              <li class="header__list-item">
-                <a href="#" class="header__nav-link">blog</a>
-              </li>
-              <li class="header__list-item">
-                <a href="#" class="header__nav-link">contact</a>
-              </li>
-            </ul>
-          </nav>
+
+          <ul class="header__nav-list">
+            <li class="header__list-item">
+              <a href="#" class="header__nav-link">home</a>
+            </li>
+            <li class="header__list-item">
+              <a href="#" class="header__nav-link">about</a>
+            </li>
+            <li class="header__list-item">
+              <a href="#" class="header__nav-link">works</a>
+            </li>
+            <li class="header__list-item">
+              <a href="#" class="header__nav-link">blog</a>
+            </li>
+            <li class="header__list-item">
+              <a href="#" class="header__nav-link">contact</a>
+            </li>
+          </ul>
+
           <div class="header__nav-bar">
             <form
               action="#"
@@ -57,9 +65,16 @@
                 />
               </div>
             </form>
+            <div class="header__burger">
+              <label class="header__burger-label" for="burger-checkbox">
+                <span class="header__line"></span>
+              </label>
+            </div>
           </div>
-        </div>
+        </nav>
+        <!-- </div> -->
       </header>
+
       <main class="main">
         <section class="hero">
           <div class="container hero__text">

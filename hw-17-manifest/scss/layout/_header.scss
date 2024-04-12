@@ -5,25 +5,26 @@
   @include flex(column, center);
   @extend %full-width;
   position: relative;
-  padding: 40px 0;
-
-  &__inner {
-    @include flex($alignment: center, $justification: space-between);
-  }
+  padding-top: 37px;
+  padding-bottom: 36px;
 
   &__logo-icon {
-    width: 141.79px;
+    width: 142px;
     height: 12px;
   }
 
   &__nav {
-    margin-left: auto;
+    @include flex($alignment: center, $justification: space-between);
+  }
+
+  &__checkbox {
+    display: none;
   }
 
   &__nav-list {
-    @include flex($alignment: center, $justification: space-around);
+    @include flex($alignment: center, $justification: flex-end);
     @extend %full-width;
-    gap: 20px;
+    gap: 24px;
   }
 
   &__list-item {
@@ -33,13 +34,13 @@
   &__nav-link {
     position: relative;
     display: inline-block;
-    padding: 5px;
+    padding: 5px 7px;
 
     &:active::after {
       content: "";
       position: absolute;
       bottom: 0;
-      left: calc(50% - 22px);
+      left: calc(50% - 21px);
       height: 1px;
       width: 40px;
       background: $black-color;
@@ -47,6 +48,7 @@
   }
 
   &__nav-bar {
+    @include flex($alignment: center);
     margin-left: 85px;
   }
 
@@ -59,13 +61,10 @@
   }
 
   &__input {
-    // @extend %full-width;
     width: 0;
     border: none;
     border-bottom: 1px solid $black-color;
     padding-right: 0;
-    // padding-right: 25px;
-    // display: none;
     padding-left: 0;
     opacity: 0;
 
@@ -77,18 +76,18 @@
   &__search-btn:focus + &__input {
     @include transition(opacity 0.5s ease-in-out);
     @extend %full-width;
-    // display: block;
     padding-right: 25px;
     opacity: 1;
   }
 
   &__search-btn {
     position: absolute;
+    top: 2px;
     right: 0;
     border: none;
     outline: none;
     padding: 0 0 0 10px;
-    background: $white-color;
+    background: transparent;
     box-sizing: border-box;
     z-index: 1;
   }
@@ -97,5 +96,88 @@
     width: 17px;
     height: 16px;
     fill: $black-color;
+  }
+}
+
+// media
+
+@include for-tablet-landscape-down {
+  .header {
+    &__burger {
+      display: inline-block;
+      height: 20px;
+      padding: 15px 0 15px 15px;
+      margin-left: 34px;
+    }
+
+    &__burger-label {
+      display: block;
+      position: relative;
+      height: 20px;
+      cursor: pointer;
+    }
+
+    &__line {
+      display: block;
+      width: 34px;
+      height: 2px;
+      background: $black-color;
+
+      &::before {
+        position: absolute;
+        content: "";
+        top: 8px;
+        width: 34px;
+        height: 2px;
+        background: $black-color;
+      }
+
+      &::after {
+        position: absolute;
+        content: "";
+        bottom: 1px;
+        width: 34px;
+        height: 2px;
+        background: $black-color;
+      }
+    }
+
+    &__nav-list {
+      @include flex(column, flex-end);
+      position: absolute;
+      top: 123px;
+      left: 0;
+      width: 100%;
+      height: calc(100vh - 100px);
+      background: linear-gradient($button-hover-color, transparent);
+      padding: 15px 8px;
+      box-sizing: border-box;
+      z-index: 10;
+      opacity: 0;
+    }
+
+    &__nav-link {
+      margin-bottom: 20px;
+    }
+
+    &__nav-link,
+    &__nav-link:visited,
+    &__nav-link:active {
+      color: $white-color;
+    }
+
+    &__nav-link:active::after {
+      background: $white-color;
+    }
+
+    &__checkbox:checked ~ &__nav-list {
+      @include transition(all 0.5ms ease-in-out);
+      opacity: 1;
+    }
+
+    &:has(input:checked) + .main .hero__text {
+      @include transition(all 0.5ms ease-in-out);
+      opacity: 0;
+    }
   }
 }
