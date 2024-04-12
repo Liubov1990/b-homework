@@ -7,7 +7,7 @@ body {
   }
 }
 
-@mixin font-list-regular {
+@mixin font-navigation-regular {
   font-size: 14px;
   font-weight: $fw-regular;
   line-height: 1.2;
@@ -16,7 +16,7 @@ body {
   color: $black-color;
 }
 
-@mixin font-search-placeholder {
+@mixin font-placeholder-regular {
   font-size: 12px;
   font-weight: $fw-regular;
   line-height: 1.66;

@@ -19,8 +19,13 @@ body {
 .container {
   @extend %full-width;
   max-width: 1200px;
-  padding: 0 15px;
+  padding: 0 34px;
   box-sizing: border-box;
+
+  @include for-phone-only {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
 }
 
 .main {

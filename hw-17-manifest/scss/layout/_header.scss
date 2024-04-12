@@ -8,9 +8,21 @@
   padding-top: 37px;
   padding-bottom: 36px;
 
+  // media
+  @include for-tablet-landscape-down {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
+
   &__logo-icon {
     width: 142px;
     height: 12px;
+
+    // media
+    @include for-tablet-landscape-down {
+      width: 145px;
+      height: 13px;
+    }
   }
 
   &__nav {
@@ -21,14 +33,44 @@
     display: none;
   }
 
+  // media
+  @include for-tablet-landscape-down {
+    // show nav list
+    &__checkbox:checked ~ &__nav-list {
+      @include transition(all 0.5ms ease-in-out);
+      opacity: 1;
+    }
+
+    // hide hero text on nav list show
+    &:has(&__checkbox:checked) + .main .hero__text {
+      @include transition(all 0.5ms ease-in-out);
+      opacity: 0;
+    }
+  }
+
   &__nav-list {
     @include flex($alignment: center, $justification: flex-end);
     @extend %full-width;
     gap: 24px;
+
+    // media
+    @include for-tablet-landscape-down {
+      @include flex(column, flex-end);
+      position: absolute;
+      top: 60px;
+      left: 0;
+      width: 100%;
+      height: calc(100vh - 100px);
+      background: linear-gradient($button-hover-color, transparent);
+      padding: 22px;
+      box-sizing: border-box;
+      z-index: 10;
+      opacity: 0;
+    }
   }
 
   &__list-item {
-    @include font-list-regular;
+    @include font-navigation-regular;
   }
 
   &__nav-link {
@@ -37,25 +79,43 @@
     padding: 5px 7px;
 
     &:active::after {
-      content: "";
       position: absolute;
+      content: "";
       bottom: 0;
       left: calc(50% - 21px);
       height: 1px;
       width: 40px;
       background: $black-color;
     }
+
+    //  media
+    @include for-tablet-landscape-down {
+      color: $white-color;
+      margin-bottom: 20px;
+
+      &:visited,
+      &:active {
+        color: $white-color;
+      }
+
+      &:active::after {
+        background: $white-color;
+      }
+    }
   }
 
   &__nav-bar {
     @include flex($alignment: center);
     margin-left: 85px;
+
+    @include for-tablet-landscape-down {
+      margin-left: 20px;
+    }
   }
 
   &__search-wrap {
     @include flex($alignment: center);
     position: relative;
-    max-width: 178px;
     padding-left: 5px;
     box-sizing: border-box;
   }
@@ -69,15 +129,8 @@
     opacity: 0;
 
     &::placeholder {
-      @include font-search-placeholder;
+      @include font-placeholder-regular;
     }
-  }
-
-  &__search-btn:focus + &__input {
-    @include transition(opacity 0.5s ease-in-out);
-    @extend %full-width;
-    padding-right: 25px;
-    opacity: 1;
   }
 
   &__search-btn {
@@ -86,28 +139,47 @@
     right: 0;
     border: none;
     outline: none;
-    padding: 0 0 0 10px;
     background: transparent;
+    padding: 0 0 0 10px;
     box-sizing: border-box;
     z-index: 1;
+
+    // media
+    @include for-tablet-landscape-down {
+      top: -1px;
+    }
+  }
+
+  // show input preview
+  &__search-btn:focus + &__input {
+    @include transition(opacity 0.5ms ease-in-out);
+    width: 178px;
+    padding-right: 25px;
+    opacity: 1;
   }
 
   &__search-lens {
     width: 17px;
     height: 16px;
     fill: $black-color;
+
+    // media
+    @include for-tablet-landscape-down {
+      width: 22px;
+      height: 22px;
+    }
   }
-}
 
-// media
-
-@include for-tablet-landscape-down {
-  .header {
+  @include for-tablet-landscape-down {
     &__burger {
       display: inline-block;
       height: 20px;
       padding: 15px 0 15px 15px;
-      margin-left: 34px;
+      margin-left: 24px;
+
+      @include for-phone-only {
+        margin-left: 20px;
+      }
     }
 
     &__burger-label {
@@ -119,65 +191,28 @@
 
     &__line {
       display: block;
-      width: 34px;
-      height: 2px;
-      background: $black-color;
 
-      &::before {
-        position: absolute;
-        content: "";
-        top: 8px;
+      &,
+      &::before,
+      &::after {
         width: 34px;
         height: 2px;
         background: $black-color;
       }
 
+      &::before,
       &::after {
         position: absolute;
         content: "";
-        bottom: 1px;
-        width: 34px;
-        height: 2px;
-        background: $black-color;
       }
-    }
 
-    &__nav-list {
-      @include flex(column, flex-end);
-      position: absolute;
-      top: 123px;
-      left: 0;
-      width: 100%;
-      height: calc(100vh - 100px);
-      background: linear-gradient($button-hover-color, transparent);
-      padding: 15px 8px;
-      box-sizing: border-box;
-      z-index: 10;
-      opacity: 0;
-    }
+      &::before {
+        top: 8px;
+      }
 
-    &__nav-link {
-      margin-bottom: 20px;
-    }
-
-    &__nav-link,
-    &__nav-link:visited,
-    &__nav-link:active {
-      color: $white-color;
-    }
-
-    &__nav-link:active::after {
-      background: $white-color;
-    }
-
-    &__checkbox:checked ~ &__nav-list {
-      @include transition(all 0.5ms ease-in-out);
-      opacity: 1;
-    }
-
-    &:has(input:checked) + .main .hero__text {
-      @include transition(all 0.5ms ease-in-out);
-      opacity: 0;
+      &::after {
+        bottom: 1px;
+      }
     }
   }
 }
