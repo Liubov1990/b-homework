@@ -108,3 +108,13 @@ body {
   letter-spacing: 0.1em;
   color: $black-color;
 }
+
+//styleName: Heading / H4;
+
+@mixin font-vacancies-paragraph {
+  font-family: Lato;
+  font-size: 19px;
+  font-weight: $fw-regular;
+  line-height: 1.68;
+  letter-spacing: 0.05em;
+}

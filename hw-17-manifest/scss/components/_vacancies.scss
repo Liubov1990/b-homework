@@ -1,0 +1,35 @@
+@use "../abstracts" as *;
+@use "../base/typography" as *;
+
+.vacancies {
+  @include flex(column, center);
+  @extend %full-width;
+  margin-bottom: 90px;
+
+  &__inner {
+    @include flex($justification: space-between);
+    @extend %full-width;
+  }
+
+  &__list-wrap {
+    padding-right: 10px;
+    margin-bottom: 35px;
+  }
+
+  &__list-link {
+    @include font-post-title;
+  }
+
+  &__description {
+    @extend %full-width;
+    max-width: 470px;
+    padding-left: 10px;
+  }
+
+  &__paragraph {
+    @include font-vacancies-paragraph;
+    &:first-child {
+      margin-bottom: 35px;
+    }
+  }
+}
