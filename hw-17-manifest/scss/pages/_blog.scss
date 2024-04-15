@@ -12,8 +12,13 @@
   }
 
   &__heading {
-    @include font-heading1-semibold;
+    @include font-heading1-regular;
     align-self: flex-start;
-    margin-bottom: 45px;
+    margin-bottom: 50px;
+
+    // media
+    // @include for-tablet-portrait-down {
+    //   align-self: center;
+    // }
   }
 }

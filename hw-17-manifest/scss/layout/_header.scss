@@ -33,21 +33,6 @@
     display: none;
   }
 
-  // media
-  @include for-tablet-landscape-down {
-    // show nav list
-    &__checkbox:checked ~ &__nav-list {
-      @include transition(all 0.5ms ease-in-out);
-      opacity: 1;
-    }
-
-    // hide hero text on nav list show
-    &:has(&__checkbox:checked) + .main .hero__text {
-      @include transition(all 0.5ms ease-in-out);
-      opacity: 0;
-    }
-  }
-
   &__nav-list {
     @include flex($alignment: center, $justification: flex-end);
     @extend %full-width;
@@ -110,6 +95,11 @@
 
     @include for-tablet-landscape-down {
       margin-left: 20px;
+      gap: 24px;
+    }
+
+    @include for-phone-only {
+      gap: 5px;
     }
   }
 
@@ -150,14 +140,6 @@
     }
   }
 
-  // show input preview
-  &__search-btn:focus + &__input {
-    @include transition(opacity 0.5ms ease-in-out);
-    width: 178px;
-    padding-right: 25px;
-    opacity: 1;
-  }
-
   &__search-lens {
     width: 17px;
     height: 16px;
@@ -170,49 +152,86 @@
     }
   }
 
-  @include for-tablet-landscape-down {
-    &__burger {
-      display: inline-block;
-      height: 20px;
-      padding: 15px 0 15px 15px;
-      margin-left: 24px;
+  &__burger {
+    padding: 15px 0 15px 15px;
+    display: none;
 
-      @include for-phone-only {
-        margin-left: 5px;
-      }
+    // media
+    @include for-tablet-landscape-down {
+      display: block;
+    }
+  }
+
+  &__burger-label {
+    display: block;
+    position: relative;
+    width: 34px;
+    height: 20px;
+    cursor: pointer;
+  }
+
+  &__line {
+    display: block;
+
+    &,
+    &::before,
+    &::after {
+      width: $full-width;
+      height: 2px;
+      background: $black-color;
     }
 
-    &__burger-label {
-      display: block;
-      position: relative;
-      height: 20px;
-      cursor: pointer;
+    &::before,
+    &::after {
+      position: absolute;
+      content: "";
     }
 
-    &__line {
-      display: block;
+    &::before {
+      top: 8px;
+    }
 
-      &,
-      &::before,
-      &::after {
-        width: 34px;
-        height: 2px;
-        background: $black-color;
-      }
+    &::after {
+      bottom: 1px;
+    }
+  }
 
-      &::before,
-      &::after {
-        position: absolute;
-        content: "";
-      }
+  // --- Actions --- //
 
-      &::before {
-        top: 8px;
-      }
+  // show nav list
+  &__checkbox:checked ~ &__nav-list {
+    @include transition(all 0.5ms ease-in-out);
+    opacity: 1;
+  }
 
-      &::after {
-        bottom: 1px;
-      }
+  // hide hero text on nav list show
+  &:has(.header__checkbox:checked) + .main .hero__text {
+    @include transition(all 0.5ms ease-in-out);
+    opacity: 0;
+  }
+
+  // show input preview
+  &__search-btn:focus + &__input {
+    @include transition(opacity 0.5ms ease-in-out);
+    width: 178px;
+    padding-right: 25px;
+    opacity: 1;
+  }
+
+  // cross burger
+  &__checkbox:checked ~ &__nav-bar &__burger-label {
+    top: 8px;
+  }
+
+  &__checkbox:checked ~ &__nav-bar &__line {
+    transform: rotate(45deg) translate(-1px, 0);
+
+    &::before {
+      opacity: 0;
+    }
+
+    &::after {
+      transform: rotate(-90deg) translate(-1px, 0);
     }
   }
 }

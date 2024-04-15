@@ -19,8 +19,8 @@ body {
 
 .container {
   @extend %full-width;
-  max-width: 1200px;
-  padding: 0 15px;
+  max-width: 1238px;
+  padding: 0 34px;
   box-sizing: border-box;
 
   @include for-phone-only {

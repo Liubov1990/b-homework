@@ -36,6 +36,15 @@ body {
   color: $black-color;
 }
 
+@mixin font-heading1-regular {
+  font-family: "Red Hat Display", sans-serif;
+  font-size: 48px;
+  font-weight: $fw-semi-bold;
+  line-height: 1.33;
+  letter-spacing: 0.05em;
+  color: $black-color;
+}
+
 // Heading / H2 ???
 
 @mixin font-heading2 {
@@ -59,7 +68,7 @@ body {
 
 //styleName: Heading / H6;
 
-@mixin font-post-category {
+@mixin font-category-regular {
   font-size: 16px;
   font-weight: $fw-regular;
   line-height: 1.66;
@@ -98,20 +107,9 @@ body {
 
 // Heading / H3 ???
 
-@mixin font-post-title {
+@mixin font-title-medium {
   font-family: "Red Hat Display", sans-serif;
   font-size: 23px;
-  font-weight: $fw-medium;
-  line-height: 1.66;
-  letter-spacing: 0.1em;
-  color: $black-color;
-}
-
-//
-
-@mixin font-latest-title {
-  font-family: "Red Hat Display", sans-serif;
-  font-size: 22px;
   font-weight: $fw-medium;
   line-height: 1.66;
   letter-spacing: 0.1em;

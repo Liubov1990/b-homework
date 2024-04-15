@@ -2,7 +2,7 @@
 @use "../base/typography" as *;
 
 .button {
-  @include font-post-category;
+  @include font-category-regular;
   display: inline;
   width: 180px;
   height: 45px;

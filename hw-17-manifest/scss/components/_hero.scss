@@ -13,17 +13,17 @@
   overflow: hidden;
 
   // media
-  @include for-tablet-portrait-up-to-laptop {
+  @include for-tablet-landscape-down {
     width: $full-width;
     background: url(./../public/images/tablet/hero.webp);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-  }
-  @include for-tablet-landscape-down {
+    // }
+    // @include for-tablet-landscape-down {
     height: $min-tablet-content-vh;
   }
-  @include for-tablet-portrait-down {
+  @include for-phone-only {
     width: $full-width;
     background: url(./../public/images/phone/hero_image.webp);
     background-repeat: no-repeat;

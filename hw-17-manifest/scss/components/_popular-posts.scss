@@ -23,6 +23,11 @@
     grid-auto-rows: auto;
     align-items: stretch;
     gap: 30px;
+
+    // media
+    @include for-tablet-landscape-down {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__post {

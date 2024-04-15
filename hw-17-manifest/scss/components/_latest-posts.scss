@@ -23,19 +23,43 @@
     grid-auto-rows: auto;
     align-items: stretch;
     gap: 30px;
+
+    // media
+    @include for-tablet-landscape-down {
+      grid-template-columns: 1fr;
+    }
   }
 
   &__post {
     @include flex(column);
     margin-bottom: 50px;
+
+    // media
+    @include for-tablet-landscape-down {
+      @include flex();
+
+      &:nth-of-type(2n) {
+        flex-direction: row-reverse;
+        justify-content: space-between;
+      }
+    }
   }
 
   &__image {
     margin-bottom: 25px;
+
+    // media
+    @include for-tablet-landscape-down {
+      width: 46%;
+    }
   }
 
   &__text-content-wrap {
     @include flex(column);
+    @include for-tablet-landscape-down {
+      width: 52%;
+      // padding-left: 20px;
+    }
   }
 
   &__info {
@@ -49,7 +73,7 @@
   }
 
   &__title {
-    @include font-latest-title;
+    @include font-title-medium;
     margin-bottom: 20px;
   }
 
