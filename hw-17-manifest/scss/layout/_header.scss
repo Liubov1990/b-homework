@@ -40,14 +40,16 @@
 
     // media
     @include for-tablet-landscape-down {
-      @include flex(column, flex-end);
+      @include flex(column, center);
       position: absolute;
       top: 60px;
       left: 0;
+      bottom: 0;
       width: 100%;
       height: $min-tablet-content-vh;
-      background: linear-gradient($button-hover-color, transparent);
-      padding: 22px;
+      gap: 15px;
+      background: $button-hover-color;
+      padding: 50px 25px;
       box-sizing: border-box;
       z-index: 10;
       opacity: 0;

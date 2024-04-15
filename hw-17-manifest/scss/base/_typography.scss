@@ -24,8 +24,8 @@ body {
   color: $placeholder-color;
 }
 
-//styleName: Heading / H1 ;
-
+//styleName: Heading / H1;
+// +
 @mixin font-heading1-semibold {
   @include responsive-font(30, 48);
   font-family: "Red Hat Display", sans-serif;
