@@ -1,0 +1,11 @@
+@use "../abstracts" as *;
+
+.arrow-icon {
+  width: 24px;
+  height: 12px;
+  fill: $placeholder-color;
+}
+
+.arrow--pl {
+  padding-left: 13px;
+}

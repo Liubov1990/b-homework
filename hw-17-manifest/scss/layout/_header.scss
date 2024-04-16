@@ -169,7 +169,10 @@
     position: relative;
     width: 34px;
     height: 20px;
-    cursor: pointer;
+
+    &:hover {
+      cursor: url(./../public/svg/cursor.svg), auto;
+    }
   }
 
   &__line {
@@ -227,6 +230,9 @@
 
   &__checkbox:checked ~ &__nav-bar &__line {
     transform: rotate(45deg) translate(-1px, 0);
+    transition-timing-function: ease;
+    transition-duration: 0.15s;
+    transition-property: transform;
 
     &::before {
       opacity: 0;
@@ -234,6 +240,9 @@
 
     &::after {
       transform: rotate(-90deg) translate(-1px, 0);
+      transition-timing-function: ease;
+      transition-duration: 0.15s;
+      transition-property: transform;
     }
   }
 }

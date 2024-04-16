@@ -30,11 +30,13 @@
 
   &:hover {
     @include transition(background 0.5s ease-in-out);
+    fill: $black-color;
     color: $black-color;
     background: none;
   }
 
-  .button--padding {
-    padding-left: 10px;
+  &:hover .arrow-icon {
+    @include transition(background 0.5s ease-in-out);
+    fill: $black-color;
   }
 }

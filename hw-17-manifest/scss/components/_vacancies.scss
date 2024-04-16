@@ -2,7 +2,7 @@
 @use "../base/typography" as *;
 
 .vacancies {
-  // @include flex(column, center);
+  @include flex(column, center);
   @extend %full-width;
   margin-bottom: 90px;
 
@@ -35,6 +35,14 @@
     @include for-phone-only {
       margin-bottom: 23px;
     }
+
+    .button {
+      transform: translateY(6px);
+
+      @include for-phone-only {
+        transform: translateY(1px);
+      }
+    }
   }
 
   &__list-link {
@@ -65,7 +73,7 @@
     max-width: 470px;
 
     &:first-child {
-      margin-bottom: 34px;
+      margin-bottom: 33px;
 
       // media
       @include for-tablet-landscape-down {

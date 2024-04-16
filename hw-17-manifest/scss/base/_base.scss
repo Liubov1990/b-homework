@@ -5,6 +5,7 @@ body {
   height: 100%;
   width: 100%;
   // font-size: $initial-font-size;
+  // font-size: calc(16px + 0.390625vw);
 }
 
 body {
@@ -48,4 +49,14 @@ a:focus {
 
 img {
   @include responsive-image;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active,
+a:focus,
+button:hover,
+button:focus {
+  cursor: url(./../public/svg/cursor.svg), auto;
 }

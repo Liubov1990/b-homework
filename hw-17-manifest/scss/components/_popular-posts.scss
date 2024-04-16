@@ -85,7 +85,7 @@
 
     @include for-tablet-landscape-down {
       @include font-title-latest-medium;
-      margin-bottom: 22px;
+      margin-bottom: 21px;
     }
 
     @include for-phone-only {
@@ -102,7 +102,7 @@
 
     // media
     @include for-tablet-landscape-down {
-      margin-top: 65px;
+      margin-top: 66px;
     }
     @include for-phone-only {
       margin-top: 111px;

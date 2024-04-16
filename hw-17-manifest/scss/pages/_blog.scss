@@ -5,7 +5,7 @@
   @include flex(column, center);
   @extend %full-width;
   padding-top: 90px;
-  padding-bottom: 90px;
+  padding-bottom: 91px;
 
   // media
   @include for-tablet-landscape-down {

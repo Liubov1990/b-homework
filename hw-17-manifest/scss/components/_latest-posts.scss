@@ -17,12 +17,20 @@
   &__all {
     @include flex($alignment: center, $justification: space-between);
     @extend %full-width;
-    margin-bottom: 31px;
+    margin-bottom: 32px;
 
     // media
+    @include for-tablet-landscape-down {
+      margin-bottom: 31px;
+    }
     @include for-phone-only {
       flex-direction: column;
       align-items: flex-start;
+      margin-bottom: 20px;
+    }
+
+    .button {
+      transform: translate(0px, -9px);
     }
   }
 
@@ -34,6 +42,7 @@
     // media
     @include for-phone-only {
       @include font-heading-lsp;
+      margin-bottom: 20px;
     }
   }
 
