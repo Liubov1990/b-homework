@@ -19,12 +19,12 @@
   }
 
   &__heading {
-    @include font-heading2;
+    @include font-heading2-semibold;
     text-transform: capitalize;
 
     // media
     @include for-phone-only {
-      @include font-heading-lsp;
+      @include font-heading2-semibold-spacing;
       margin-bottom: 12px;
     }
   }
@@ -59,14 +59,13 @@
 
     // media
     @include for-phone-only {
-      @include font-category-regular;
-      margin-bottom: 23px;
+      margin-bottom: 22px;
     }
   }
 
   &__info {
     @include flex($justification: space-between);
-    @include font-latest-category;
+    @include font-category-regular-small-f;
     margin-bottom: 20px;
 
     @include for-phone-only {
@@ -80,11 +79,13 @@
   }
 
   &__title {
-    @include font-popular-title;
+    @include font-popular-title-semibold;
     margin-bottom: 17px;
 
     @include for-tablet-landscape-down {
       @include font-title-latest-medium;
+      // @include responsive-font(18, 22);
+      // line-height: 1.2;
       margin-bottom: 21px;
     }
 
@@ -94,7 +95,8 @@
   }
 
   &__excerpt {
-    @include font-post-excerpt;
+    @include font-paragraph-regular;
+    // @include responsive-font(14, 16);
   }
 
   &__load-more {
@@ -102,10 +104,10 @@
 
     // media
     @include for-tablet-landscape-down {
-      margin-top: 66px;
+      margin-top: 67px;
     }
     @include for-phone-only {
-      margin-top: 111px;
+      margin-top: 112px;
     }
   }
 }

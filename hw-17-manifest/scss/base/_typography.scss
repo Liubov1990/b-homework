@@ -16,7 +16,7 @@ body {
   color: $black-color;
 }
 
-@mixin font-placeholder-regular {
+@mixin font-input-placeholder-regular {
   font-size: 12px;
   font-weight: $fw-regular;
   line-height: 1.66;
@@ -24,12 +24,9 @@ body {
   color: $placeholder-color;
 }
 
-//styleName: Heading / H1;
-// +
 @mixin font-heading1-semibold {
-  @include responsive-font(30, 48);
   font-family: "Red Hat Display", sans-serif;
-  // font-size: 48px;
+  font-size: 48px;
   font-weight: $fw-semi-bold;
   line-height: 1.33;
   letter-spacing: 0.05em;
@@ -45,9 +42,7 @@ body {
   color: $black-color;
 }
 
-// Heading / H2 ???
-
-@mixin font-heading2 {
+@mixin font-heading2-semibold {
   font-family: "Red Hat Display", sans-serif;
   font-size: 28px;
   font-weight: $fw-semi-bold;
@@ -56,26 +51,22 @@ body {
   color: $black-color;
 }
 
-@mixin font-heading-lsp {
+@mixin font-heading2-semibold-spacing {
   font-family: "Red Hat Display", sans-serif;
   font-size: 28px;
   font-weight: $fw-semi-bold;
-  line-height: 36px;
+  line-height: 1.28;
   letter-spacing: 0.05em;
   color: $black-color;
 }
 
-//styleName: Heading / H5;
-
-@mixin font-post-excerpt {
+@mixin font-paragraph-regular {
   font-size: 16px;
   font-weight: $fw-regular;
   line-height: 1.66;
   letter-spacing: 0.05em;
   color: $main-text-color;
 }
-
-//styleName: Heading / H6;
 
 @mixin font-category-regular {
   font-size: 16px;
@@ -85,19 +76,7 @@ body {
   color: $placeholder-color;
 }
 
-//styleName: Heading / H6;
-
-@mixin font-footer-contact {
-  font-size: 16px;
-  font-weight: $fw-regular;
-  line-height: 1.66;
-  letter-spacing: 0.1em;
-  color: $black-color;
-}
-
-//styleName: Heading / H9;
-
-@mixin font-latest-category {
+@mixin font-category-regular-small-f {
   font-size: 12px;
   font-weight: $fw-regular;
   line-height: 1.66;
@@ -105,16 +84,21 @@ body {
   color: $placeholder-color;
 }
 
-//styleName: Heading / H9;
-@mixin font-copiright {
-  font-size: 12px;
+@mixin font-contact-list-regular {
+  font-size: 16px;
   font-weight: $fw-regular;
   line-height: 1.66;
   letter-spacing: 0.1em;
   color: $black-color;
 }
 
-// Heading / H3 ???
+@mixin font-copiright-regular {
+  font-size: 12px;
+  font-weight: $fw-regular;
+  line-height: 1.66;
+  letter-spacing: 0.1em;
+  color: $black-color;
+}
 
 @mixin font-title-medium {
   font-family: "Red Hat Display", sans-serif;
@@ -143,8 +127,7 @@ body {
   color: $black-color;
 }
 
-//
-@mixin font-popular-title {
+@mixin font-popular-title-semibold {
   font-family: "Red Hat Display", sans-serif;
   font-size: 24px;
   font-weight: $fw-semi-bold;
@@ -162,10 +145,7 @@ body {
   color: $black-color;
 }
 
-//styleName: Heading / H4;
-
-@mixin font-vacancies-paragraph {
-  font-family: Lato;
+@mixin font-vacancies-paragraph-regular {
   font-size: 19px;
   font-weight: $fw-regular;
   line-height: 1.68;
@@ -173,8 +153,7 @@ body {
   color: $main-text-color;
 }
 
-@mixin font-vacancies-paragraph-sm-f {
-  font-family: Lato;
+@mixin font-vacancies-paragraph-regular-small-f {
   font-size: 18px;
   font-weight: $fw-regular;
   line-height: 1.77;

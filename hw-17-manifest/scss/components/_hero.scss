@@ -47,6 +47,7 @@
 
   &__heading {
     @include font-heading1-semibold;
+    @include responsive-font(30, 48);
 
     // media
     @include for-phone-only {

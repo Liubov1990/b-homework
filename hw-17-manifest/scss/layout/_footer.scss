@@ -29,7 +29,6 @@
 
     @include for-phone-only {
       @include responsive-font(32, 48);
-      margin-bottom: 20px;
     }
   }
 
@@ -58,7 +57,7 @@
   }
 
   &__contact-link {
-    @include font-footer-contact;
+    @include font-contact-list-regular;
 
     @include for-phone-only {
       font-size: 18px;
@@ -80,7 +79,7 @@
   }
 
   &__copiright {
-    @include font-copiright;
+    @include font-copiright-regular;
     text-align: center;
     transform: translateX(-3px);
 

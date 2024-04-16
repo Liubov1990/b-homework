@@ -6,12 +6,12 @@
   @extend %full-width;
   margin-bottom: 113px;
 
+  // media
   @include for-tablet-landscape-down {
     margin-bottom: 41px;
   }
-
   @include for-phone-only {
-    margin-bottom: 54px;
+    margin-bottom: 56px;
   }
 
   &__all {
@@ -35,13 +35,13 @@
   }
 
   &__heading {
-    @include font-heading2;
+    @include font-heading2-semibold;
     text-transform: capitalize;
     margin-bottom: 10px;
 
     // media
     @include for-phone-only {
-      @include font-heading-lsp;
+      @include font-heading2-semibold-spacing;
       margin-bottom: 20px;
     }
   }
@@ -93,6 +93,7 @@
       }
     }
 
+    // media
     @include for-phone-only {
       @include flex(column);
       margin-bottom: 13px;
@@ -101,10 +102,12 @@
 
   &__picture {
     display: block;
-    flex-basis: 48.7%;
     margin-bottom: 25px;
 
     // media
+    @include for-tablet-landscape-down {
+      flex-basis: 48.7%;
+    }
     @include for-phone-only {
       margin-bottom: 7px;
     }
@@ -120,9 +123,10 @@
 
   &__info {
     @include flex($justification: space-between);
-    @include font-latest-category;
+    @include font-category-regular-small-f;
     margin-bottom: 25px;
 
+    // media
     @include for-phone-only {
       @include font-category-regular;
       margin-bottom: 24px;
@@ -137,13 +141,22 @@
     @include font-title-latest-medium;
     margin-bottom: 17px;
 
+    // media
+    // @include for-tablet-landscape-down {
+    //   @include responsive-font(18, 22);
+    //   line-height: 1.2;
+    // }
     @include for-phone-only {
       margin-bottom: 15px;
     }
   }
 
   &__excerpt {
-    @include font-post-excerpt;
+    @include font-paragraph-regular;
     word-spacing: 0.6px;
+
+    @include for-tablet-landscape-down {
+      // @include responsive-font(14, 16);
+    }
   }
 }

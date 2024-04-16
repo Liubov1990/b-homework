@@ -121,7 +121,7 @@
     opacity: 0;
 
     &::placeholder {
-      @include font-placeholder-regular;
+      @include font-input-placeholder-regular;
     }
   }
 

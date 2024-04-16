@@ -4,18 +4,13 @@ html,
 body {
   height: 100%;
   width: 100%;
-  // font-size: $initial-font-size;
-  // font-size: calc(16px + 0.390625vw);
+  // font-size: calc(15px + 0.390625vw);
 }
 
 body {
   @include fonts();
   background: $white-color;
   min-height: $min-content-vh;
-}
-
-.root {
-  //   @include flex(column, center);
 }
 
 .container {

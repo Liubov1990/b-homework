@@ -3,20 +3,21 @@
 
 .posts {
   @include flex(column, center);
-  padding-bottom: 40px;
+  padding-bottom: 90px;
+  gap: 50px;
 
   // media
   @include for-tablet-landscape-down {
-    padding-bottom: 20px;
+    padding-bottom: 64px;
   }
   @include for-phone-only {
     padding-bottom: 14px;
+    gap: 0;
   }
 
   &__post {
     @include flex($alignment: center);
     width: 100%;
-    margin-bottom: 50px;
     gap: 30px;
 
     &:nth-of-type(2n) {
@@ -80,7 +81,7 @@
   &__category {
     @include font-category-regular;
     text-transform: capitalize;
-    margin-bottom: 23px;
+    margin-bottom: 24px;
 
     // media
     @include for-phone-only {
@@ -93,6 +94,11 @@
     margin-bottom: 9px;
 
     // media
+    // @include for-tablet-landscape-down {
+    //   @include responsive-font(19, 23);
+    //   line-height: 1.2;
+    // }
+
     @include for-phone-only {
       @include responsive-font(22, 23);
       margin-bottom: 12px;
@@ -105,7 +111,7 @@
 
     // media
     @include for-tablet-landscape-down {
-      margin-bottom: 0;
+      margin-bottom: 15px;
     }
     @include for-phone-only {
       margin-bottom: 38px;
@@ -113,6 +119,10 @@
   }
 
   &__excerpt {
-    @include font-post-excerpt;
+    @include font-paragraph-regular;
+
+    @include for-tablet-landscape-down {
+      // @include responsive-font(14, 16);
+    }
   }
 }

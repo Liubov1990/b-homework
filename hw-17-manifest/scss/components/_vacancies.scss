@@ -69,7 +69,7 @@
   }
 
   &__paragraph {
-    @include font-vacancies-paragraph;
+    @include font-vacancies-paragraph-regular;
     max-width: 470px;
 
     &:first-child {
@@ -87,9 +87,11 @@
     // media
     @include for-tablet-landscape-down {
       max-width: 626px;
+      text-align: right;
     }
     @include for-phone-only {
-      @include font-vacancies-paragraph-sm-f;
+      @include font-vacancies-paragraph-regular-small-f;
+      text-align: left;
       // @include responsive-font(18, 19);
     }
   }
