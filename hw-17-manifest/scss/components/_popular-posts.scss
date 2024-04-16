@@ -4,17 +4,29 @@
 .popular {
   @include flex(column, center);
   @extend %full-width;
-  margin-bottom: 90px;
 
   &__all {
     @include flex($alignment: center, $justification: space-between);
     @extend %full-width;
-    margin-bottom: 30px;
+    margin-bottom: 45px;
+
+    // media
+    @include for-phone-only {
+      flex-direction: column;
+      align-items: flex-start;
+      margin-bottom: 29px;
+    }
   }
 
   &__heading {
     @include font-heading2;
     text-transform: capitalize;
+
+    // media
+    @include for-phone-only {
+      @include font-heading-lsp;
+      margin-bottom: 12px;
+    }
   }
 
   &__posts {
@@ -26,36 +38,74 @@
 
     // media
     @include for-tablet-landscape-down {
+      gap: 20px;
+    }
+    @include for-phone-only {
       grid-template-columns: 1fr;
     }
   }
 
   &__post {
     @include flex(column);
-    margin-bottom: 50px;
+
+    @include for-phone-only {
+      margin-bottom: 30px;
+    }
   }
 
-  &__image {
-    margin-bottom: 25px;
+  &__picture {
+    display: block;
+    margin-bottom: 21px;
+
+    // media
+    @include for-phone-only {
+      @include font-category-regular;
+      margin-bottom: 23px;
+    }
   }
 
   &__info {
     @include flex($justification: space-between);
     @include font-latest-category;
     margin-bottom: 20px;
+
+    @include for-phone-only {
+      @include font-category-regular;
+      margin-bottom: 12px;
+    }
   }
 
   &__category {
-    @include font-latest-category;
     text-transform: capitalize;
   }
 
   &__title {
     @include font-popular-title;
-    margin-bottom: 20px;
+    margin-bottom: 17px;
+
+    @include for-tablet-landscape-down {
+      @include font-title-latest-medium;
+      margin-bottom: 22px;
+    }
+
+    @include for-phone-only {
+      margin-bottom: 12px;
+    }
   }
 
   &__excerpt {
     @include font-post-excerpt;
+  }
+
+  &__load-more {
+    margin-top: 54px;
+
+    // media
+    @include for-tablet-landscape-down {
+      margin-top: 65px;
+    }
+    @include for-phone-only {
+      margin-top: 111px;
+    }
   }
 }

@@ -90,16 +90,20 @@
             <!-- Posts -->
             <div class="posts">
               <article class="posts__post">
-                <picture class="posts__image">
+                <picture class="posts__picture">
                   <source
                     srcset="./public/images/desktop/arrow_1.webp"
-                    media="(min-width: 1024px)"
+                    media="(min-width: 901px)"
                   />
                   <source
                     srcset="./public/images/tablet/arrow_1.webp"
-                    media="(min-width: 768px) and (max-width: 1023px)"
+                    media="(min-width: 599px) and (max-width: 900px)"
                   />
-                  <img src="./public/images/phone/arrow_1.webp" alt="Arrow" />
+                  <img
+                    src="./public/images/phone/arrow_1.webp"
+                    alt="Arrow"
+                    class="posts__image"
+                  />
                 </picture>
                 <div class="posts__text-content-wrap">
                   <div class="posts__text-content">
@@ -122,16 +126,20 @@
                 </div>
               </article>
               <article class="posts__post">
-                <picture class="posts__image">
+                <picture class="posts__picture">
                   <source
                     srcset="./public/images/desktop/blog.webp"
-                    media="(min-width: 1024px)"
+                    media="(min-width: 901px)"
                   />
                   <source
                     srcset="./public/images/tablet/blog.webp"
-                    media="(min-width: 768px) and (max-width: 1023px)"
+                    media="(min-width: 599px) and (max-width: 900px)"
                   />
-                  <img src="./public/images/phone/blog.webp" alt="Blog" />
+                  <img
+                    src="./public/images/phone/blog.webp"
+                    alt="Blog"
+                    class="posts__image"
+                  />
                 </picture>
                 <div class="posts__text-content-wrap">
                   <div class="posts__text-content">
@@ -160,19 +168,19 @@
               <div class="latest__all">
                 <h2 class="latest__heading">Latest Posts</h2>
                 <button type="button" class="button button--transparent">
-                  Wiew All<span class="button--padding">&rarr;</span>
+                  View All<span class="button--padding">&rarr;</span>
                 </button>
               </div>
               <div class="latest__posts">
                 <article class="latest__post">
-                  <picture class="latest__image">
+                  <picture class="latest__picture">
                     <source
                       srcset="./public/images/desktop/lamp_white.webp"
-                      media="(min-width: 1024px)"
+                      media="(min-width: 901px)"
                     />
                     <source
                       srcset="./public/images/tablet/lamp_white.webp"
-                      media="(min-width: 768px) and (max-width: 1023px)"
+                      media="(min-width: 599px) and (max-width: 900px)"
                     />
                     <img
                       src="./public/images/phone/lamp_white.webp"
@@ -194,14 +202,14 @@
                   </div>
                 </article>
                 <article class="latest__post">
-                  <picture class="latest__image">
+                  <picture class="latest__picture">
                     <source
                       srcset="./public/images/desktop/arrow_2.webp"
-                      media="(min-width: 1024px)"
+                      media="(min-width: 901px)"
                     />
                     <source
                       srcset="./public/images/tablet/arrow_2.webp"
-                      media="(min-width: 768px) and (max-width: 1023px)"
+                      media="(min-width: 599px) and (max-width: 900px)"
                     />
                     <img src="./public/images/phone/arrow_2.webp" alt="Arrow" />
                   </picture>
@@ -222,14 +230,14 @@
                   </div>
                 </article>
                 <article class="latest__post">
-                  <picture class="latest__image">
+                  <picture class="latest__picture">
                     <source
                       srcset="./public/images/desktop/roof.webp"
-                      media="(min-width: 1024px)"
+                      media="(min-width: 901px)"
                     />
                     <source
                       srcset="./public/images/tablet/roof.webp"
-                      media="(min-width: 768px) and (max-width: 1023px)"
+                      media="(min-width: 599px) and (max-width: 900px)"
                     />
                     <img src="./public/images/phone/roof.webp" alt="Roof" />
                   </picture>
@@ -255,12 +263,12 @@
               <div class="popular__all">
                 <h2 class="popular__heading">The Most Popular</h2>
                 <button type="button" class="button button--transparent">
-                  Wiew All<span class="button--padding">&rarr;</span>
+                  View All<span class="button--padding">&rarr;</span>
                 </button>
               </div>
               <div class="popular__posts">
                 <article class="popular__post">
-                  <picture class="popular__image">
+                  <picture class="popular__picture">
                     <source
                       srcset="./public/images/desktop/lamp_orange.webp"
                       media="(min-width: 1024px)"
@@ -293,7 +301,7 @@
                   </div>
                 </article>
                 <article class="popular__post">
-                  <picture class="popular__image">
+                  <picture class="popular__picture">
                     <source
                       srcset="./public/images/desktop/wall.webp"
                       media="(min-width: 1024px)"
@@ -361,9 +369,9 @@
 
       <footer class="footer">
         <div class="container footer__inner">
+          <h2 class="footer__heading">Need a project?</h2>
           <div class="footer__contacts">
             <div class="footer__list-wrap">
-              <h2 class="footer__heading">Need a project?</h2>
               <ul class="footer__contacts-list">
                 <li class="footer__contacts-item">
                   <a

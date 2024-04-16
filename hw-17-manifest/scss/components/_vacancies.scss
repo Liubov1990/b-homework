@@ -2,34 +2,87 @@
 @use "../base/typography" as *;
 
 .vacancies {
-  @include flex(column, center);
+  // @include flex(column, center);
   @extend %full-width;
   margin-bottom: 90px;
+
+  // media
+  @include for-tablet-landscape-down {
+    margin-bottom: 70px;
+  }
 
   &__inner {
     @include flex($justification: space-between);
     @extend %full-width;
+
+    // media
+    @include for-tablet-landscape-down {
+      flex-wrap: wrap;
+    }
   }
 
   &__list-wrap {
+    @include flex(column, $alignment: flex-start);
     padding-right: 10px;
     margin-bottom: 35px;
+
+    @include for-tablet-landscape-down {
+      flex-basis: 100%;
+      padding-right: 0;
+      margin-bottom: 42px;
+    }
+
+    @include for-phone-only {
+      margin-bottom: 23px;
+    }
   }
 
   &__list-link {
-    @include font-title-medium;
+    @include font-title-regular;
+
+    @include for-phone-only {
+      @include font-popular-title-regular;
+    }
   }
 
   &__description {
-    @extend %full-width;
-    max-width: 470px;
+    @include flex(column);
     padding-left: 10px;
+
+    @include for-tablet-landscape-down {
+      flex-direction: row-reverse;
+      flex-wrap: wrap;
+      padding-left: 0;
+    }
+
+    @include for-phone-only {
+      @include flex(column);
+    }
   }
 
   &__paragraph {
     @include font-vacancies-paragraph;
+    max-width: 470px;
+
     &:first-child {
-      margin-bottom: 35px;
+      margin-bottom: 34px;
+
+      // media
+      @include for-tablet-landscape-down {
+        margin-bottom: 21px;
+      }
+      @include for-phone-only {
+        margin-bottom: 21px;
+      }
+    }
+
+    // media
+    @include for-tablet-landscape-down {
+      max-width: 626px;
+    }
+    @include for-phone-only {
+      @include font-vacancies-paragraph-sm-f;
+      // @include responsive-font(18, 19);
     }
   }
 }

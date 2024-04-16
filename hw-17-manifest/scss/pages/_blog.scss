@@ -7,6 +7,12 @@
   padding-top: 90px;
   padding-bottom: 90px;
 
+  // media
+  @include for-tablet-landscape-down {
+    padding-top: 70px;
+    padding-bottom: 72px;
+  }
+
   &__inner {
     @include flex(column);
   }
@@ -16,9 +22,13 @@
     align-self: flex-start;
     margin-bottom: 50px;
 
+    @include for-phone-only {
+      margin-bottom: 56px;
+    }
+
     // media
-    // @include for-tablet-portrait-down {
-    //   align-self: center;
-    // }
+    @include for-phone-only {
+      align-self: center;
+    }
   }
 }

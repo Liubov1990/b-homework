@@ -37,9 +37,8 @@
 
 @mixin responsive-image {
   display: block;
-  max-width: 100%;
+  // max-width: 100%;
   width: 100%;
-  // min-width: 340px;
   height: auto;
 }
 
