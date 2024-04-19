@@ -1,0 +1,23 @@
+@use "./variables" as *;
+
+%rotate-elem {
+  transform: $rotate;
+}
+
+@mixin width-height($width: auto, $height: auto) {
+  width: $width;
+  height: $height;
+}
+
+@mixin flex($direction: row, $alignment: stretch, $justification: flex-start) {
+  display: flex;
+  flex-direction: $direction;
+  align-items: $alignment;
+  justify-content: $justification;
+}
+
+@for $i from 1 through $cards {
+  .cards__flip-card-item:nth-of-type(#{$i}) > .cards__flip-inner {
+    animation-delay: random() + s;
+  }
+}

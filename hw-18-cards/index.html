@@ -1,0 +1,1283 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS animations</title>
+
+    <link rel="stylesheet" href="./scss/index.min.css" />
+  </head>
+  <body>
+    <main class="main">
+      <div class="cards container">
+        <div class="cards__block">
+          <!-- A -->
+          <div class="cards__flip-card-item">
+            <div class="cards__flip-inner">
+              <div class="cards__flip-front">
+                <img src="./public/card.webp" class="cards__front-img" />
+              </div>
+              <div class="cards__flip-back">
+                <div class="cards__back-side-content">
+                  <span
+                    class="cards__back-identifier cards__back-identifier--grey"
+                    >A</span
+                  >
+                  <svg class="cards__back-icon cards__back-icon--grey">
+                    <use xlink:href="./public/sprite.svg#cards-clubs-icon" />
+                  </svg>
+                </div>
+                <div class="cards__back-main-content">
+                  <svg
+                    class="cards__back-icon cards__back-icon--grey cards__back-icon--big"
+                  >
+                    <use xlink:href="./public/sprite.svg#cards-clubs-icon" />
+                  </svg>
+                </div>
+                <div
+                  class="cards__back-side-content cards__back-side-content--revert"
+                >
+                  <span
+                    class="cards__back-identifier cards__back-identifier--grey cards__back-identifier--revert"
+                    >A</span
+                  >
+                  <svg
+                    class="cards__back-icon cards__back-icon--grey cards__back-icon--revert"
+                  >
+                    <use xlink:href="./public/sprite.svg#cards-clubs-icon" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cards__flip-card-item">
+            <div class="cards__flip-inner">
+              <div class="cards__flip-front">
+                <img src="./public/card.webp" class="cards__front-img" />
+              </div>
+              <div class="cards__flip-back">
+                <div class="cards__back-side-content">
+                  <span class="cards__back-identifier">A</span>
+                  <svg class="cards__back-icon">
+                    <use xlink:href="./public/sprite.svg#cards-diamonds-icon" />
+                  </svg>
+                </div>
+                <div class="cards__back-main-content">
+                  <svg class="cards__back-icon cards__back-icon--big">
+                    <use xlink:href="./public/sprite.svg#cards-diamonds-icon" />
+                  </svg>
+                </div>
+                <div
+                  class="cards__back-side-content cards__back-side-content--revert"
+                >
+                  <span
+                    class="cards__back-identifier cards__back-identifier--revert"
+                    >A</span
+                  >
+                  <svg class="cards__back-icon cards__back-icon--revert">
+                    <use xlink:href="./public/sprite.svg#cards-diamonds-icon" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cards__flip-card-item">
+            <div class="cards__flip-inner">
+              <div class="cards__flip-front">
+                <img src="./public/card.webp" class="cards__front-img" />
+              </div>
+              <div class="cards__flip-back">
+                <div class="cards__back-side-content">
+                  <span
+                    class="cards__back-identifier cards__back-identifier--grey"
+                    >A</span
+                  >
+                  <svg class="cards__back-icon cards__back-icon--grey">
+                    <use xlink:href="./public/sprite.svg#cards-spades-icon" />
+                  </svg>
+                </div>
+                <div class="cards__back-main-content">
+                  <svg
+                    class="cards__back-icon cards__back-icon--grey cards__back-icon--big"
+                  >
+                    <use xlink:href="./public/sprite.svg#cards-spades-icon" />
+                  </svg>
+                </div>
+                <div
+                  class="cards__back-side-content cards__back-side-content--revert"
+                >
+                  <span
+                    class="cards__back-identifier cards__back-identifier--grey cards__back-identifier--revert"
+                    >A</span
+                  >
+                  <svg
+                    class="cards__back-icon cards__back-icon--grey cards__back-icon--revert"
+                  >
+                    <use xlink:href="./public/sprite.svg#cards-spades-icon" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cards__flip-card-item">
+            <div class="cards__flip-inner">
+              <div class="cards__flip-front">
+                <img src="./public/card.webp" class="cards__front-img" />
+              </div>
+              <div class="cards__flip-back">
+                <div class="cards__back-side-content">
+                  <span class="cards__back-identifier">A</span>
+                  <svg class="cards__back-icon">
+                    <use xlink:href="./public/sprite.svg#cards-hearts-icon" />
+                  </svg>
+                </div>
+                <div class="cards__back-main-content">
+                  <svg class="cards__back-icon cards__back-icon--big">
+                    <use xlink:href="./public/sprite.svg#cards-hearts-icon" />
+                  </svg>
+                </div>
+                <div
+                  class="cards__back-side-content cards__back-side-content--revert"
+                >
+                  <span
+                    class="cards__back-identifier cards__back-identifier--revert"
+                    >A</span
+                  >
+                  <svg class="cards__back-icon cards__back-icon--revert">
+                    <use xlink:href="./public/sprite.svg#cards-hearts-icon" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 6 -->
+          <div class="cards__flip-card-item">
+            <div class="cards__flip-inner">
+              <div class="cards__flip-front">
+                <img src="./public/card.webp" class="cards__front-img" />
+              </div>
+              <div class="cards__flip-back">
+                <div class="cards__back-side-content">
+                  <span
+                    class="cards__back-identifier cards__back-identifier--grey"
+                    >6</span
+                  >
+                  <svg class="cards__back-icon cards__back-icon--grey">
+                    <use xlink:href="./public/sprite.svg#cards-clubs-icon" />
+                  </svg>
+                </div>
+                <div class="cards__back-main-content">
+                  <svg
+                    class="cards__back-icon cards__back-icon--grey cards__back-icon--big"
+                  >
+                    <use xlink:href="./public/sprite.svg#cards-clubs-icon" />
+                  </svg>
+                </div>
+                <div
+                  class="cards__back-side-content cards__back-side-content--revert"
+                >
+                  <span
+                    class="cards__back-identifier cards__back-identifier--grey cards__back-identifier--revert"
+                    >6</span
+                  >
+                  <svg
+                    class="cards__back-icon cards__back-icon--grey cards__back-icon--revert"
+                  >
+                    <use xlink:href="./public/sprite.svg#cards-clubs-icon" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cards__flip-card-item">
+            <div class="cards__flip-inner">
+              <div class="cards__flip-front">
+                <img src="./public/card.webp" class="cards__front-img" />
+              </div>
+              <div class="cards__flip-back">
+                <div class="cards__back-side-content">
+                  <span class="cards__back-identifier">6</span>
+                  <svg class="cards__back-icon">
+                    <use xlink:href="./public/sprite.svg#cards-diamonds-icon" />
+                  </svg>
+                </div>
+                <div class="cards__back-main-content">
+                  <svg class="cards__back-icon cards__back-icon--big">
+                    <use xlink:href="./public/sprite.svg#cards-diamonds-icon" />
+                  </svg>
+                </div>
+                <div
+                  class="cards__back-side-content cards__back-side-content--revert"
+                >
+                  <span
+                    class="cards__back-identifier cards__back-identifier--revert"
+                    >6</span
+                  >
+                  <svg class="cards__back-icon cards__back-icon--revert">
+                    <use xlink:href="./public/sprite.svg#cards-diamonds-icon" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cards__flip-card-item">
+            <div class="cards__flip-inner">
+              <div class="cards__flip-front">
+                <img src="./public/card.webp" class="cards__front-img" />
+              </div>
+              <div class="cards__flip-back">
+                <div class="cards__back-side-content">
+                  <span
+                    class="cards__back-identifier cards__back-identifier--grey"
+                    >6</span
+                  >
+                  <svg class="cards__back-icon cards__back-icon--grey">
+                    <use xlink:href="./public/sprite.svg#cards-spades-icon" />
+                  </svg>
+                </div>
+                <div class="cards__back-main-content">
+                  <svg
+                    class="cards__back-icon cards__back-icon--grey cards__back-icon--big"
+                  >
+                    <use xlink:href="./public/sprite.svg#cards-spades-icon" />
+                  </svg>
+                </div>
+                <div
+                  class="cards__back-side-content cards__back-side-content--revert"
+                >
+                  <span
+                    class="cards__back-identifier cards__back-identifier--grey cards__back-identifier--revert"
+                    >6</span
+                  >
+                  <svg
+                    class="cards__back-icon cards__back-icon--grey cards__back-icon--revert"
+                  >
+                    <use xlink:href="./public/sprite.svg#cards-spades-icon" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cards__flip-card-item">
+            <div class="cards__flip-inner">
+              <div class="cards__flip-front">
+                <img src="./public/card.webp" class="cards__front-img" />
+              </div>
+              <div class="cards__flip-back">
+                <div class="cards__back-side-content">
+                  <span class="cards__back-identifier">6</span>
+                  <svg class="cards__back-icon">
+                    <use xlink:href="./public/sprite.svg#cards-hearts-icon" />
+                  </svg>
+                </div>
+                <div class="cards__back-main-content">
+                  <svg class="cards__back-icon cards__back-icon--big">
+                    <use xlink:href="./public/sprite.svg#cards-hearts-icon" />
+                  </svg>
+                </div>
+                <div
+                  class="cards__back-side-content cards__back-side-content--revert"
+                >
+                  <span
+                    class="cards__back-identifier cards__back-identifier--revert"
+                    >6</span
+                  >
+                  <svg class="cards__back-icon cards__back-icon--revert">
+                    <use xlink:href="./public/sprite.svg#cards-hearts-icon" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 7 -->
+          <div class="cards__flip-card-item">
+            <div class="cards__flip-inner">
+              <div class="cards__flip-front">
+                <img src="./public/card.webp" class="cards__front-img" />
+              </div>
+              <div class="cards__flip-back">
+                <div class="cards__back-side-content">
+                  <span
+                    class="cards__back-identifier cards__back-identifier--grey cards__back-identifier--grey"
+                    >7</span
+                  >
+                  <svg
+                    class="cards__back-icon cards__back-icon--grey cards__back-icon--grey"
+                  >
+                    <use xlink:href="./public/sprite.svg#cards-clubs-icon" />
+                  </svg>
+                </div>
+                <div class="cards__back-main-content">
+                  <svg
+                    class="cards__back-icon cards__back-icon--grey cards__back-icon--grey cards__back-icon--big"
+                  >
+                    <use xlink:href="./public/sprite.svg#cards-clubs-icon" />
+                  </svg>
+                </div>
+                <div
+                  class="cards__back-side-content cards__back-side-content--revert"
+                >
+                  <span
+                    class="cards__back-identifier cards__back-identifier--grey cards__back-identifier--grey cards__back-identifier--revert"
+                    >7</span
+                  >
+                  <svg
+                    class="cards__back-icon cards__back-icon--grey cards__back-icon--revert"
+                  >
+                    <use xlink:href="./public/sprite.svg#cards-clubs-icon" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cards__flip-card-item">
+            <div class="cards__flip-inner">
+              <div class="cards__flip-front">
+                <img src="./public/card.webp" class="cards__front-img" />
+              </div>
+              <div class="cards__flip-back">
+                <div class="cards__back-side-content">
+                  <span class="cards__back-identifier">7</span>
+                  <svg class="cards__back-icon">
+                    <use xlink:href="./public/sprite.svg#cards-diamonds-icon" />
+                  </svg>
+                </div>
+                <div class="cards__back-main-content">
+                  <svg class="cards__back-icon cards__back-icon--big">
+                    <use xlink:href="./public/sprite.svg#cards-diamonds-icon" />
+                  </svg>
+                </div>
+                <div
+                  class="cards__back-side-content cards__back-side-content--revert"
+                >
+                  <span
+                    class="cards__back-identifier cards__back-identifier--revert"
+                    >7</span
+                  >
+                  <svg class="cards__back-icon cards__back-icon--revert">
+                    <use xlink:href="./public/sprite.svg#cards-diamonds-icon" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cards__flip-card-item">
+            <div class="cards__flip-inner">
+              <div class="cards__flip-front">
+                <img src="./public/card.webp" class="cards__front-img" />
+              </div>
+              <div class="cards__flip-back">
+                <div class="cards__back-side-content">
+                  <span
+                    class="cards__back-identifier cards__back-identifier--grey"
+                    >7</span
+                  >
+                  <svg class="cards__back-icon cards__back-icon--grey">
+                    <use xlink:href="./public/sprite.svg#cards-spades-icon" />
+                  </svg>
+                </div>
+                <div class="cards__back-main-content">
+                  <svg
+                    class="cards__back-icon cards__back-icon--grey cards__back-icon--big"
+                  >
+                    <use xlink:href="./public/sprite.svg#cards-spades-icon" />
+                  </svg>
+                </div>
+                <div
+                  class="cards__back-side-content cards__back-side-content--revert"
+                >
+                  <span
+                    class="cards__back-identifier cards__back-identifier--grey cards__back-identifier--revert"
+                    >7</span
+                  >
+                  <svg
+                    class="cards__back-icon cards__back-icon--grey cards__back-icon--revert"
+                  >
+                    <use xlink:href="./public/sprite.svg#cards-spades-icon" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cards__flip-card-item">
+            <div class="cards__flip-inner">
+              <div class="cards__flip-front">
+                <img src="./public/card.webp" class="cards__front-img" />
+              </div>
+              <div class="cards__flip-back">
+                <div class="cards__back-side-content">
+                  <span class="cards__back-identifier">7</span>
+                  <svg class="cards__back-icon">
+                    <use xlink:href="./public/sprite.svg#cards-hearts-icon" />
+                  </svg>
+                </div>
+                <div class="cards__back-main-content">
+                  <svg class="cards__back-icon cards__back-icon--big">
+                    <use xlink:href="./public/sprite.svg#cards-hearts-icon" />
+                  </svg>
+                </div>
+                <div
+                  class="cards__back-side-content cards__back-side-content--revert"
+                >
+                  <span
+                    class="cards__back-identifier cards__back-identifier--revert"
+                    >7</span
+                  >
+                  <svg class="cards__back-icon cards__back-icon--revert">
+                    <use xlink:href="./public/sprite.svg#cards-hearts-icon" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 8 -->
+          <div class="cards__flip-card-item">
+            <div class="cards__flip-inner">
+              <div class="cards__flip-front">
+                <img src="./public/card.webp" class="cards__front-img" />
+              </div>
+              <div class="cards__flip-back">
+                <div class="cards__back-side-content">
+                  <span
+                    class="cards__back-identifier cards__back-identifier--grey cards__back-identifier--grey"
+                    >8</span
+                  >
+                  <svg
+                    class="cards__back-icon cards__back-icon--grey cards__back-icon--grey"
+                  >
+                    <use xlink:href="./public/sprite.svg#cards-clubs-icon" />
+                  </svg>
+                </div>
+                <div class="cards__back-main-content">
+                  <svg
+                    class="cards__back-icon cards__back-icon--grey cards__back-icon--grey cards__back-icon--big"
+                  >
+                    <use xlink:href="./public/sprite.svg#cards-clubs-icon" />
+                  </svg>
+                </div>
+                <div
+                  class="cards__back-side-content cards__back-side-content--revert"
+                >
+                  <span
+                    class="cards__back-identifier cards__back-identifier--grey cards__back-identifier--grey cards__back-identifier--revert"
+                    >8</span
+                  >
+                  <svg
+                    class="cards__back-icon cards__back-icon--grey cards__back-icon--revert"
+                  >
+                    <use xlink:href="./public/sprite.svg#cards-clubs-icon" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cards__flip-card-item">
+            <div class="cards__flip-inner">
+              <div class="cards__flip-front">
+                <img src="./public/card.webp" class="cards__front-img" />
+              </div>
+              <div class="cards__flip-back">
+                <div class="cards__back-side-content">
+                  <span class="cards__back-identifier">8</span>
+                  <svg class="cards__back-icon">
+                    <use xlink:href="./public/sprite.svg#cards-diamonds-icon" />
+                  </svg>
+                </div>
+                <div class="cards__back-main-content">
+                  <svg class="cards__back-icon cards__back-icon--big">
+                    <use xlink:href="./public/sprite.svg#cards-diamonds-icon" />
+                  </svg>
+                </div>
+                <div
+                  class="cards__back-side-content cards__back-side-content--revert"
+                >
+                  <span
+                    class="cards__back-identifier cards__back-identifier--revert"
+                    >8</span
+                  >
+                  <svg class="cards__back-icon cards__back-icon--revert">
+                    <use xlink:href="./public/sprite.svg#cards-diamonds-icon" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cards__flip-card-item">
+            <div class="cards__flip-inner">
+              <div class="cards__flip-front">
+                <img src="./public/card.webp" class="cards__front-img" />
+              </div>
+              <div class="cards__flip-back">
+                <div class="cards__back-side-content">
+                  <span
+                    class="cards__back-identifier cards__back-identifier--grey"
+                    >8</span
+                  >
+                  <svg class="cards__back-icon cards__back-icon--grey">
+                    <use xlink:href="./public/sprite.svg#cards-spades-icon" />
+                  </svg>
+                </div>
+                <div class="cards__back-main-content">
+                  <svg
+                    class="cards__back-icon cards__back-icon--grey cards__back-icon--big"
+                  >
+                    <use xlink:href="./public/sprite.svg#cards-spades-icon" />
+                  </svg>
+                </div>
+                <div
+                  class="cards__back-side-content cards__back-side-content--revert"
+                >
+                  <span
+                    class="cards__back-identifier cards__back-identifier--grey cards__back-identifier--revert"
+                    >8</span
+                  >
+                  <svg
+                    class="cards__back-icon cards__back-icon--grey cards__back-icon--revert"
+                  >
+                    <use xlink:href="./public/sprite.svg#cards-spades-icon" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cards__flip-card-item">
+            <div class="cards__flip-inner">
+              <div class="cards__flip-front">
+                <img src="./public/card.webp" class="cards__front-img" />
+              </div>
+              <div class="cards__flip-back">
+                <div class="cards__back-side-content">
+                  <span class="cards__back-identifier">8</span>
+                  <svg class="cards__back-icon">
+                    <use xlink:href="./public/sprite.svg#cards-hearts-icon" />
+                  </svg>
+                </div>
+                <div class="cards__back-main-content">
+                  <svg class="cards__back-icon cards__back-icon--big">
+                    <use xlink:href="./public/sprite.svg#cards-hearts-icon" />
+                  </svg>
+                </div>
+                <div
+                  class="cards__back-side-content cards__back-side-content--revert"
+                >
+                  <span
+                    class="cards__back-identifier cards__back-identifier--revert"
+                    >8</span
+                  >
+                  <svg class="cards__back-icon cards__back-icon--revert">
+                    <use xlink:href="./public/sprite.svg#cards-hearts-icon" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 9 -->
+          <div class="cards__flip-card-item">
+            <div class="cards__flip-inner">
+              <div class="cards__flip-front">
+                <img src="./public/card.webp" class="cards__front-img" />
+              </div>
+              <div class="cards__flip-back">
+                <div class="cards__back-side-content">
+                  <span
+                    class="cards__back-identifier cards__back-identifier--grey cards__back-identifier--grey"
+                    >9</span
+                  >
+                  <svg
+                    class="cards__back-icon cards__back-icon--grey cards__back-icon--grey"
+                  >
+                    <use xlink:href="./public/sprite.svg#cards-clubs-icon" />
+                  </svg>
+                </div>
+                <div class="cards__back-main-content">
+                  <svg
+                    class="cards__back-icon cards__back-icon--grey cards__back-icon--grey cards__back-icon--big"
+                  >
+                    <use xlink:href="./public/sprite.svg#cards-clubs-icon" />
+                  </svg>
+                </div>
+                <div
+                  class="cards__back-side-content cards__back-side-content--revert"
+                >
+                  <span
+                    class="cards__back-identifier cards__back-identifier--grey cards__back-identifier--grey cards__back-identifier--revert"
+                    >9</span
+                  >
+                  <svg
+                    class="cards__back-icon cards__back-icon--grey cards__back-icon--revert"
+                  >
+                    <use xlink:href="./public/sprite.svg#cards-clubs-icon" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cards__flip-card-item">
+            <div class="cards__flip-inner">
+              <div class="cards__flip-front">
+                <img src="./public/card.webp" class="cards__front-img" />
+              </div>
+              <div class="cards__flip-back">
+                <div class="cards__back-side-content">
+                  <span class="cards__back-identifier">9</span>
+                  <svg class="cards__back-icon">
+                    <use xlink:href="./public/sprite.svg#cards-diamonds-icon" />
+                  </svg>
+                </div>
+                <div class="cards__back-main-content">
+                  <svg class="cards__back-icon cards__back-icon--big">
+                    <use xlink:href="./public/sprite.svg#cards-diamonds-icon" />
+                  </svg>
+                </div>
+                <div
+                  class="cards__back-side-content cards__back-side-content--revert"
+                >
+                  <span
+                    class="cards__back-identifier cards__back-identifier--revert"
+                    >9</span
+                  >
+                  <svg class="cards__back-icon cards__back-icon--revert">
+                    <use xlink:href="./public/sprite.svg#cards-diamonds-icon" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cards__flip-card-item">
+            <div class="cards__flip-inner">
+              <div class="cards__flip-front">
+                <img src="./public/card.webp" class="cards__front-img" />
+              </div>
+              <div class="cards__flip-back">
+                <div class="cards__back-side-content">
+                  <span
+                    class="cards__back-identifier cards__back-identifier--grey"
+                    >9</span
+                  >
+                  <svg class="cards__back-icon cards__back-icon--grey">
+                    <use xlink:href="./public/sprite.svg#cards-spades-icon" />
+                  </svg>
+                </div>
+                <div class="cards__back-main-content">
+                  <svg
+                    class="cards__back-icon cards__back-icon--grey cards__back-icon--big"
+                  >
+                    <use xlink:href="./public/sprite.svg#cards-spades-icon" />
+                  </svg>
+                </div>
+                <div
+                  class="cards__back-side-content cards__back-side-content--revert"
+                >
+                  <span
+                    class="cards__back-identifier cards__back-identifier--grey cards__back-identifier--revert"
+                    >9</span
+                  >
+                  <svg
+                    class="cards__back-icon cards__back-icon--grey cards__back-icon--revert"
+                  >
+                    <use xlink:href="./public/sprite.svg#cards-spades-icon" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cards__flip-card-item">
+            <div class="cards__flip-inner">
+              <div class="cards__flip-front">
+                <img src="./public/card.webp" class="cards__front-img" />
+              </div>
+              <div class="cards__flip-back">
+                <div class="cards__back-side-content">
+                  <span class="cards__back-identifier">9</span>
+                  <svg class="cards__back-icon">
+                    <use xlink:href="./public/sprite.svg#cards-hearts-icon" />
+                  </svg>
+                </div>
+                <div class="cards__back-main-content">
+                  <svg class="cards__back-icon cards__back-icon--big">
+                    <use xlink:href="./public/sprite.svg#cards-hearts-icon" />
+                  </svg>
+                </div>
+                <div
+                  class="cards__back-side-content cards__back-side-content--revert"
+                >
+                  <span
+                    class="cards__back-identifier cards__back-identifier--revert"
+                    >9</span
+                  >
+                  <svg class="cards__back-icon cards__back-icon--revert">
+                    <use xlink:href="./public/sprite.svg#cards-hearts-icon" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- 10 -->
+          <div class="cards__flip-card-item">
+            <div class="cards__flip-inner">
+              <div class="cards__flip-front">
+                <img src="./public/card.webp" class="cards__front-img" />
+              </div>
+              <div class="cards__flip-back">
+                <div class="cards__back-side-content">
+                  <span
+                    class="cards__back-identifier cards__back-identifier--grey cards__back-identifier--grey"
+                    >10</span
+                  >
+                  <svg
+                    class="cards__back-icon cards__back-icon--grey cards__back-icon--grey"
+                  >
+                    <use xlink:href="./public/sprite.svg#cards-clubs-icon" />
+                  </svg>
+                </div>
+                <div class="cards__back-main-content">
+                  <svg
+                    class="cards__back-icon cards__back-icon--grey cards__back-icon--grey cards__back-icon--big"
+                  >
+                    <use xlink:href="./public/sprite.svg#cards-clubs-icon" />
+                  </svg>
+                </div>
+                <div
+                  class="cards__back-side-content cards__back-side-content--revert"
+                >
+                  <span
+                    class="cards__back-identifier cards__back-identifier--grey cards__back-identifier--grey cards__back-identifier--revert"
+                    >10</span
+                  >
+                  <svg
+                    class="cards__back-icon cards__back-icon--grey cards__back-icon--revert"
+                  >
+                    <use xlink:href="./public/sprite.svg#cards-clubs-icon" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cards__flip-card-item">
+            <div class="cards__flip-inner">
+              <div class="cards__flip-front">
+                <img src="./public/card.webp" class="cards__front-img" />
+              </div>
+              <div class="cards__flip-back">
+                <div class="cards__back-side-content">
+                  <span class="cards__back-identifier">10</span>
+                  <svg class="cards__back-icon">
+                    <use xlink:href="./public/sprite.svg#cards-diamonds-icon" />
+                  </svg>
+                </div>
+                <div class="cards__back-main-content">
+                  <svg class="cards__back-icon cards__back-icon--big">
+                    <use xlink:href="./public/sprite.svg#cards-diamonds-icon" />
+                  </svg>
+                </div>
+                <div
+                  class="cards__back-side-content cards__back-side-content--revert"
+                >
+                  <span
+                    class="cards__back-identifier cards__back-identifier--revert"
+                    >10</span
+                  >
+                  <svg class="cards__back-icon cards__back-icon--revert">
+                    <use xlink:href="./public/sprite.svg#cards-diamonds-icon" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cards__flip-card-item">
+            <div class="cards__flip-inner">
+              <div class="cards__flip-front">
+                <img src="./public/card.webp" class="cards__front-img" />
+              </div>
+              <div class="cards__flip-back">
+                <div class="cards__back-side-content">
+                  <span
+                    class="cards__back-identifier cards__back-identifier--grey"
+                    >10</span
+                  >
+                  <svg class="cards__back-icon cards__back-icon--grey">
+                    <use xlink:href="./public/sprite.svg#cards-spades-icon" />
+                  </svg>
+                </div>
+                <div class="cards__back-main-content">
+                  <svg
+                    class="cards__back-icon cards__back-icon--grey cards__back-icon--big"
+                  >
+                    <use xlink:href="./public/sprite.svg#cards-spades-icon" />
+                  </svg>
+                </div>
+                <div
+                  class="cards__back-side-content cards__back-side-content--revert"
+                >
+                  <span
+                    class="cards__back-identifier cards__back-identifier--grey cards__back-identifier--revert"
+                    >10</span
+                  >
+                  <svg
+                    class="cards__back-icon cards__back-icon--grey cards__back-icon--revert"
+                  >
+                    <use xlink:href="./public/sprite.svg#cards-spades-icon" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cards__flip-card-item">
+            <div class="cards__flip-inner">
+              <div class="cards__flip-front">
+                <img src="./public/card.webp" class="cards__front-img" />
+              </div>
+              <div class="cards__flip-back">
+                <div class="cards__back-side-content">
+                  <span class="cards__back-identifier">10</span>
+                  <svg class="cards__back-icon">
+                    <use xlink:href="./public/sprite.svg#cards-hearts-icon" />
+                  </svg>
+                </div>
+                <div class="cards__back-main-content">
+                  <svg class="cards__back-icon cards__back-icon--big">
+                    <use xlink:href="./public/sprite.svg#cards-hearts-icon" />
+                  </svg>
+                </div>
+                <div
+                  class="cards__back-side-content cards__back-side-content--revert"
+                >
+                  <span
+                    class="cards__back-identifier cards__back-identifier--revert"
+                    >10</span
+                  >
+                  <svg class="cards__back-icon cards__back-icon--revert">
+                    <use xlink:href="./public/sprite.svg#cards-hearts-icon" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- J -->
+          <div class="cards__flip-card-item">
+            <div class="cards__flip-inner">
+              <div class="cards__flip-front">
+                <img src="./public/card.webp" class="cards__front-img" />
+              </div>
+              <div class="cards__flip-back">
+                <div class="cards__back-side-content">
+                  <span
+                    class="cards__back-identifier cards__back-identifier--grey cards__back-identifier--grey"
+                    >J</span
+                  >
+                  <svg
+                    class="cards__back-icon cards__back-icon--grey cards__back-icon--grey"
+                  >
+                    <use xlink:href="./public/sprite.svg#cards-clubs-icon" />
+                  </svg>
+                </div>
+                <div class="cards__back-main-content">
+                  <svg
+                    class="cards__back-icon cards__back-icon--grey cards__back-icon--grey cards__back-icon--big"
+                  >
+                    <use xlink:href="./public/sprite.svg#cards-clubs-icon" />
+                  </svg>
+                </div>
+                <div
+                  class="cards__back-side-content cards__back-side-content--revert"
+                >
+                  <span
+                    class="cards__back-identifier cards__back-identifier--grey cards__back-identifier--grey cards__back-identifier--revert"
+                    >J</span
+                  >
+                  <svg
+                    class="cards__back-icon cards__back-icon--grey cards__back-icon--revert"
+                  >
+                    <use xlink:href="./public/sprite.svg#cards-clubs-icon" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cards__flip-card-item">
+            <div class="cards__flip-inner">
+              <div class="cards__flip-front">
+                <img src="./public/card.webp" class="cards__front-img" />
+              </div>
+              <div class="cards__flip-back">
+                <div class="cards__back-side-content">
+                  <span class="cards__back-identifier">J</span>
+                  <svg class="cards__back-icon">
+                    <use xlink:href="./public/sprite.svg#cards-diamonds-icon" />
+                  </svg>
+                </div>
+                <div class="cards__back-main-content">
+                  <svg class="cards__back-icon cards__back-icon--big">
+                    <use xlink:href="./public/sprite.svg#cards-diamonds-icon" />
+                  </svg>
+                </div>
+                <div
+                  class="cards__back-side-content cards__back-side-content--revert"
+                >
+                  <span
+                    class="cards__back-identifier cards__back-identifier--revert"
+                    >J</span
+                  >
+                  <svg class="cards__back-icon cards__back-icon--revert">
+                    <use xlink:href="./public/sprite.svg#cards-diamonds-icon" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cards__flip-card-item">
+            <div class="cards__flip-inner">
+              <div class="cards__flip-front">
+                <img src="./public/card.webp" class="cards__front-img" />
+              </div>
+              <div class="cards__flip-back">
+                <div class="cards__back-side-content">
+                  <span
+                    class="cards__back-identifier cards__back-identifier--grey"
+                    >J</span
+                  >
+                  <svg class="cards__back-icon cards__back-icon--grey">
+                    <use xlink:href="./public/sprite.svg#cards-spades-icon" />
+                  </svg>
+                </div>
+                <div class="cards__back-main-content">
+                  <svg
+                    class="cards__back-icon cards__back-icon--grey cards__back-icon--big"
+                  >
+                    <use xlink:href="./public/sprite.svg#cards-spades-icon" />
+                  </svg>
+                </div>
+                <div
+                  class="cards__back-side-content cards__back-side-content--revert"
+                >
+                  <span
+                    class="cards__back-identifier cards__back-identifier--grey cards__back-identifier--revert"
+                    >J</span
+                  >
+                  <svg
+                    class="cards__back-icon cards__back-icon--grey cards__back-icon--revert"
+                  >
+                    <use xlink:href="./public/sprite.svg#cards-spades-icon" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cards__flip-card-item">
+            <div class="cards__flip-inner">
+              <div class="cards__flip-front">
+                <img src="./public/card.webp" class="cards__front-img" />
+              </div>
+              <div class="cards__flip-back">
+                <div class="cards__back-side-content">
+                  <span class="cards__back-identifier">J</span>
+                  <svg class="cards__back-icon">
+                    <use xlink:href="./public/sprite.svg#cards-hearts-icon" />
+                  </svg>
+                </div>
+                <div class="cards__back-main-content">
+                  <svg class="cards__back-icon cards__back-icon--big">
+                    <use xlink:href="./public/sprite.svg#cards-hearts-icon" />
+                  </svg>
+                </div>
+                <div
+                  class="cards__back-side-content cards__back-side-content--revert"
+                >
+                  <span
+                    class="cards__back-identifier cards__back-identifier--revert"
+                    >J</span
+                  >
+                  <svg class="cards__back-icon cards__back-icon--revert">
+                    <use xlink:href="./public/sprite.svg#cards-hearts-icon" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Q -->
+          <div class="cards__flip-card-item">
+            <div class="cards__flip-inner">
+              <div class="cards__flip-front">
+                <img src="./public/card.webp" class="cards__front-img" />
+              </div>
+              <div class="cards__flip-back">
+                <div class="cards__back-side-content">
+                  <span
+                    class="cards__back-identifier cards__back-identifier--grey cards__back-identifier--grey"
+                    >Q</span
+                  >
+                  <svg
+                    class="cards__back-icon cards__back-icon--grey cards__back-icon--grey"
+                  >
+                    <use xlink:href="./public/sprite.svg#cards-clubs-icon" />
+                  </svg>
+                </div>
+                <div class="cards__back-main-content">
+                  <svg
+                    class="cards__back-icon cards__back-icon--grey cards__back-icon--grey cards__back-icon--big"
+                  >
+                    <use xlink:href="./public/sprite.svg#cards-clubs-icon" />
+                  </svg>
+                </div>
+                <div
+                  class="cards__back-side-content cards__back-side-content--revert"
+                >
+                  <span
+                    class="cards__back-identifier cards__back-identifier--grey cards__back-identifier--grey cards__back-identifier--revert"
+                    >Q</span
+                  >
+                  <svg
+                    class="cards__back-icon cards__back-icon--grey cards__back-icon--revert"
+                  >
+                    <use xlink:href="./public/sprite.svg#cards-clubs-icon" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cards__flip-card-item">
+            <div class="cards__flip-inner">
+              <div class="cards__flip-front">
+                <img src="./public/card.webp" class="cards__front-img" />
+              </div>
+              <div class="cards__flip-back">
+                <div class="cards__back-side-content">
+                  <span class="cards__back-identifier">Q</span>
+                  <svg class="cards__back-icon">
+                    <use xlink:href="./public/sprite.svg#cards-diamonds-icon" />
+                  </svg>
+                </div>
+                <div class="cards__back-main-content">
+                  <svg class="cards__back-icon cards__back-icon--big">
+                    <use xlink:href="./public/sprite.svg#cards-diamonds-icon" />
+                  </svg>
+                </div>
+                <div
+                  class="cards__back-side-content cards__back-side-content--revert"
+                >
+                  <span
+                    class="cards__back-identifier cards__back-identifier--revert"
+                    >Q</span
+                  >
+                  <svg class="cards__back-icon cards__back-icon--revert">
+                    <use xlink:href="./public/sprite.svg#cards-diamonds-icon" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cards__flip-card-item">
+            <div class="cards__flip-inner">
+              <div class="cards__flip-front">
+                <img src="./public/card.webp" class="cards__front-img" />
+              </div>
+              <div class="cards__flip-back">
+                <div class="cards__back-side-content">
+                  <span
+                    class="cards__back-identifier cards__back-identifier--grey"
+                    >Q</span
+                  >
+                  <svg class="cards__back-icon cards__back-icon--grey">
+                    <use xlink:href="./public/sprite.svg#cards-spades-icon" />
+                  </svg>
+                </div>
+                <div class="cards__back-main-content">
+                  <svg
+                    class="cards__back-icon cards__back-icon--grey cards__back-icon--big"
+                  >
+                    <use xlink:href="./public/sprite.svg#cards-spades-icon" />
+                  </svg>
+                </div>
+                <div
+                  class="cards__back-side-content cards__back-side-content--revert"
+                >
+                  <span
+                    class="cards__back-identifier cards__back-identifier--grey cards__back-identifier--revert"
+                    >Q</span
+                  >
+                  <svg
+                    class="cards__back-icon cards__back-icon--grey cards__back-icon--revert"
+                  >
+                    <use xlink:href="./public/sprite.svg#cards-spades-icon" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cards__flip-card-item">
+            <div class="cards__flip-inner">
+              <div class="cards__flip-front">
+                <img src="./public/card.webp" class="cards__front-img" />
+              </div>
+              <div class="cards__flip-back">
+                <div class="cards__back-side-content">
+                  <span class="cards__back-identifier">Q</span>
+                  <svg class="cards__back-icon">
+                    <use xlink:href="./public/sprite.svg#cards-hearts-icon" />
+                  </svg>
+                </div>
+                <div class="cards__back-main-content">
+                  <svg class="cards__back-icon cards__back-icon--big">
+                    <use xlink:href="./public/sprite.svg#cards-hearts-icon" />
+                  </svg>
+                </div>
+                <div
+                  class="cards__back-side-content cards__back-side-content--revert"
+                >
+                  <span
+                    class="cards__back-identifier cards__back-identifier--revert"
+                    >Q</span
+                  >
+                  <svg class="cards__back-icon cards__back-icon--revert">
+                    <use xlink:href="./public/sprite.svg#cards-hearts-icon" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- K -->
+          <div class="cards__flip-card-item">
+            <div class="cards__flip-inner">
+              <div class="cards__flip-front">
+                <img src="./public/card.webp" class="cards__front-img" />
+              </div>
+              <div class="cards__flip-back">
+                <div class="cards__back-side-content">
+                  <span
+                    class="cards__back-identifier cards__back-identifier--grey cards__back-identifier--grey"
+                    >K</span
+                  >
+                  <svg
+                    class="cards__back-icon cards__back-icon--grey cards__back-icon--grey"
+                  >
+                    <use xlink:href="./public/sprite.svg#cards-clubs-icon" />
+                  </svg>
+                </div>
+                <div class="cards__back-main-content">
+                  <svg
+                    class="cards__back-icon cards__back-icon--grey cards__back-icon--grey cards__back-icon--big"
+                  >
+                    <use xlink:href="./public/sprite.svg#cards-clubs-icon" />
+                  </svg>
+                </div>
+                <div
+                  class="cards__back-side-content cards__back-side-content--revert"
+                >
+                  <span
+                    class="cards__back-identifier cards__back-identifier--grey cards__back-identifier--grey cards__back-identifier--revert"
+                    >K</span
+                  >
+                  <svg
+                    class="cards__back-icon cards__back-icon--grey cards__back-icon--revert"
+                  >
+                    <use xlink:href="./public/sprite.svg#cards-clubs-icon" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cards__flip-card-item">
+            <div class="cards__flip-inner">
+              <div class="cards__flip-front">
+                <img src="./public/card.webp" class="cards__front-img" />
+              </div>
+              <div class="cards__flip-back">
+                <div class="cards__back-side-content">
+                  <span class="cards__back-identifier">K</span>
+                  <svg class="cards__back-icon">
+                    <use xlink:href="./public/sprite.svg#cards-diamonds-icon" />
+                  </svg>
+                </div>
+                <div class="cards__back-main-content">
+                  <svg class="cards__back-icon cards__back-icon--big">
+                    <use xlink:href="./public/sprite.svg#cards-diamonds-icon" />
+                  </svg>
+                </div>
+                <div
+                  class="cards__back-side-content cards__back-side-content--revert"
+                >
+                  <span
+                    class="cards__back-identifier cards__back-identifier--revert"
+                    >K</span
+                  >
+                  <svg class="cards__back-icon cards__back-icon--revert">
+                    <use xlink:href="./public/sprite.svg#cards-diamonds-icon" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cards__flip-card-item">
+            <div class="cards__flip-inner">
+              <div class="cards__flip-front">
+                <img src="./public/card.webp" class="cards__front-img" />
+              </div>
+              <div class="cards__flip-back">
+                <div class="cards__back-side-content">
+                  <span
+                    class="cards__back-identifier cards__back-identifier--grey"
+                    >K</span
+                  >
+                  <svg class="cards__back-icon cards__back-icon--grey">
+                    <use xlink:href="./public/sprite.svg#cards-spades-icon" />
+                  </svg>
+                </div>
+                <div class="cards__back-main-content">
+                  <svg
+                    class="cards__back-icon cards__back-icon--grey cards__back-icon--big"
+                  >
+                    <use xlink:href="./public/sprite.svg#cards-spades-icon" />
+                  </svg>
+                </div>
+                <div
+                  class="cards__back-side-content cards__back-side-content--revert"
+                >
+                  <span
+                    class="cards__back-identifier cards__back-identifier--grey cards__back-identifier--revert"
+                    >K</span
+                  >
+                  <svg
+                    class="cards__back-icon cards__back-icon--grey cards__back-icon--revert"
+                  >
+                    <use xlink:href="./public/sprite.svg#cards-spades-icon" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="cards__flip-card-item">
+            <div class="cards__flip-inner">
+              <div class="cards__flip-front">
+                <img src="./public/card.webp" class="cards__front-img" />
+              </div>
+              <div class="cards__flip-back">
+                <div class="cards__back-side-content">
+                  <span class="cards__back-identifier">K</span>
+                  <svg class="cards__back-icon">
+                    <use xlink:href="./public/sprite.svg#cards-hearts-icon" />
+                  </svg>
+                </div>
+                <div class="cards__back-main-content">
+                  <svg class="cards__back-icon cards__back-icon--big">
+                    <use xlink:href="./public/sprite.svg#cards-hearts-icon" />
+                  </svg>
+                </div>
+                <div
+                  class="cards__back-side-content cards__back-side-content--revert"
+                >
+                  <span
+                    class="cards__back-identifier cards__back-identifier--revert"
+                    >K</span
+                  >
+                  <svg class="cards__back-icon cards__back-icon--revert">
+                    <use xlink:href="./public/sprite.svg#cards-hearts-icon" />
+                  </svg>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

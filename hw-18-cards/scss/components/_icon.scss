@@ -1,0 +1,20 @@
+@use "./../abstracts/" as *;
+
+.cards {
+  &__back-icon {
+    @include width-height(40px, 40px);
+    fill: $dark-red-color;
+
+    &--grey {
+      fill: $grey-color;
+    }
+
+    &--big {
+      @include width-height(120px, 120px);
+    }
+
+    &--revert {
+      @extend %rotate-elem;
+    }
+  }
+}

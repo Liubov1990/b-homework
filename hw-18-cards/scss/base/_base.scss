@@ -1,0 +1,23 @@
+@use "./../abstracts" as *;
+
+body {
+  font-family: "Helvetica Neue", sans-serif;
+  font-size: $initial-font-size;
+  font-weight: $fw-normal;
+  font-style: normal;
+  line-height: normal;
+  background: $light-grey-color;
+  min-height: 100vh;
+}
+
+.main {
+  @include flex(column, center);
+  @include width-height($full-width);
+}
+
+.container {
+  @include width-height($full-width);
+  max-width: $max-container-width;
+  padding: 0 15px;
+  box-sizing: border-box;
+}

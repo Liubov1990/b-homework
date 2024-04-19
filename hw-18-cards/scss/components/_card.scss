@@ -1,0 +1,83 @@
+@use "./../abstracts" as *;
+@use "./../base/animations" as *;
+
+.cards {
+  &__flip-card-item {
+    @include width-height(250px, 350px);
+    background-color: transparent;
+    perspective: 1500px;
+
+    &:hover .cards__flip-inner {
+      // animation-play-state: paused;
+      animation: none;
+      transition: transform 1s ease;
+      transform: rotateY(180deg);
+      cursor: pointer;
+    }
+
+    &:hover .cards__flip-back {
+      box-shadow: $box-shadow;
+    }
+  }
+
+  &__flip-inner {
+    @include width-height($full-width, $full-height);
+    position: relative;
+    transform-style: preserve-3d;
+    animation: rotateCard 2s infinite;
+  }
+
+  &__flip-front,
+  &__flip-back {
+    @include width-height($full-width, $full-height);
+    position: absolute;
+    border-radius: 10px;
+    box-sizing: border-box;
+    overflow: hidden;
+    backface-visibility: hidden;
+  }
+
+  &__front-img {
+    @include width-height($full-width, $full-height);
+    display: block;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+
+  &__flip-back {
+    @include flex(column);
+    padding: 20px;
+    background: $black-color;
+    transform: rotateY(180deg);
+  }
+
+  &__back-side-content {
+    @include flex(column, center);
+    @include width-height(60px);
+
+    &--revert {
+      flex-direction: column-reverse;
+      align-self: flex-end;
+    }
+  }
+
+  &__back-main-content {
+    @include flex($justification: center);
+    flex-grow: 1;
+  }
+
+  &__back-identifier {
+    display: inline-block;
+    font-size: 2.8125rem;
+    font-weight: $fw-medium;
+    color: $dark-red-color;
+
+    &--grey {
+      color: $grey-color;
+    }
+  }
+
+  &__back-identifier--revert {
+    @extend %rotate-elem;
+  }
+}

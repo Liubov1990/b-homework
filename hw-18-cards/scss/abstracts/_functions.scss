@@ -1,0 +1,7 @@
+@use "./variables" as *;
+
+@for $i from 1 through $cards {
+  .cards__flip-card-item:nth-of-type(#{$i}) > .cards__flip-inner {
+    animation-delay: random() + s;
+  }
+}

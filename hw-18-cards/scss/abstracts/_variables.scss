@@ -1,0 +1,16 @@
+@use "./colors" as *;
+
+$box-shadow: 2px 2px 8px $dark-red-rgba-color,
+  4px 4px 10px 3px $black-rgba-color;
+
+$initial-font-size: 16px;
+$fw-normal: 400;
+$fw-medium: 500;
+
+$full-width: 100%;
+$full-height: 100%;
+$max-container-width: 1200px;
+
+$cards: 36;
+
+$rotate: rotate(180deg);
