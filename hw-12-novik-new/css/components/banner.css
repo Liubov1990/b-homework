@@ -1,0 +1,71 @@
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding-bottom: 104px;
+}
+
+.hero__inner {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.hero__personal-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding-top: 30px;
+  margin-bottom: 41px;
+}
+
+.hero__personal-info-list {
+  transform: Translate(-3px, -12px);
+}
+
+.hero__title {
+  font-family: "Gilroy-Bold", sans-serif;
+  font-size: 2.959rem;
+  line-height: 1.24;
+  max-width: 124px;
+}
+
+.hero__languages-list {
+  transform: rotate(270deg);
+  transform-origin: 28px -19px;
+}
+
+.hero__lang-item {
+  font-family: "Gilroy-Bold", sans-serif;
+  font-size: 1rem;
+  line-height: 1.24;
+  display: inline-block;
+}
+
+.hero__lang-item:not(:last-child)::after {
+  content: "\007C";
+  width: 20px;
+  height: 20px;
+  font-size: 1rem;
+  line-height: 1.24;
+  margin-left: 4px;
+}
+
+.hero__lang-item:hover {
+  cursor: pointer;
+  color: var(--main-text-color);
+  transition: all 0.2s ease-in;
+}
+
+.hero__img-wrap {
+  display: flex;
+  max-width: 943.61px;
+  height: 387px;
+}
+
+.hero__img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}

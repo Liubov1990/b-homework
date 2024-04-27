@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Figma</title>
+
+    <link rel="stylesheet" type="text/css" href="./css/index.css" />
+  </head>
+
+  <body>
+    <main class="main">
+      <header class="header">
+        <div class="content-wrapper">
+          <nav class="header__nav">
+            <ul class="header__list">
+              <li>
+                <a href="#" class="header__link link--active">Home</a>
+              </li>
+              <li><a href="#about" class="header__link">About me</a></li>
+              <li><a href="#skills" class="header__link">Skills</a></li>
+              <li><a href="#portfolio" class="header__link">Portfolio</a></li>
+              <li><a href="#contacts" class="header__link">Contacts</a></li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+
+      <hr class="horisontal-rule" />
+
+      <section class="hero">
+        <div class="content-wrapper hero__inner">
+          <div class="hero__personal-info">
+            <h1 class="hero__title">Denis Novik</h1>
+            <ul class="hero__personal-info-list">
+              <li class="hero__personal-info-item">UX | UI designer</li>
+              <li class="hero__personal-info-item">24 years old, Minsk</li>
+            </ul>
+            <ul class="hero__languages-list">
+              <li class="hero__lang-item link">RU</li>
+              <li class="hero__lang-item link--active">ENG</li>
+            </ul>
+          </div>
+          <div class="hero__img-wrap">
+            <img
+              src="./public/images/banner.jpg"
+              alt="Banner with photo of Denis Novik"
+              class="hero__img"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- About -->
+      <section id="about" class="about">
+        <div class="content-wrapper about__inner">
+          <h2 class="about__heading">About me</h2>
+          <p class="about__text">
+            Hi, I'm Denis – UX/UI designer from Minsk.<br />
+            I'm interested in design and everything connected with it.
+          </p>
+          <p class="about__text">
+            I'm studying at courses "Web and mobile design<br />
+            interfaces" in IT-Academy.
+          </p>
+          <p class="about__text">
+            Ready to implement excellent projects<br />
+            with wonderful people.
+          </p>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="skills">
+        <div class="content-wrapper skills__inner">
+          <h2 class="skills__heading">Skills</h2>
+          <p>I work in such programs as</p>
+          <div class="skills__items">
+            <div class="skills__item">
+              <div class="skills__skill-wrap">
+                <img
+                  src="./public/images/adobe_photoshop.png"
+                  alt="Adobe Photoshop logo"
+                  class="skills__logo"
+                />
+                <span class="skills__skill-name">
+                  Adobe<br />
+                  Photoshop
+                </span>
+              </div>
+              <div class="skills__rating">
+                <svg class="skills__rating-star">
+                  <use xlink:href="./public/sprite.svg#star-icon" />
+                </svg>
+                <svg class="skills__rating-star">
+                  <use xlink:href="./public/sprite.svg#star-icon" />
+                </svg>
+                <svg class="skills__rating-star skills__rating-star--empty">
+                  <use xlink:href="./public/sprite.svg#star-icon" />
+                </svg>
+                <svg class="skills__rating-star skills__rating-star--empty">
+                  <use xlink:href="./public/sprite.svg#star-icon" />
+                </svg>
+                <svg class="skills__rating-star skills__rating-star--empty">
+                  <use xlink:href="./public/sprite.svg#star-icon" />
+                </svg>
+              </div>
+            </div>
+            <div class="skills__item">
+              <div class="skills__skill-wrap">
+                <img
+                  src="./public/images/adobe_illustrator.png"
+                  alt="Adobe Illustrator logo"
+                  class="skills__logo"
+                />
+                <span class="skills__skill-name">
+                  Adobe<br />
+                  Illustrator</span
+                >
+              </div>
+              <div class="skills__rating">
+                <svg class="skills__rating-star">
+                  <use xlink:href="./public/sprite.svg#star-icon" />
+                </svg>
+                <svg class="skills__rating-star">
+                  <use xlink:href="./public/sprite.svg#star-icon" />
+                </svg>
+                <svg class="skills__rating-star">
+                  <use xlink:href="./public/sprite.svg#star-icon" />
+                </svg>
+                <svg class="skills__rating-star skills__rating-star--empty">
+                  <use xlink:href="./public/sprite.svg#star-icon" />
+                </svg>
+                <svg class="skills__rating-star skills__rating-star--empty">
+                  <use xlink:href="./public/sprite.svg#star-icon" />
+                </svg>
+              </div>
+            </div>
+            <div class="skills__item">
+              <div class="skills__skill-wrap">
+                <img
+                  src="./public/images/adobe_after_effects.png"
+                  alt="Adobe After Effects logo"
+                  class="skills__logo"
+                />
+                <span class="skills__skill-name">
+                  Adobe<br />
+                  After Effects
+                </span>
+              </div>
+              <div class="skills__rating">
+                <svg class="skills__rating-star">
+                  <use xlink:href="./public/sprite.svg#star-icon" />
+                </svg>
+                <svg class="skills__rating-star">
+                  <use xlink:href="./public/sprite.svg#star-icon" />
+                </svg>
+                <svg class="skills__rating-star">
+                  <use xlink:href="./public/sprite.svg#star-icon" />
+                </svg>
+                <svg class="skills__rating-star">
+                  <use xlink:href="./public/sprite.svg#star-icon" />
+                </svg>
+                <svg class="skills__rating-star skills__rating-star--empty">
+                  <use xlink:href="./public/sprite.svg#star-icon" />
+                </svg>
+              </div>
+            </div>
+            <div class="skills__item">
+              <div class="skills__skill-wrap">
+                <img
+                  src="./public/images/figma.png"
+                  alt="Figma logo"
+                  class="skills__logo skills__logo--small-width"
+                />
+                <span class="skills__skill-name">Figma</span>
+              </div>
+              <div class="skills__rating">
+                <svg class="skills__rating-star">
+                  <use xlink:href="./public/sprite.svg#star-icon" />
+                </svg>
+                <svg class="skills__rating-star">
+                  <use xlink:href="./public/sprite.svg#star-icon" />
+                </svg>
+                <svg class="skills__rating-star">
+                  <use xlink:href="./public/sprite.svg#star-icon" />
+                </svg>
+                <svg class="skills__rating-star">
+                  <use xlink:href="./public/sprite.svg#star-icon" />
+                </svg>
+                <svg class="skills__rating-star">
+                  <use xlink:href="./public/sprite.svg#star-icon" />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Portfolio -->
+      <section id="portfolio" class="portfolio">
+        <div class="content-wrapper portfolio__inner">
+          <h2 class="portfolio__heading">Portfolio</h2>
+          <div class="portfolio__item">
+            <img
+              src="./public/images/fashion.jpg"
+              alt="Online fashion store project example"
+              class="portfolio__image"
+            />
+            <a href="#" class="portfolio__link">
+              Online fashion store - Homepage
+            </a>
+          </div>
+          <div class="portfolio__item">
+            <img
+              src="./public/images/reebok.jpg"
+              alt="Reebok Store project example"
+              class="portfolio__image"
+            />
+            <a href="#" class="portfolio__link"> Reebok Store - Concept </a>
+          </div>
+          <div class="portfolio__item">
+            <img
+              src="./public/images/braun.jpg"
+              alt="Braun Landing Page example"
+              class="portfolio__image"
+            />
+            <a href="#" class="portfolio__link">
+              Braun Landing Page - Concept
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contacts -->
+      <footer id="contacts" class="footer">
+        <div class="content-wrapper footer__inner">
+          <h2 class="footer__heading">Contacts</h2>
+          <p class="footer__text">
+            Want to know more or just chat? You are welcome!
+          </p>
+          <button type="button" class="footer__button">Send message</button>
+          <div class="footer__social-icons">
+            <div class="footer__icon-wrapper">
+              <a href="https://www.linkedin.com/" target="_blank">
+                <svg class="footer__icon">
+                  <use xlink:href="./public/sprite.svg#linkedin-icon" />
+                </svg>
+              </a>
+            </div>
+            <div class="footer__icon-wrapper">
+              <a href="https://www.instagram.com/" target="_blank">
+                <svg class="footer__icon">
+                  <use xlink:href="./public/sprite.svg#instagram-icon" />
+                </svg>
+              </a>
+            </div>
+            <div class="footer__icon-wrapper">
+              <a href="https://www.behance.net/" target="_blank">
+                <svg class="footer__icon">
+                  <use xlink:href="./public/sprite.svg#behance-icon" />
+                </svg>
+              </a>
+            </div>
+            <div class="footer__icon-wrapper">
+              <a href="https://dribbble.com/" target="_blank">
+                <svg class="footer__icon">
+                  <use xlink:href="./public/sprite.svg#dribble-icon" />
+                </svg>
+              </a>
+            </div>
+          </div>
+          <span class="footer__follow">
+            Like me on <br />
+            <a
+              href="https://www.linkedin.com/"
+              target="_blank"
+              class="footer__link"
+              >LinkedIn</a
+            >,
+            <a
+              href="https://www.instagram.com/"
+              target="_blank"
+              class="footer__link"
+              >Instagram</a
+            >,
+            <a
+              href="https://www.behance.net/"
+              target="_blank"
+              class="footer__link"
+              >Behance</a
+            >,
+            <a href="https://dribbble.com/" target="_blank" class="footer__link"
+              >Dribble</a
+            >
+          </span>
+        </div>
+      </footer>
+    </main>
+  </body>
+</html>

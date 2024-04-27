@@ -1,0 +1,21 @@
+.footer__button {
+  font-family: "Gilroy-Bold", sans-serif;
+  font-size: 1.125rem;
+  letter-spacing: 1.6px;
+  line-height: 1.24;
+  text-align: center;
+  width: 180px;
+  height: 44px;
+  border-radius: 22px;
+  border: 3px solid transparent;
+  color: var(--main-bg-color);
+  background-color: var(--main-text-color);
+  box-sizing: border-box;
+}
+
+.footer__button:hover {
+  color: var(--main-text-color);
+  border: 3px solid var(--main-text-color);
+  background-color: var(--empty-star-color);
+  transition: all 0.2s ease-in;
+}

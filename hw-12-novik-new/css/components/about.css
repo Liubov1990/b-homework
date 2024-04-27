@@ -1,0 +1,32 @@
+.about {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  background: var(--secondary-bg-color);
+  box-sizing: border-box;
+  padding-top: 114px;
+  padding-bottom: 110px;
+}
+
+.about__heading {
+  font-family: "Gilroy-Bold", sans-serif;
+  font-size: 2.125rem;
+  line-height: 1.24;
+  margin-bottom: 23px;
+}
+
+.about__inner {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 510px;
+}
+
+.about__text {
+  text-align: center;
+  margin-bottom: 43px;
+}
+
+.about__text:last-child {
+  margin-bottom: 0;
+}

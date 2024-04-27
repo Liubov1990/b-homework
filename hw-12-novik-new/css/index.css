@@ -1,0 +1,16 @@
+/* reset styles */
+@import "../../../shared/css/libs/reset.css";
+
+/* abstracts */
+@import "./abstracts/fonts.css";
+@import "./abstracts/core.css";
+@import "./abstracts/variables.css";
+
+/* components */
+@import "./components/header.css";
+@import "./components/banner.css";
+@import "./components/about.css";
+@import "./components/skills.css";
+@import "./components/portfolio.css";
+@import "./components/footer.css";
+@import "./components/button.css";
