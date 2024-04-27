@@ -79,5 +79,5 @@ let exchangedRate = dollarsAmount * currenciesExchangeRate;
 alert(
   `При курсі ${currenciesExchangeRate.toFixed(
     2
-  )} євро за доллар, в суммі Ви отримаєте ${exchangedRate.toFixed(1)} $.`
+  )} євро за доллар, в суммі Ви отримаєте $${exchangedRate.toFixed(1)}.`
 );
