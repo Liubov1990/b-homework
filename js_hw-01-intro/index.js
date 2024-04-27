@@ -1,10 +1,10 @@
 /* ------------- MINIMUM ------------- */
 
 // 2. Variables for name and surname:
-// let userFullName;
-// let fullName;
-// let firstAndLastName;
-// let nameData;
+// - userFullName;
+// - fullName;
+// - firstAndLastName;
+// - nameData;
 
 // Wrong names using:
 // - 1name
