@@ -16,7 +16,7 @@ const consoleOutputStyles = getStringifiedStyles([
 ]);
 
 /* ------------- MINIMUM ------------- */
-1;
+// 1
 const firstNumber = 0.1;
 const secondNumber = 0.2;
 const numbersSum = Number(firstNumber + secondNumber).toFixed(1);
@@ -39,23 +39,48 @@ console.log(
 ); // 3
 
 // 3.
-const GIGABITE = 1024;
-const fileSize = 820;
+// 3.1 -- NOT CORRECT
+// const GIGABITE = 1024;
+// const fileSize = 820;
 
-const userFleshSize = prompt(
+// const userFleshSize = prompt(
+//   "Скільки файлів розміром 820 MB поміститься на Вашу флешку? Впишіть розмір вашої флеш карти у GB.",
+//   ""
+// );
+
+// const gigabitesInFlesh = userFleshSize * GIGABITE;
+// const filesCount = Math.trunc(gigabitesInFlesh / fileSize);
+// console.log(
+//   `%c PROMPT Files on drive: %c ${filesCount}`,
+//   consoleMessageStyles,
+//   consoleOutputStyles
+// );
+
+// 3.2 -- SOLUTION
+/* ( const fleshSize = 16; // GB / 16 000 Mb / 16 384 Mb
+   console.log(16000000000 / 1024 / 1024 /1024)
+   // 14, 15.2 ...
+   // 14.8 Gb / 14 800 Mb)
+*/
+
+const fleshSize = prompt(
   "Скільки файлів розміром 820 MB поміститься на Вашу флешку? Впишіть розмір вашої флеш карти у GB.",
   ""
 );
+const fileSize = 820;
+const filesCount = Math.floor(
+  (fleshSize * 1000 * 1000 * 1000) / (fileSize * 1024 * 1024)
+  //     Gb    => Mb  => Kb  => b         Mb     => Kb  => b
+  //        фактичний                          фактичний
+);
 
-const gigabitesInFlesh = userFleshSize * GIGABITE;
-const filesCount = Math.trunc(gigabitesInFlesh / fileSize);
 console.log(
-  `%c PROMPT Files on drive: %c ${filesCount}`,
+  `%c PROMPT Money left: %c ${filesCount}`,
   consoleMessageStyles,
   consoleOutputStyles
 );
 
-// /* -------------- NORMAL ------------- */
+/* -------------- NORMAL ------------- */
 
 // 1.
 const moneyInWallet = prompt("Введіть скільки у вашому гаманці коштів.", "");
@@ -77,7 +102,7 @@ console.log(
   consoleOutputStyles
 );
 
-// // 2.
+// 2.
 const numberInput = prompt("Введіть тризначне число.", "");
 
 // 2.1 // long and ugly way
@@ -105,18 +130,33 @@ console.log(
 
 // /* ---------------- MAX -------------- */
 // 1.
-const MONTHS_IN_YEAR = 12;
-const INVESTMENT_MONTHS_COUNT = 2;
+// 1.1 -- NOT CORRECT
+// const MONTHS_IN_YEAR = 12;
+// const INVESTMENT_MONTHS_COUNT = 2;
 
-const investmentSum = prompt("Введіть суму вкладу в банк на 2 місяці.", "");
-const sumPerMonth = investmentSum / INVESTMENT_MONTHS_COUNT; // сумма за місяць
-const sumPerYear = sumPerMonth * MONTHS_IN_YEAR; // сумма за рік
-const percentPerYear = (sumPerYear / 100) * 5; // кількість відсотків за рік
-const percentPerTwoMonth =
-  (percentPerYear / MONTHS_IN_YEAR) * INVESTMENT_MONTHS_COUNT; // кількість відсотків за 2 місяці
+// const investmentSum = prompt("Введіть суму вкладу в банк на 2 місяці.", "");
+// const sumPerMonth = investmentSum / INVESTMENT_MONTHS_COUNT; // сумма за місяць
+// const sumPerYear = sumPerMonth * MONTHS_IN_YEAR; // сумма за рік
+// const percentPerYear = (sumPerYear / 100) * 5; // кількість відсотків за рік
+// const percentPerTwoMonth =
+//   (percentPerYear / MONTHS_IN_YEAR) * INVESTMENT_MONTHS_COUNT; // кількість відсотків за 2 місяці
 
+// console.log(
+//   `%c PROMPT Сума нарахованих відсотків: %c ${percentPerTwoMonth}`,
+//   consoleMessageStyles,
+//   consoleOutputStyles
+// );
+
+// 1.2 --SOLUTION
+const depositRate = 0.05;
+const depositTerm = 2;
+const months = 12;
+const depositSum = prompt("Введіть суму вкладу в банк на 2 місяці.", "");
+
+const mounthlyRate = depositRate / 12;
+const profit = depositSum * mounthlyRate * depositTerm;
 console.log(
-  `%c PROMPT Сума нарахованих відсотків: %c ${percentPerTwoMonth}`,
+  `%c PROMPT Сума нарахованих відсотків: %c ${profit}`,
   consoleMessageStyles,
   consoleOutputStyles
 );
