@@ -18,22 +18,22 @@ const fructions = {
 
   add: function () {
     const sum = this.firstFruction + this.secondFruction;
-    console.log(this.cutNumbers(sum));
+    console.log("Додавання:", this.cutNumbers(sum));
   },
 
   substract: function () {
     const diff = this.firstFruction - this.secondFruction;
-    console.log(this.cutNumbers(diff));
+    console.log("Віднімання:", this.cutNumbers(diff));
   },
 
   multiplicate: function () {
     const mult = this.firstFruction * this.secondFruction;
-    console.log(this.cutNumbers(mult));
+    console.log("Множення:", this.cutNumbers(mult));
   },
 
   divide: function () {
     const div = this.firstFruction / this.secondFruction;
-    console.log(this.cutNumbers(div));
+    console.log("Ділення:", this.cutNumbers(div));
   },
 
   reduct: function () {

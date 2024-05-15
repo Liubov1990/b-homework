@@ -77,10 +77,10 @@ class Car {
     const { fuelToSpend, timesToRefuel } = this.getFuelConsumption(distance);
 
     console.log(
-      `Для того, щоб подолати відстань у ${distance} км. зі швидкістю ${this.averageSpeed} км/год. автомобілем "${this.manufacturer} ${this.model}", при кожні 4 години в дорозі з подальшою зупинкою на 1 годину, потрібно:
-      часу ${generalTripTime} год.;
-      топлива: ${fuelToSpend} л.;
-      заправок: ${timesToRefuel}.`
+      `Для того, щоб подолати відстань у ${distance} км. зі швидкістю ${this.averageSpeed} км/год. автомобілем "${this.manufacturer} ${this.model}", при кожних 4 години в дорозі з подальшою зупинкою на 1 годину, потрібно:
+      часу - ${generalTripTime} год.;
+      топлива - ${fuelToSpend} л.;
+      заправок - ${timesToRefuel}.`
     );
   }
 }
