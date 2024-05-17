@@ -36,7 +36,7 @@ function addProductCards(arr, ...products) {
       const { productName, count, isBought, priceForOne, sum } = {
         ...addedItem,
         count: product.count + addedItem.count,
-        sum: addedItem.sum + addedItem.priceForOne,
+        sum: product.sum + addedItem.sum,
       };
       arr[itemIndex] = new ProductCard(
         productName,
