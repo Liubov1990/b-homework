@@ -50,13 +50,13 @@ console.log("Factorial:", factorial(7));
 //     arr.push(arguments[i]);
 //   }
 
-//   console.log("Joined numbers:", arr.join(""));
+//   console.log("Joined numbers:", parseInt(arr.join("")));
 // }
 // joinNumbers(1, 4, 9);
 
 // 5.2
 const joinNumbers2 = (...params) =>
-  console.log("Joined numbers:", params.join(""));
+  console.log("Joined numbers:", typeof parseInt(params.join("")));
 
 joinNumbers2(5, 6, 3);
 
