@@ -6,7 +6,7 @@ const colorsIndexes = {
   2: "green",
 };
 
-window.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
   const switchColorsBtn = document.querySelector("#traffic-lights-btn");
   let colorIndex = 0;
 

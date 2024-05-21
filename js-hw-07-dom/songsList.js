@@ -2,7 +2,7 @@
 
 import data from "./data.json" with {type: "json"};
 
-window.addEventListener("DOMContentLoaded", function () {
+document.addEventListener("DOMContentLoaded", function () {
   const container = document.createElement("div");
   const list = document.createElement("ol");
 
