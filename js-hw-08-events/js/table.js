@@ -29,7 +29,7 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   function runSortTable(event) {
-    if (event.target.tagName != "TH") return;
+    if (event.target.tagName !== "TH") return;
     let th = event.target;
 
     sortTable(th.cellIndex, th.dataset.type);
