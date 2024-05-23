@@ -1,13 +1,4 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  background-color: black;
-  padding: 20px;
-}
+@import "./base.css";
 
 table {
   font-size: large;

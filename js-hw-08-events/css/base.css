@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  background-color: black;
+  padding: 20px;
+  margin: 0;
+}
+
+ol {
+  color: white;
+  font-size: 28px;
+}
+
+.link-to-task {
+  display: block;
+  color: white;
+  margin: 10px;
+}

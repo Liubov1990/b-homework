@@ -1,12 +1,4 @@
-* {
-  box-sizing: border-box;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  background-color: black;
-}
+@import "./base.css";
 
 #container {
   position: relative;
@@ -15,15 +7,22 @@ body {
   min-width: 100px;
   min-height: 100px;
   background-color: lightgrey;
-  border: 5px solid gray;
+  overflow: hidden;
+  padding: 10px;
+  border-radius: 10px;
 }
 
 .resizer {
   content: "";
   position: absolute;
-  right: -5px;
-  bottom: -5px;
-  width: 5px;
-  height: 5px;
+  right: 0;
+  bottom: 0;
+  width: 10px;
+  height: 10px;
   cursor: nwse-resize;
+  z-index: 100;
+}
+
+p {
+  margin: 0;
 }

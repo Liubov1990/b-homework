@@ -2,10 +2,10 @@
 
 document.addEventListener("DOMContentLoaded", function () {
   const table = document.querySelector("table");
+  const tbody = table.querySelector("tbody");
 
   function sortTable(colNum, type) {
-    let tbody = table.querySelector("tbody");
-    let rowsArray = [...tbody.rows];
+    const rowsArray = [...tbody.rows];
     let compare;
 
     switch (type) {
@@ -36,5 +36,9 @@ document.addEventListener("DOMContentLoaded", function () {
   }
 
   table.addEventListener("click", runSortTable);
-  table.removeEventListener("unload", runSortTable);
+});
+
+window.addEventListener("unload", function () {
+  table.removeEventListener("click", runSortTable);
+  return;
 });
