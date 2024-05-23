@@ -23,3 +23,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
   switchColorsBtn.addEventListener("click", setColor);
 });
+
+window.addEventListener("unload", function () {
+  switchColorsBtn.removeEventListener("click", setColor);
+});

@@ -23,3 +23,9 @@ document.addEventListener("DOMContentLoaded", function () {
   closeButton.addEventListener("click", closeModal);
   window.addEventListener("click", closeModalThroughOverlay);
 });
+
+window.addEventListener("unload", function () {
+  openButton.removeEventListener("click", openModal);
+  closeButton.removeEventListener("click", closeModal);
+  window.removeEventListener("click", closeModalThroughOverlay);
+});
