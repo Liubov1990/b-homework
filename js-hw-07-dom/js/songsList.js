@@ -1,6 +1,6 @@
 // Створити сторінку, що показує нумерований список пісень.
 
-import data from "./data.json" with {type: "json"};
+import data from "../data.json" with {type: "json"};
 
 document.addEventListener("DOMContentLoaded", function () {
   const container = document.createElement("div");

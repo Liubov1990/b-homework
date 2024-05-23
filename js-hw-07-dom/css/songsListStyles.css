@@ -1,0 +1,7 @@
+@import "./base.css";
+
+.songs-item {
+  font-size: 1.5rem;
+  color: yellow;
+  margin-bottom: 20px;
+}
