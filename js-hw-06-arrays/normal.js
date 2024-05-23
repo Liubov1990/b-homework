@@ -1,59 +1,64 @@
 /* -------------- NORMAL ------------- */
 
-function ProductCard(productName, count, isBought, priceForOne, sum) {
+function ProductCard(productName, count, isBought, priceForOne) {
   this.productName = productName;
   this.count = count;
   this.isBought = isBought;
   this.priceForOne = priceForOne;
-  this.sum = sum;
+  this.sum = count * priceForOne;
 }
 
-const productCard1 = new ProductCard("shampoo", 1, false, 120, 120);
-const productCard2 = new ProductCard("hand cream", 1, true, 90, 90);
-const productCard3 = new ProductCard("shower gel", 1, false, 180, 180);
-const productCard4 = new ProductCard("hand cream", 5, false, 90, 450);
+const productCard1 = new ProductCard("shampoo", 1, false, 120);
+const productCard2 = new ProductCard("hand cream", 1, true, 90);
+const productCard3 = new ProductCard("shower gel", 1, false, 180);
+const productCard4 = new ProductCard("hand cream", 5, false, 90);
 
 const shoppingList = [productCard1, productCard2];
 
 // Видалення продукту зі списку (видалення повинно проводитися шляхом створення нового масиву, в якому продукт, що ми шукаємо, буде відсутнім)
 
-const deleteProductCard = shoppingList.filter(
-  (item) => item.productName !== "hand cream"
+const deletedProductCardIndex = shoppingList.findIndex(
+  (item) => item.productName === "hand cream"
+);
+const updatedShoppingList = shoppingList.filter(
+  (_item, index) => index !== deletedProductCardIndex
 );
 
-console.log("Shopping list without deleted elements:", shoppingList);
-console.log("Shopping list after deleting elements:", deleteProductCard);
+console.log("Shopping list without deleted elements:", updatedShoppingList);
+console.log(
+  "New shopping list after deleting elements:",
+  shoppingList[deletedProductCardIndex]
+);
 
 // Додавання покупки в список. Враховуй, що при додаванні покупки з уже існуючим в списку продуктом, необхідно збільшувати кількість в існуючій покупці, а не додавати нову. При цьому також повинна змінитися сума, наприклад, якщо ціна за одиницю 12, а кількості товарів стало 2, то сума буде 24.
 
 function addProductCards(arr, ...products) {
+  const copiedArr = [...arr];
   products.forEach((product) => {
-    const itemIndex = arr.findIndex(
+    const itemIndex = copiedArr.findIndex(
       (item) => item.productName === product.productName
     );
     if (itemIndex !== -1) {
-      const addedItem = arr[itemIndex];
-      const { productName, count, isBought, priceForOne, sum } = {
+      const addedItem = copiedArr[itemIndex];
+      const { productName, count, isBought, priceForOne } = {
         ...addedItem,
         count: product.count + addedItem.count,
-        sum: product.sum + addedItem.sum,
       };
-      arr[itemIndex] = new ProductCard(
+      copiedArr[itemIndex] = new ProductCard(
         productName,
         count,
         isBought,
-        priceForOne,
-        sum
+        priceForOne
       );
     } else {
-      arr.push(product);
+      copiedArr.push(product);
     }
   });
 
-  return arr;
+  return copiedArr;
 }
 
 console.log(
   "Shopping list with added element:",
-  addProductCards(shoppingList, productCard3, productCard4)
+  addProductCards(updatedShoppingList, productCard3, productCard4)
 );

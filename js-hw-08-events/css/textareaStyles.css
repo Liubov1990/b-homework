@@ -1,0 +1,15 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: black;
+  padding: 20px;
+}
+
+.textarea,
+.text-content {
+  color: white;
+}
