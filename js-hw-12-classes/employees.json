@@ -1,0 +1,23 @@
+[
+  {
+    "id": 1,
+    "employeeName": "Jane",
+    "position": "Financial analyst",
+    "salary": "27600$",
+    "type": "Salary"
+  },
+  {
+    "id": 2,
+    "employeeName": "Jhon",
+    "position": "Banking consultant",
+    "salary": "14400$",
+    "type": "Salary"
+  },
+  {
+    "id": 3,
+    "employeeName": "Oggie",
+    "position": "Loan officer",
+    "salary": "20400$",
+    "type": "Salary"
+  }
+]
