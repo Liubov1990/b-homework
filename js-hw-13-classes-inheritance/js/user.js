@@ -29,6 +29,10 @@ export default class User {
     this.#isLoggedIn = false;
   }
 
+  set changedRole(newRole) {
+    this.role = newRole;
+  }
+
   getName() {
     return this.name;
   }
@@ -77,13 +81,20 @@ class Admin extends User {
 
   changeUserRole(userName, newRole) {
     const isCorrectRole = newRole === "admin" || newRole === "user";
+    const targetUserIndex = this.users.findIndex(
+      (user) => user.name === userName
+    );
 
-    if (!isCorrectRole) {
-      alert(`Role ${newRole} is not correct`);
+    if (!isCorrectRole || targetUserIndex === -1) {
+      const alertText = !isCorrectRole
+        ? `Role ${newRole} is not correct`
+        : `User ${userName} is not exist`;
+      alert(alertText);
       return;
-    } else {
-      console.log(this.role);
     }
+
+    this.users[targetUserIndex].changedRole = newRole;
+    return this.users;
   }
 
   getAllUsers() {
