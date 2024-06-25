@@ -9,7 +9,38 @@
 // 2 кнопка — показує користувачу поточну дату й час у текстовому варіанті
 
 // 3 кнопка — видаляє годинник зі «стіни» годинників
+//////////////////////////////////////////////////////////////////////////////////////////
 
-export default class Clock {}
+const searchInput = document.querySelector(".world-clock__search");
+const addClockBtn = document.querySelector(".world-clock__add-btn");
+const clockContainer = document.querySelector(".world-clock__clocks-block");
+const showTimeBtn = document.querySelector(".world-clock__show-time-btn");
+const showDateTimeBtn = document.querySelector(
+  ".world-clock__show-date-time-btn"
+);
+const deleteClockBtn = document.querySelector(".world-clock__delete-btn");
 
-const user = new Clock();
+// const clockItem = `<div class="world-clock__clocks-item">
+// <div class="world-clock__clock">${}</div>
+// <div class="world-clock__handle-buttons">
+//   <button type="button" class="world-clock__show-time-btn">
+//     Show time
+//   </button>
+//   <button type="button" class="world-clock__show-date-time-btn">
+//     Show date and time
+//   </button>
+//   <button type="button" class="world-clock__delete-btn">
+//     Delete clock
+//   </button>
+// </div>
+// </div>`;
+export default class Clock {
+  constructor(timezone) {
+    this.timezone = timezone;
+  }
+  getCurrentDate() {}
+  getCurrentDateTime() {}
+  deleteClock() {}
+}
+
+const clock1 = new Clock();
