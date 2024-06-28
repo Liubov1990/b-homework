@@ -4,7 +4,7 @@
 
 // Створи об’єкт класу EmpTable і виведи на екран результат роботи методу getHtml ().
 
-import employeesData from "../employees.json" assert { type: "json" };
+import employeesData from "../employees.json" with { type: "json" };
 
 const tBody = document.querySelector(".employees-table__body");
 let template = "";
