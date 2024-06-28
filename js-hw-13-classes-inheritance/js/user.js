@@ -122,8 +122,6 @@ console.log("User3 role:", user3.getRole());
 console.log("Logging in:", user3.login());
 console.log("Logging out:", user2.login());
 
-console.log("Crating Admin user:", admin);
-
 console.log("Adding user:", admin.addUser(user1));
 console.log("Adding user:", admin.addUser(user2));
 console.log("Adding user:", admin.addUser(user3));
@@ -131,7 +129,7 @@ console.log("Adding user:", admin.addUser(user3));
 console.log("Removing user:", admin.removeUser(userCreds1.name));
 
 console.log(
-  "Change user role with error:",
+  "Change user role with intentional error:",
   admin.changeUserRole(userCreds3.name, "customer")
 );
 console.log(
